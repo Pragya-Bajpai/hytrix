@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 <body>
 
-      @include('home.layout.header')
-  
-      @include('home.layout.navbar')
-       
-      @yield('content')
+    {{-- Top Header Bar --}}
+    @include('home.layout.header')
 
-      @include('home.layout.footer')
-      
+    {{-- Main Navbar --}}
+    @include('home.layout.navbar')
+
+    {{-- Dynamic Page Content --}}
+    @yield('content')
+
+    {{-- Footer --}}
+    @include('home.layout.footer')
+
 </body>
 </html>

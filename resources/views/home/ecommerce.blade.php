@@ -1,110 +1,162 @@
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hytrix</title>
-  @include('home.layout.head')
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>E-Commerce Website Development Company in India | Hytrix Technologies</title>
+
+    <meta name="description"
+        content="Hytrix Technologies builds high-converting, scalable e-commerce websites and multi-vendor marketplaces with secure payment gateways and modern shopping experiences.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="{{ url()->current() }}">
+
+    {{-- Open Graph --}}
+    <meta property="og:title" content="E-Commerce Development Services | Hytrix Technologies">
+    <meta property="og:description"
+        content="Scale your online retail business with cutting-edge e-commerce platforms built by Hytrix Technologies.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:site_name" content="Hytrix Technologies LLP">
+
+    @include('home.layout.head')
 </head>
 
 @extends('home.layout.main')
 
 @section('content')
 
-  <!-- start-App-development-area -->
-         <div class="blog-details-area pt-100 pb-70">
-            <div class="container">
-               <div class="row">
-                  <div class="col-lg-12">
-                     <div class="blog-article">
-                        <div class="article-content text-center">
-                            <h2>Hytrix technology llp has the key to catalyze your businesses with its cutting edge e-commerce solutions.</h2>
-                           <p>
-                           
-                           </p>
+    {{-- ====== E-Commerce Intro Hero ====== --}}
+    <div class="py-4 py-lg-5">
+        <div class="container py-lg-5">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="choose-content mr-lg-20">
+                        <div class="section-title">
+                            <span class="sp-color2">ONLINE STORE SOLUTIONS</span>
+                            <h1>E-Commerce Website Development in India</h1>
                         </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4">
-                     <div class="side-bar-area">
-                        <img src="https://ferryinfotech.com/assets/images/e-comm1.png" alt="">
-                     </div>
-                  </div>
-               </div>
+                        <p class="text-dark">
+                            Hytrix Technologies empowers retailers, brands, and startups with next-generation e-commerce platforms designed for speed, conversions, and seamless scalability.
+                        </p>
+                        <p class="text-dark">
+                            Whether you need a custom store, WooCommerce, Shopify, or enterprise marketplace architecture, we deliver intuitive product discovery, fast checkout flows, and automated inventory systems.
+                        </p>
+                        <a href="{{ route('contact') }}" class="default-btn btn-bg-two mt-3">
+                            Launch Your Online Store <i class='bx bx-chevron-right'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="choose-img">
+                        <img src="{{ asset('public/assets/images/choose-img.jpg') }}"
+                            alt="E-commerce development company in India"
+                            class="img-fluid rounded shadow-sm">
+                    </div>
+                </div>
+
             </div>
-         </div>
-         <section class="services-style-area pb-70">
-            <div class="container">
-               <!--div class="section-title text-center">
-                  <h2 style="min-width:100%;">We Empower Businesses With Our Amazing Range Of Android Application Development Services, Like</h2>
-                  <p class="margin-auto">
-                    Our hardworking team makes sure we satisfy our customers need in a given time. Our team sketches the innovative ideas of our customers in there budget.
-                  </p>
-               </div-->
-               <div class="row about-content  pt-45">
-                    <div class="col-lg-6 col-sm-6">
-                        <div class="work-process-card-three e_commerce_box">
-                            <h3>Why E-commerce Solutions?</h3>
-                            <ul class="about-list">
-                                <li><i class="bx bxs-check-circle"></i>
-                                    Excellent platform to sell products and services through web
-                                </li>
-                                <li><i class="bx bxs-check-circle"></i>
-                                    Your services and products are in demand globally
-                                </li>
-                                <li><i class="bx bxs-check-circle"></i> 
-                                    You aspire to be among the big players
-                                </li>
-                                <li><i class="bx bxs-check-circle"></i>
-                                    It further enhances your business revenues
-                                </li>
-                                <li><i class="bx bxs-check-circle"></i>
-                                    Your online store is old, dull and doesn’t meet expectations of new generation
-                                </li>
-                                <li><i class="bx bxs-check-circle"></i>  
-                                    Custom Web Template Designing
-                                </li>
-                            </ul>
-                            <i class="flaticon-project"></i>
+        </div>
+    </div>
+
+    {{-- ====== E-Commerce Feature Breakdown ====== --}}
+    <section class="services-style-area py-5" style="background: var(--color-bg-light);">
+        <div class="container py-lg-4">
+            <div class="section-title text-center mb-5">
+                <span class="sp-color1">Why Choose E-Commerce</span>
+                <h2>Accelerate Your Business With Modern Online Retail</h2>
+                <p class="margin-auto">
+                    Transform the way you sell online with comprehensive e-commerce solutions crafted for maximum performance.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                {{-- Card 1: Why E-Commerce Solutions --}}
+                <div class="col-lg-6 mb-4">
+                    <div class="security-card h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class='bx bx-store-alt me-2' style="font-size: 32px; color: var(--color-accent-link);"></i>
+                            <h3 class="mb-0 ms-2">Why Invest in E-Commerce?</h3>
                         </div>
+                        <ul class="about-list text-start ps-0 list-unstyled">
+                            <li class="mb-2 d-flex align-items-center">
+                                <i class="bx bxs-check-circle text-primary me-2"></i>
+                                <span>Sell products &amp; digital services globally 24/7</span>
+                            </li>
+                            <li class="mb-2 d-flex align-items-center">
+                                <i class="bx bxs-check-circle text-primary me-2"></i>
+                                <span>Higher conversion rates with streamlined one-click checkout</span>
+                            </li>
+                            <li class="mb-2 d-flex align-items-center">
+                                <i class="bx bxs-check-circle text-primary me-2"></i>
+                                <span>Direct-to-consumer reach without intermediaries</span>
+                            </li>
+                            <li class="mb-2 d-flex align-items-center">
+                                <i class="bx bxs-check-circle text-primary me-2"></i>
+                                <span>Automated inventory, tax, and multi-currency billing</span>
+                            </li>
+                            <li class="mb-2 d-flex align-items-center">
+                                <i class="bx bxs-check-circle text-primary me-2"></i>
+                                <span>Modern, mobile-responsive shopping experience</span>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-lg-6 col-sm-6">
-                        <div class="work-process-card-three e_commerce_box">
-                            <h3>What is covered?</h3>
-                            <ul class="about-list">
-                                <li><i class="bx bxs-check-circle"></i>
-                                    Online sales and shopping
-                                </li>
-                                <li><i class="bx bxs-check-circle"></i>
-                                    Multiple options for money transactions
-                                </li>
-                                <li><i class="bx bxs-check-circle"></i> 
-                                    Product listings with image
-                                </li>
-                                <li><i class="bx bxs-check-circle"></i>
-                                    Control panel
-                                </li>
-                                <li><i class="bx bxs-check-circle"></i>
-                                    Shopping cart and much more
-                                </li>
-                                <li><i class="bx bxs-check-circle"></i>
-                                    Multiple options for money transactions
-                                </li>
-                                <li><i class="bx bxs-check-circle"></i> 
-                                    Product listings with image
-                                </li>
-                                <li><i class="bx bxs-check-circle"></i>
-                                    Control panel
-                                </li>
-                                <li><i class="bx bxs-check-circle"></i>
-                                    Shopping cart and much more
-                                </li>
-                            </ul>
-                            <i class="flaticon-chip"></i>
+                </div>
+
+                {{-- Card 2: What is covered --}}
+                <div class="col-lg-6 mb-4">
+                    <div class="security-card h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class='bx bx-check-double me-2' style="font-size: 32px; color: var(--color-accent-link);"></i>
+                            <h3 class="mb-0 ms-2">Features &amp; Capabilities Included</h3>
                         </div>
+                        <ul class="about-list text-start ps-0 list-unstyled">
+                            <li class="mb-2 d-flex align-items-center">
+                                <i class="bx bxs-check-circle text-primary me-2"></i>
+                                <span>Multiple payment gateways (Stripe, Razorpay, PayPal, UPI)</span>
+                            </li>
+                            <li class="mb-2 d-flex align-items-center">
+                                <i class="bx bxs-check-circle text-primary me-2"></i>
+                                <span>Comprehensive product catalog with variations &amp; filters</span>
+                            </li>
+                            <li class="mb-2 d-flex align-items-center">
+                                <i class="bx bxs-check-circle text-primary me-2"></i>
+                                <span>Intuitive admin control panel for order &amp; stock management</span>
+                            </li>
+                            <li class="mb-2 d-flex align-items-center">
+                                <i class="bx bxs-check-circle text-primary me-2"></i>
+                                <span>Automated customer notifications via Email &amp; SMS</span>
+                            </li>
+                            <li class="mb-2 d-flex align-items-center">
+                                <i class="bx bxs-check-circle text-primary me-2"></i>
+                                <span>Coupons, discounts, and promotional reward systems</span>
+                            </li>
+                        </ul>
                     </div>
-                   
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    {{-- ====== CTA Section ====== --}}
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-7">
+                    <h2 class="mb-3">Ready to Scale Your Online Revenue?</h2>
+                    <p class="text-muted mb-4">
+                        Contact our e-commerce specialists to discuss your custom storefront, integration needs, or replatforming.
+                    </p>
+                    <a href="{{ route('contact') }}" class="default-btn btn-bg-two">
+                        Get A Free Quote <i class='bx bx-chevron-right'></i>
+                    </a>
                 </div>
             </div>
-         </section>
-        <!-- end-App-development-area -->
-        
+        </div>
+    </section>
+
 @endsection

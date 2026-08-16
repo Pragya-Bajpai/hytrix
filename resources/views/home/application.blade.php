@@ -1,107 +1,140 @@
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hytrix</title>
-  @include('home.layout.head')
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Job Application | Careers at Hytrix Technologies</title>
+
+    <meta name="description"
+        content="Submit your job application to join the engineering and marketing teams at Hytrix Technologies.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="{{ url()->current() }}">
+
+    @include('home.layout.head')
 </head>
 
 @extends('home.layout.main')
 
 @section('content')
- 
-  <section class="ptb-70">
+
+    {{-- ====== Application Form Banner ====== --}}
+    <section class="portfolio-hero">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 d-flex justify-content-center align-items-center" >
-									@if(session()->has('success'))
-									<p class="alert alert-success w-75 mt-3"> {{ session()->get('success') }}</p>
-									@endif
-                </div>
-				<div class="col-lg-2">
-                </div>
-								
-                <div class="col-lg-8" id="main-career">
-									
-                    <form class="row g-3" action="{{route('appstore')}}" method="POST" enctype="multipart/form-data">
-                      @csrf
-                      <div class="col-md-12 mb-3">
-                          <div class="text-center">
-                              <h3>Job Application <span class="red">Form</span></h3>
-                              <p>
-                                  Hi there! This form records the entry for your Job Application for various profiles at maxus. Go ahead and fill in the form with complete and accurate details that are best to your knowledge!
-                              </p>
-                              <p>
-                                  In case of any query or assistance, reach us out at <br>
-                                  <a href="mailto:info@hytrix.in">info@hytrix.in</a> OR Call us Tel: +91 8283853996
-                              </p>
-                          </div>
-                      </div>
-                    <div class="col-md-6 mb-3">
-                      <label for="inputEmail4" class="form-label">First Name*</label>
-                      <input type="text" class="form-control" required="" id="inputEmail4" placeholder="First Name" name="fname" value="{{old('fname')}}">
-					  <span class="text-danger">
-								   @error('fname')
-								   {{$message}}
-								   @enderror
-					</span>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <label for="inputPassword4" class="form-label">Last Name</label>
-                      <input type="text" required="" class="form-control" id="inputPassword4" placeholder="Last Name" name="lname"  value="{{old('lname')}}">
-					<span class="text-danger">
-								   @error('lname')
-								   {{$message}}
-								   @enderror
-					</span>
-				  </div>
-                    <div class="col-md-6 mb-3">
-                      <label for="inputEmail4" class="form-label">Email*</label>
-                      <input type="email" required="" class="form-control" id="inputEmail4" placeholder="Enter Your Valid Email Address" name="email" value="{{old('email')}}">
-                    <span class="text-danger">
-								   @error('email')
-								   {{$message}}
-								   @enderror
-					</span>
-					</div>
-                    <div class="col-md-6 mb-3">
-                      <label for="inputPassword4" class="form-label">Mobile No*</label>
-                      <input type="number" required="" class="form-control" id="inputPassword4" placeholder="Mobile No" name="mobile" value="{{old('mobile')}}">
-						<span class="text-danger">
-								   @error('mobile')
-								   {{$message}}
-								   @enderror
-					</span>                   
-				   </div>
-                    <div class="col-6 mb-3">
-                      <label for="inputAddress" class="form-label">Attachment Your CV*</label>
-                      <input type="file" class="form-control" id="inputAddress" placeholder="Enter Text" name="file" value="{{old('file')}}">
-					  <span class="text-danger">
-								   @error('file')
-								   {{$message}}
-								   @enderror
-					</span>  
-                    </div>
-                    <div class="col-12 mb-3">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                         <a href="{{route('term.condition')}}">Accept Terms And Conditions</a> 
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-12 mb-3 mt-3">
-                      <div class="hire-deve-sum text-center">
-                           <button type="submit" class="default-btn btn-bg-two border-radius-50 disabled" style="pointer-events: all; cursor: pointer;">
-                                Submit Application<i class="bx bx-chevron-right"></i>
-                                </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-                <div class="col-lg-2">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <span class="hero-badge">Careers</span>
+                    <h1>Job Application Form</h1>
+                    <p>
+                        Fill in your details below to apply for career opportunities at Hytrix Technologies.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    {{-- ====== Application Form Section ====== --}}
+    <section class="py-5" style="background: var(--color-bg-light);">
+        <div class="container py-lg-4">
+            <div class="row justify-content-center">
+
+                <div class="col-lg-8">
+
+                    {{-- Alert Messages --}}
+                    @if(session()->has('success'))
+                        <div class="alert alert-success alert-dismissible fade show mb-4" role="alert">
+                            <i class='bx bx-check-circle me-2'></i> {{ session()->get('success') }}
+                        </div>
+                    @endif
+                    @if(session()->has('failed'))
+                        <div class="alert alert-danger alert-dismissible fade show mb-4" role="alert">
+                            <i class='bx bx-error-circle me-2'></i> {{ session()->get('failed') }}
+                        </div>
+                    @endif
+
+                    <div class="bg-white p-4 p-md-5 rounded shadow-sm border">
+                        <div class="text-center mb-4">
+                            <h3 class="mb-2">Candidate Details</h3>
+                            <p class="text-muted">
+                                Please submit accurate information. In case of any questions, reach out to us at
+                                <a href="mailto:info@hytrix.in">info@hytrix.in</a> or <a href="tel:+919076500530">+91 9076500530</a>.
+                            </p>
+                        </div>
+
+                        <form action="{{ route('appstore') }}" method="POST" enctype="multipart/form-data">
+                            @csrf
+
+                            <div class="row">
+                                {{-- First Name --}}
+                                <div class="col-md-6 mb-3">
+                                    <label for="inputFname" class="form-label text-muted">First Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" required id="inputFname" placeholder="Your first name" name="fname" value="{{ old('fname') }}">
+                                    @error('fname')
+                                        <span class="text-danger small">{{ $message }}</span>
+                                    @enderror
+                                </div>
+
+                                {{-- Last Name --}}
+                                <div class="col-md-6 mb-3">
+                                    <label for="inputLname" class="form-label text-muted">Last Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" required id="inputLname" placeholder="Your last name" name="lname" value="{{ old('lname') }}">
+                                    @error('lname')
+                                        <span class="text-danger small">{{ $message }}</span>
+                                    @enderror
+                                </div>
+
+                                {{-- Email --}}
+                                <div class="col-md-6 mb-3">
+                                    <label for="inputEmail" class="form-label text-muted">Email Address <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" required id="inputEmail" placeholder="yourname@domain.com" name="email" value="{{ old('email') }}">
+                                    @error('email')
+                                        <span class="text-danger small">{{ $message }}</span>
+                                    @enderror
+                                </div>
+
+                                {{-- Mobile --}}
+                                <div class="col-md-6 mb-3">
+                                    <label for="inputMobile" class="form-label text-muted">Mobile Number <span class="text-danger">*</span></label>
+                                    <input type="tel" class="form-control" required id="inputMobile" placeholder="Contact number" name="mobile" value="{{ old('mobile') }}">
+                                    @error('mobile')
+                                        <span class="text-danger small">{{ $message }}</span>
+                                    @enderror
+                                </div>
+
+                                {{-- CV Upload --}}
+                                <div class="col-12 mb-3">
+                                    <label for="inputCv" class="form-label text-muted">Attach Your CV / Resume <span class="text-danger">*</span></label>
+                                    <input type="file" class="form-control" required id="inputCv" name="file">
+                                    <small class="text-muted">PDF, DOC, DOCX formats supported.</small>
+                                    @error('file')
+                                        <span class="text-danger small d-block">{{ $message }}</span>
+                                    @enderror
+                                </div>
+
+                                {{-- Terms Agreement --}}
+                                <div class="col-12 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                                        <label class="form-check-label" for="gridCheck">
+                                            I agree to the <a href="{{ route('terms.conditions') }}" target="_blank">Terms and Conditions</a> and Privacy Policy.
+                                        </label>
+                                    </div>
+                                </div>
+
+                                {{-- Submit Button --}}
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="default-btn btn-bg-two">
+                                        Submit Application <i class="bx bx-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 @endsection
