@@ -1,93 +1,164 @@
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hytrix</title>
-  @include('home.layout.head')
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Digital Marketing Company in India | SEO &amp; Growth Services | Hytrix Technologies</title>
+
+    <meta name="description"
+        content="Hytrix Technologies provides data-driven digital marketing services in India, including SEO, content marketing, social media marketing, PPC campaigns, and brand growth strategies.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="{{ url()->current() }}">
+
+    {{-- Open Graph --}}
+    <meta property="og:title" content="Digital Marketing Services | Hytrix Technologies">
+    <meta property="og:description"
+        content="Strategizing impactful digital campaigns to elevate your brand's online presence.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:site_name" content="Hytrix Technologies LLP">
+
+    @include('home.layout.head')
 </head>
 
 @extends('home.layout.main')
 
 @section('content')
 
-  <!-- start-App-development-area -->
-         <div class="blog-details-area pt-50 pb-70">
-            <div class="container text-center">
-                <h2>Strategizing impactful digital campaigns.Elevate your brand's online presence with our expertise.</h2>
-               <div class="row align-items-center">
-                  <div class="col-lg-8 about-content">
-                    <!--ul class="about-list text-start">
-                        <li><i class="bx bxs-check-circle"></i> 
-                            We make it sure that we turn our customers business a successful one. We keep a eye on changing trends. Our team provide help in digital marketing solutions, which can help our customers in expanding there business online, so that our customers can shape there dreams into reality. We assure our customers that we are always available with them.
-                        </li>
-                        <li><i class="bx bxs-check-circle"></i>
-                            We provide services like SEO and SMO to impel direct sales into the company. Our excellent knowledge of Internet marketing will perk up the required traffic and help to improve your ranking in most famous search engines like Google, Yahoo, Bing etc. We also offer services like hire SEO experts who will work with your team to get targeted position in growing internet marketing.
-                        </li>
-                        <li><i class="bx bxs-check-circle"></i>
-                            Our SEO analysts are qualified and experienced enough to boost your website ranking. They are well aware of every tactics and strategy to deal with search engine protocols. They force search engines to understand and give priorities to your website in a regular run. So if you want best internet marketing professionals for your website, write to us.
-                        </li>
-                     </ul-->
-                  </div>
-                  <div class="col-lg-4">
-                     <div class="side-bar-area">
-                        <img src="https://ferryinfotech.com/assets/images/discussion.png" alt="">
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <section class="services-style-area pb-70 pt-0" id="our-services">
-            <div class="container">
-               <!--div class="section-title text-center">
-                  <h2>We Empower Businesses With Our Amazing Range</h2>
-                  <p class="margin-auto">
-                    Our hardworking team makes sure we satisfy our customers need in a given time. Our team sketches the innovative ideas of our customers in there budget.
-                  </p>
-               </div-->
-               <div class="row pt-45">
-                <div class="feature py-4 col-md-6  col-lg-4 d-flex">
-                  <div class="icon text-green mr-3"><i class="fa fa-paint-brush"></i></div>
-                  <div class="px-4">
-                      <h5><a href="#!">Content Marketing</a></h5>
-                      <p>We provides content marketing services to educate the clients by supplying them proper information.</p>
-                  </div>
+    {{-- ====== Digital Marketing Intro ====== --}}
+    <div class="py-4 py-lg-5">
+        <div class="container py-lg-5">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="choose-content mr-lg-20">
+                        <div class="section-title">
+                            <span class="sp-color2">GROWTH &amp; PERFORMANCE MARKETING</span>
+                            <h1>Digital Marketing Company in India</h1>
+                        </div>
+                        <p class="text-dark">
+                            Elevate your brand's digital visibility and drive high-intent qualified leads. At Hytrix Technologies, our growth specialists deploy data-backed digital marketing strategies that turn online traffic into loyal customers.
+                        </p>
+                        <p class="text-dark">
+                            From organic Search Engine Optimization (SEO) and content marketing to targeted pay-per-click (PPC) and social media campaigns, we provide measurable ROI across every channel.
+                        </p>
+                        <a href="{{ route('contact') }}" class="default-btn btn-bg-two mt-3">
+                            Claim Free SEO Audit <i class='bx bx-chevron-right'></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="feature py-4 col-md-6  col-lg-4 d-flex">
-                  <div class="icon text-green mr-3"><i class="fa fa-code"></i></div>
-                  <div class="px-4">
-                      <h5><a href="#!">Social Media Engagement</a></h5>
-                      <p>We provides content marketing services to educate the clients by supplying them proper information.</p>
-                  </div>
+
+                <div class="col-lg-6">
+                    <div class="choose-img">
+                        <img src="{{ asset('public/assets/images/choose-img1.jpg') }}"
+                            alt="Digital marketing company in India by Hytrix Technologies"
+                            class="img-fluid rounded shadow-sm">
+                    </div>
                 </div>
-                <div class="feature py-4 col-md-6  col-lg-4 d-flex">
-                    <div class="icon text-green mr-3"><i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i></div>
-                    <div class="px-4">
-                        <h5><a href="#!">Interest</a></h5>
-                        <p>We provides content marketing services to educate the clients by supplying them proper information.</p>
-                    </div>
-                  </div>
-                  <div class="feature py-4 col-md-6  col-lg-4 d-flex">
-                    <div class="icon text-green mr-3"><i class="fa fa-male" aria-hidden="true"></i></div>
-                    <div class="px-4">
-                        <h5><a href="#!">Personal Branding</a></h5>
-                        <p>We provides content marketing services to educate the clients by supplying them proper information.</p>
-                    </div>
-                  </div>
-                  <div class="feature py-4 col-md-6  col-lg-4 d-flex">
-                    <div class="icon text-green mr-3"><i class="fa fa-globe" aria-hidden="true"></i> </div>
-                    <div class="px-4">
-                        <h5><a href="#!">Location Based Marketing</a></h5>
-                        <p>We provides content marketing services to educate the clients by supplying them proper information.</p>
-                    </div>
-                  </div>
-                  <div class="feature py-4 col-md-6  col-lg-4 d-flex">
-                    <div class="icon text-green mr-3"><i class="fa fa-line-chart" aria-hidden="true"></i></div>
-                    <div class="px-4">
-                        <h5><a href="#!">Data Analysis </a></h5>
-                        <p>We provides content marketing services to educate the clients by supplying them proper information.</p>
-                    </div>
-                  </div>
-              </div>
+
             </div>
-         </section>
-        <!-- end-App-development-area -->
+        </div>
+    </div>
+
+    {{-- ====== Digital Marketing Capabilities ====== --}}
+    <section class="services-style-area py-5" style="background: var(--color-bg-light);">
+        <div class="container py-lg-4">
+            <div class="section-title text-center mb-5">
+                <span class="sp-color1">Our Marketing Solutions</span>
+                <h2>Data-Driven Channels to Scale Your Brand</h2>
+                <p class="margin-auto">
+                    We craft tailored campaigns designed to maximize your brand reach, user engagement, and customer acquisition.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                {{-- Content Marketing --}}
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="security-card h-100">
+                        <i class='bx bx-edit-alt'></i>
+                        <h3>Content Marketing</h3>
+                        <p>
+                            High-quality, search-optimized articles, blogs, and landing pages that establish domain authority and educate your target audience.
+                        </p>
+                    </div>
+                </div>
+
+                {{-- Social Media Marketing --}}
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="security-card h-100">
+                        <i class='bx bxl-facebook-circle'></i>
+                        <h3>Social Media Marketing</h3>
+                        <p>
+                            Strategic community building and paid advertising campaigns across LinkedIn, Instagram, Meta, and Twitter to amplify brand awareness.
+                        </p>
+                    </div>
+                </div>
+
+                {{-- SEO & Search Visibility --}}
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="security-card h-100">
+                        <i class='bx bx-search-alt'></i>
+                        <h3>Search Engine Optimization</h3>
+                        <p>
+                            On-page, technical, and off-page SEO optimizations to rank your business at the top of Google for competitive commercial keywords.
+                        </p>
+                    </div>
+                </div>
+
+                {{-- Personal & Corporate Branding --}}
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="security-card h-100">
+                        <i class='bx bx-user-pin'></i>
+                        <h3>Brand Identity &amp; Positioning</h3>
+                        <p>
+                            Distinctive visual identities, brand guidelines, and executive thought leadership programs that inspire trust and recognition.
+                        </p>
+                    </div>
+                </div>
+
+                {{-- Local SEO & Marketing --}}
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="security-card h-100">
+                        <i class='bx bx-map-pin'></i>
+                        <h3>Location-Based SEO</h3>
+                        <p>
+                            Google Business Profile management, local citation audits, and geo-targeted ads that dominate local search results.
+                        </p>
+                    </div>
+                </div>
+
+                {{-- Analytics & Conversion Optimization --}}
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="security-card h-100">
+                        <i class='bx bx-line-chart'></i>
+                        <h3>Data Analytics &amp; CRO</h3>
+                        <p>
+                            In-depth funnel analysis, heatmapping, and A/B split testing to maximize your website's conversion rate and lifetime customer value.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    {{-- ====== CTA Section ====== --}}
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-7">
+                    <h2 class="mb-3">Ready to Accelerate Your Online Growth?</h2>
+                    <p class="text-muted mb-4">
+                        Speak with our digital strategists to uncover untapped opportunities and create a custom growth roadmap for your business.
+                    </p>
+                    <a href="{{ route('contact') }}" class="default-btn btn-bg-two">
+                        Schedule A Consultation <i class='bx bx-chevron-right'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 @endsection

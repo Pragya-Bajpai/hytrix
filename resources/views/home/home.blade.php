@@ -2,244 +2,302 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-
-    <title>Best IT Company in Lucknow | Web, Software & Digital Marketing Services | Hytrix Technologies</title>
+    <title>Best IT Company in Lucknow | Web, Software &amp; Digital Marketing Services | Hytrix Technologies</title>
     <meta name="description"
         content="Hytrix Technologies LLP is a leading IT company in Lucknow specializing in web development, software development, mobile apps, e-commerce, API integration, and digital marketing. Grow your business with us!">
     <meta name="keywords"
         content="IT company in Lucknow, web development company in Lucknow, software development company in Lucknow, digital marketing company in Lucknow, mobile app development company in Lucknow">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Hytrix Technologies | IT Company in India">
-
     <meta property="og:description"
         content="Web development, software development, mobile app, e-commerce and digital marketing services for businesses across India.">
-
     <meta property="og:type" content="website">
-
     <meta property="og:url" content="{{ url('/') }}">
-
     <meta property="og:image" content="{{ asset('public/home/hytrix-og-image.jpg') }}">
-
     <meta property="og:site_name" content="Hytrix Technologies">
     <meta name="twitter:card" content="summary_large_image">
-
     <meta name="twitter:title" content="Hytrix Technologies | IT Company in India">
-
     <meta name="twitter:description"
         content="Web, software, mobile app, e-commerce and digital marketing services for businesses across India.">
-
     <meta name="twitter:image" content="{{ asset('public/home/hytrix-og-image.jpg') }}">
     <link rel="canonical" href="{{ url('/') }}">
 
     <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Hytrix Technologies LLP",
-    "url": "{{ url('/') }}",
-    "logo": "{{ asset('public/assets/images/logo.png') }}",
-    "description": "Hytrix Technologies is an IT company in India providing web development, software development, mobile app development, e-commerce and digital marketing services.",
-    "sameAs": [
-        "YOUR_LINKEDIN_URL",
-        "YOUR_FACEBOOK_URL",
-        "YOUR_INSTAGRAM_URL"
-    ]
-}
-</script>
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Hytrix Technologies LLP",
+        "url": "{{ url('/') }}",
+        "logo": "{{ asset('public/assets/images/logo.png') }}",
+        "description": "Hytrix Technologies is an IT company in India providing web development, software development, mobile app development, e-commerce and digital marketing services.",
+        "sameAs": [
+            "https://www.linkedin.com/company/hytrix-technology/",
+            "https://www.facebook.com/profile.php?id=100089461593466&mibextid=ZbWKwL",
+            "https://www.instagram.com/hytrixtech/?utm_source=qr"
+        ]
+    }
+    </script>
     @include('home.layout.head')
 </head>
 
 @extends('home.layout.main')
 
 @section('content')
-    <style>
-        .d-table {
-            height: auto !important;
-        }
 
-
-        .about-img-2 img {
-            border-radius: 35px;
-            /* smooth rounded corners */
-        }
-    </style>
+    {{-- ====== Hero Slider Section ====== --}}
     <div class="banner-slider-area ht-banner">
         <div class="banner-slider owl-carousel owl-theme">
+
+            {{-- Slide 1 --}}
             <div class="banner-item item-bg1">
                 <div class="d-table">
                     <div class="d-table-cell">
                         <div class="container">
                             <div class="banner-item-content">
-                                <span>Only High Quality Services</span>
-                                <h1>Best IT Company in Lucknow for Web & Software Development</h1>
+                                <span>High-Impact IT Solutions</span>
+                                <h1>Best IT Company in Lucknow for Web &amp; Software Development</h1>
                                 <p>
-                                    At Hytrix, we don't just provide technology solutions – we engineer digital revolutions.
-                                    Join us in shaping the future, where innovation knows no bounds and industries thrive on
-                                    the cutting edge of possibility.
+                                    At Hytrix, we engineer digital transformations. We craft scalable web platforms, enterprise software, and mobile apps designed to accelerate business growth.
                                 </p>
                                 <div class="banner-btn">
-                                    <a href="{{ route('about') }}" class="default-btn btn-bg-two border-radius-50">Learn
-                                        More <i class='bx bx-chevron-right'></i></a>
-                                    <a href="{{ route('contact') }}"
-                                        class="default-btn btn-bg-one border-radius-50 ml-20">Get A Quote <i
-                                            class='bx bx-chevron-right'></i></a>
+                                    <a href="{{ route('about') }}" class="default-btn btn-bg-two">
+                                        Why Choose Us <i class='bx bx-chevron-right'></i>
+                                    </a>
+                                    <a href="{{ route('contact') }}" class="default-btn btn-bg-one">
+                                        Get A Quote <i class='bx bx-chevron-right'></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            {{-- Slide 2 --}}
             <div class="banner-item item-bg2">
                 <div class="d-table">
                     <div class="d-table-cell">
                         <div class="container">
                             <div class="banner-item-content">
-                                <span>Only High Quality Services</span>
-                                <h1>We Provide Best IT Services for Your Need</h1>
+                                <span>Scalable Architecture</span>
+                                <h1>Custom Software &amp; Cloud Solutions for Modern Enterprises</h1>
                                 <p>
-                                    As industry landscapes continually shift, we stay ahead by anticipating technological
-                                    trends and adapting our solutions. Your success is our driving <br> force.
+                                    Stay ahead in rapidly shifting digital landscapes. We deliver secure, robust, and scalable cloud and software ecosystems tailored to your exact workflows.
                                 </p>
                                 <div class="banner-btn">
-                                    <a href="{{ route('about') }}" class="default-btn btn-bg-two border-radius-50">Learn
-                                        More <i class='bx bx-chevron-right'></i></a>
-                                    <a href="{{ route('contact') }}"
-                                        class="default-btn btn-bg-one border-radius-50 ml-20">Get A Quote <i
-                                            class='bx bx-chevron-right'></i></a>
+                                    <a href="{{ route('about') }}" class="default-btn btn-bg-two">
+                                        Learn More <i class='bx bx-chevron-right'></i>
+                                    </a>
+                                    <a href="{{ route('contact') }}" class="default-btn btn-bg-one">
+                                        Get A Quote <i class='bx bx-chevron-right'></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            {{-- Slide 3 --}}
             <div class="banner-item item-bg3">
                 <div class="d-table">
                     <div class="d-table-cell">
                         <div class="container">
                             <div class="banner-item-content">
-                                <span>Only High Quality Services</span>
-                                <h1>Digital IT Service With Excellent Quality</h1>
+                                <span>Results-Driven Growth</span>
+                                <h1>Mobile App &amp; E-Commerce Development That Converts</h1>
                                 <p>
-                                    Our track record speaks volumes. We have ignited growth for our clients through scalable
-                                    solutions that streamline processes, unlock new opportunities, and foster unprecedented
-                                    collaboration.
+                                    Ignite revenue and customer retention with ultra-fast e-commerce stores, native Android apps, and data-driven digital marketing campaigns.
                                 </p>
                                 <div class="banner-btn">
-                                    <a href="{{ route('about') }}" class="default-btn btn-bg-two border-radius-50">Learn
-                                        More <i class='bx bx-chevron-right'></i></a>
-                                    <a href="{{ route('contact') }}"
-                                        class="default-btn btn-bg-one border-radius-50 ml-20">Get A Quote <i
-                                            class='bx bx-chevron-right'></i></a>
+                                    <a href="{{ route('about') }}" class="default-btn btn-bg-two">
+                                        Our Work <i class='bx bx-chevron-right'></i>
+                                    </a>
+                                    <a href="{{ route('contact') }}" class="default-btn btn-bg-one">
+                                        Get A Quote <i class='bx bx-chevron-right'></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
         <div class="banner-sideImg">
-            <img src="public/assets/images/development-icon.png" class="img-fluid">
+            <img src="{{ asset('public/assets/images/development-icon.png') }}" class="img-fluid" alt="IT Development">
         </div>
     </div>
 
-
-
-    <section class="services-style-area pt-100 pb-70">
-        <div class="container">
-            <div class="section-title text-center">
-                <span class="sp-color2">Our Services</span>
-                <h2>Explore Our Services</h2>
-                <p class="margin-auto">
-                    Our hardworking team makes sure we satisfy our customers need in a given time. Our team sketches the
-                    innovative ideas of our customers in there budget.
+    {{-- ====== Core Services Section (Symmetrical Grid) ====== --}}
+    <section class="py-5 bg-white">
+        <div class="container py-lg-4">
+            <div class="section-title text-center mb-5">
+                <span class="sp-color2 fw-bold text-uppercase" style="letter-spacing: 1px;">What We Do</span>
+                <h2>Comprehensive IT Services &amp; Digital Solutions</h2>
+                <p class="margin-auto text-muted" style="max-width: 650px;">
+                    We design and develop technology solutions that empower organizations to streamline operations, engage customers, and scale reliably.
                 </p>
             </div>
-            <div class="row pt-45">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="{{ route('web') }}">
-                        <div class="services-card services-style-bg">
-                            <i class="flaticon-consultant"></i>
-                            <h3>Web Development</h3>
-                            <p>
-                                Hytrix Technologies LLP provides professional web development services in Lucknow,
-                                including responsive business websites, custom web applications and scalable web
-                                solutions designed around your business requirements.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="{{ route('software') }}">
-                        <div class="services-card services-style-bg">
-                            <i class="flaticon-web-development"></i>
-                            <h3>Software Development</h3>
-                            <p>Our team has a support of our well skilled, Focused, experienced and knowledgeable people
-                                which makes our team one of the finest website designing team's in lucknow.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="{{ route('android') }}">
-                        <div class="services-card services-style-bg">
-                            <i class="flaticon-stats"></i>
-                            <h3>Android Development</h3>
-                            <p>Empowering a digital world is a key to successful business these days. We empower this
-                                digital world with innovative mobile apps to your business.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="{{ route('ecommerce') }}">
-                        <div class="services-card services-style-bg">
-                            <i class="flaticon-consultant"></i>
-                            <h3>E-Commerce website</h3>
-                            <p>We make it sure that we turn our customers business a successful one. We keep a eye on
-                                changing trends. We keep a eye on changing trends.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="{{ route('digital') }}">
-                        <div class="services-card services-style-bg">
-                            <i class="flaticon-consultant"></i>
-                            <h3>Digital Marketing</h3>
-                            <p>We make it sure that we turn our customers business a successful one. We keep a eye on
-                                changing trends. We keep a eye on changing trends.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="{{ route('ecommerce') }}">
-                        <div class="services-card services-style-bg">
-                            <i class="flaticon-consulting"></i>
-                            <h3>E-Commerce website</h3>
-                            <p>We provide the best services for website designingand nearby areas. We provide the best
-                                services for website designingand nearby areas.We provide the best services for website
-                                designingand nearby areas.</p>
+
+            <div class="row g-4">
+
+                {{-- Web Development --}}
+                <div class="col-lg-3 col-md-6">
+                    <a href="{{ route('web') }}" class="text-decoration-none d-block h-100">
+                        <div class="home-service-card">
+                            <div>
+                                <div class="home-service-card__icon">
+                                    <i class='bx bx-code-alt'></i>
+                                </div>
+                                <h3 class="home-service-card__title">Web Development</h3>
+                                <p class="home-service-card__text">
+                                    Responsive business websites, custom web applications, and scalable Laravel solutions built for optimal performance.
+                                </p>
+                            </div>
+                            <div class="mt-3 text-primary fw-bold small">
+                                Learn More <i class='bx bx-right-arrow-alt'></i>
+                            </div>
                         </div>
                     </a>
                 </div>
 
-
-                <div class="col-lg-4 col-sm-6">
-                    <a href="{{ route('api') }}">
-                        <div class="services-card services-style-bg">
-                            <i class="flaticon-structure"></i>
-                            <h3>Api Integration</h3>
-                            <p>As we have well skilled, focussed, experienced and knowledgeable people who have a clear and
-                                deep understanding of web development and we provide one of the excellent...</p>
+                {{-- Software Development --}}
+                <div class="col-lg-3 col-md-6">
+                    <a href="{{ route('software') }}" class="text-decoration-none d-block h-100">
+                        <div class="home-service-card">
+                            <div>
+                                <div class="home-service-card__icon">
+                                    <i class='bx bx-laptop'></i>
+                                </div>
+                                <h3 class="home-service-card__title">Software Engineering</h3>
+                                <p class="home-service-card__text">
+                                    Custom enterprise software, ERP, CRM, and automation workflows engineered to optimize operational efficiency.
+                                </p>
+                            </div>
+                            <div class="mt-3 text-primary fw-bold small">
+                                Learn More <i class='bx bx-right-arrow-alt'></i>
+                            </div>
                         </div>
                     </a>
                 </div>
 
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#!">
-                        <div class="services-card services-style-bg">
-                            <i class="flaticon-structure"></i>
-                            <h3>Cloud Computing</h3>
-                            <p>As we have well skilled, focussed, experienced and knowledgeable people who have a clear and
-                                deep understanding of web development and we provide one of the excellent...</p>
+                {{-- Android Development --}}
+                <div class="col-lg-3 col-md-6">
+                    <a href="{{ route('android') }}" class="text-decoration-none d-block h-100">
+                        <div class="home-service-card">
+                            <div>
+                                <div class="home-service-card__icon">
+                                    <i class='bx bxl-android'></i>
+                                </div>
+                                <h3 class="home-service-card__title">Android Apps</h3>
+                                <p class="home-service-card__text">
+                                    Intuitive, feature-rich native and cross-platform mobile apps that drive engagement and seamless mobile experiences.
+                                </p>
+                            </div>
+                            <div class="mt-3 text-primary fw-bold small">
+                                Learn More <i class='bx bx-right-arrow-alt'></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                {{-- E-Commerce Development --}}
+                <div class="col-lg-3 col-md-6">
+                    <a href="{{ route('ecommerce') }}" class="text-decoration-none d-block h-100">
+                        <div class="home-service-card">
+                            <div>
+                                <div class="home-service-card__icon">
+                                    <i class='bx bx-store-alt'></i>
+                                </div>
+                                <h3 class="home-service-card__title">E-Commerce Stores</h3>
+                                <p class="home-service-card__text">
+                                    High-converting online storefronts with seamless multi-currency checkout, inventory management, and gateway integration.
+                                </p>
+                            </div>
+                            <div class="mt-3 text-primary fw-bold small">
+                                Learn More <i class='bx bx-right-arrow-alt'></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                {{-- Digital Marketing --}}
+                <div class="col-lg-3 col-md-6">
+                    <a href="{{ route('digital') }}" class="text-decoration-none d-block h-100">
+                        <div class="home-service-card">
+                            <div>
+                                <div class="home-service-card__icon">
+                                    <i class='bx bx-trending-up'></i>
+                                </div>
+                                <h3 class="home-service-card__title">Digital Marketing</h3>
+                                <p class="home-service-card__text">
+                                    Data-driven SEO, Google Ads, social media marketing, and conversion optimization to scale qualified lead generation.
+                                </p>
+                            </div>
+                            <div class="mt-3 text-primary fw-bold small">
+                                Learn More <i class='bx bx-right-arrow-alt'></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                {{-- Web Hosting --}}
+                <div class="col-lg-3 col-md-6">
+                    <a href="{{ route('webhost') }}" class="text-decoration-none d-block h-100">
+                        <div class="home-service-card">
+                            <div>
+                                <div class="home-service-card__icon">
+                                    <i class='bx bx-server'></i>
+                                </div>
+                                <h3 class="home-service-card__title">Web Hosting</h3>
+                                <p class="home-service-card__text">
+                                    High-speed Linux &amp; Windows servers, reseller hosting, SSL encryption, and 99.9% guaranteed uptime support.
+                                </p>
+                            </div>
+                            <div class="mt-3 text-primary fw-bold small">
+                                Learn More <i class='bx bx-right-arrow-alt'></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                {{-- API Integration --}}
+                <div class="col-lg-3 col-md-6">
+                    <a href="{{ route('api') }}" class="text-decoration-none d-block h-100">
+                        <div class="home-service-card">
+                            <div>
+                                <div class="home-service-card__icon">
+                                    <i class='bx bx-transfer'></i>
+                                </div>
+                                <h3 class="home-service-card__title">API Integration</h3>
+                                <p class="home-service-card__text">
+                                    Seamless connectivity with payment gateways, logistics carriers, advertising networks, and third-party SaaS tools.
+                                </p>
+                            </div>
+                            <div class="mt-3 text-primary fw-bold small">
+                                Learn More <i class='bx bx-right-arrow-alt'></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                {{-- Cloud Computing --}}
+                <div class="col-lg-3 col-md-6">
+                    <a href="{{ route('cloud') }}" class="text-decoration-none d-block h-100">
+                        <div class="home-service-card">
+                            <div>
+                                <div class="home-service-card__icon">
+                                    <i class='bx bx-cloud'></i>
+                                </div>
+                                <h3 class="home-service-card__title">Cloud Solutions</h3>
+                                <p class="home-service-card__text">
+                                    Flexible AWS, GCP, and Azure cloud infrastructure, CI/CD automated deployments, and 24/7 managed reliability.
+                                </p>
+                            </div>
+                            <div class="mt-3 text-primary fw-bold small">
+                                Learn More <i class='bx bx-right-arrow-alt'></i>
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -248,332 +306,309 @@
         </div>
     </section>
 
-
-    <section class="services-area pt-100 pb-70">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-5">
-                    <div class="work-process-left">
-                        <div class="section-title">
-                            <span class="sp-color1">Our Working Process</span>
-                            <h2>How Our Services Will Help You to Grow Your Business</h2>
-                        </div>
-                        <a href="{{ route('contact') }}" class="default-btn btn-bg-two border-radius-50 text-center">Get
-                            A Quote</a>
-                    </div>
+    {{-- ====== Working Process Section (Symmetrical Process Cards) ====== --}}
+    <section class="py-5" style="background: var(--color-bg-light);">
+        <div class="container py-lg-4">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <span class="sp-color1 fw-bold text-uppercase" style="letter-spacing: 1px;">Structured Workflow</span>
+                    <h2>How We Transform Ideas Into High-Performance Products</h2>
                 </div>
-                <div class="col-lg-7">
-                    <div class="row">
-                        <div class="col-lg-6 col-sm-6">
-                            <div class="work-process-card">
-                                <i class="flaticon-project"></i>
-                                <h3>Discovery</h3>
-                                <p>"Uncover opportunities for digital transformation. Our discovery process identifies your
-                                    needs, setting the stage for impactful development solutions."</p>
-                                <div class="number">01</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6">
-                            <div class="work-process-card">
-                                <i class="flaticon-chip"></i>
-                                <h3>Planning</h3>
-                                <p>"Strategic development to achieve goals. We plan, execute, and refine to ensure optimal
-                                    outcomes for your projects."</p>
-                                <div class="number">02</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6">
-                            <div class="work-process-card">
-                                <i class="flaticon-effective"></i>
-                                <h3>Execute</h3>
-                                <p>"Crafting code that brings ideas to life. Our development services create seamless
-                                    digital experiences for your audience."</p>
-                                <div class="number">03</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6">
-                            <div class="work-process-card">
-                                <i class="flaticon-bullhorn"></i>
-                                <h3>Deliver</h3>
-                                <p>"Crafting exceptional digital experiences through agile development. Code that brings
-                                    your ideas to life, pixel by pixel."</p>
-                                <div class="number">04</div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-lg-6 text-lg-end mt-3 mt-lg-0">
+                    <a href="{{ route('contact') }}" class="default-btn btn-bg-two">
+                        Start Your Project <i class='bx bx-chevron-right'></i>
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="service-shape">
-            <img src="public/assets//images/shape/service-shape1.png" alt="Images">
+
+            <div class="row g-4">
+
+                {{-- Step 1: Discovery --}}
+                <div class="col-lg-3 col-md-6">
+                    <div class="home-process-card">
+                        <div>
+                            <div class="home-process-card__header">
+                                <div class="home-process-card__icon">
+                                    <i class='bx bx-search-alt'></i>
+                                </div>
+                                <span class="home-process-card__step">01</span>
+                            </div>
+                            <h3 class="home-process-card__title">Discovery &amp; Strategy</h3>
+                            <p class="home-process-card__text">
+                                We analyze your business requirements, define user personas, and establish a clear technical roadmap.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Step 2: Architecture --}}
+                <div class="col-lg-3 col-md-6">
+                    <div class="home-process-card">
+                        <div>
+                            <div class="home-process-card__header">
+                                <div class="home-process-card__icon">
+                                    <i class='bx bx-layer'></i>
+                                </div>
+                                <span class="home-process-card__step">02</span>
+                            </div>
+                            <h3 class="home-process-card__title">Design &amp; Architecture</h3>
+                            <p class="home-process-card__text">
+                                Wireframes, responsive UI/UX prototypes, and scalable database schemas designed for maximum usability.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Step 3: Development --}}
+                <div class="col-lg-3 col-md-6">
+                    <div class="home-process-card">
+                        <div>
+                            <div class="home-process-card__header">
+                                <div class="home-process-card__icon">
+                                    <i class='bx bx-code-alt'></i>
+                                </div>
+                                <span class="home-process-card__step">03</span>
+                            </div>
+                            <h3 class="home-process-card__title">Agile Engineering</h3>
+                            <p class="home-process-card__text">
+                                Clean, maintainable, and secure code built in rapid iterative sprints with continuous code reviews.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Step 4: Launch --}}
+                <div class="col-lg-3 col-md-6">
+                    <div class="home-process-card">
+                        <div>
+                            <div class="home-process-card__header">
+                                <div class="home-process-card__icon">
+                                    <i class='bx bx-rocket'></i>
+                                </div>
+                                <span class="home-process-card__step">04</span>
+                            </div>
+                            <h3 class="home-process-card__title">QA &amp; Deployment</h3>
+                            <p class="home-process-card__text">
+                                Automated testing, security audits, and zero-downtime deployment backed by ongoing 24/7 support.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
-
-
-    {{--
-      <div class="about-area pt-100 pb-70">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-lg-6">
-                  <div class="about-img-2">
-                     <img src="public/home/hytrix-img-1.jpeg" alt="Hytrix Technologies IT company in India">
-                  </div>
-               </div>
-               <div class="col-lg-6">
-                  <div class="about-content-2 ml-20">
-                     <div class="section-title">
-                        <h2 class="text-black">A software Company focused on delivering meaningful products</h2>
-                        <p class="text-black">
-                          Our software team focusses in providing meaningful results. Our team truly understands our customers problem and there business need. We become the support of our customers in achieving all that they want with no hustle.
-                        </p class="text-black">
-                        <p class="text-black">
-                           Our loyalty and dedication towards our customers makes us different from rest of website designers. Our team is filled with well skilled , focused, experienced and knowledgeable people with creative thinking who provide website and flash applications.
-                        </p>
-                        <ul class="list-unstyled mt-2 text-black">
-                           <li>
-                              <i class="bx bx-check"></i>
-                              We understand our customers need and provide them with what they want.
-                           </li>
-                           <li>
-                              <i class="bx bx-check"></i>
-                              We become a solution to all our customers problem.
-                           </li>
-                           <li>
-                              <i class="bx bx-check"></i>
-                              We keep on updating our products with latest technologies.
-                           </li>
-                           <li>
-                              <i class="bx bx-check"></i>
-                             We shape our customers idea's into reality.
-                           </li>
-                        </ul>
-                     </div>
-                  </div>
-
-               </div>
-            </div>
-         </div>
-      </div> --}}
-    <div class="about-area pt-100 pb-70">
-        <div class="container">
+    {{-- ====== About Company Section ====== --}}
+    <section class="py-5 bg-white">
+        <div class="container py-lg-4">
             <div class="row align-items-center">
 
-                <div class="col-lg-6">
-                    <div class="about-img-2">
-                        <img src="public/home/hytrix-img-1.jpeg" alt="Hytrix Technologies IT company in Lucknow">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="position-relative">
+                        <img src="{{ asset('public/home/hytrix-img-1.jpeg') }}"
+                             alt="Hytrix Technologies IT team in Lucknow"
+                             class="img-fluid rounded-4 shadow-md"
+                             style="border-radius: 24px; width: 100%; object-fit: cover; max-height: 480px;">
                     </div>
                 </div>
 
-                <div class="col-lg-6">
-                    <div class="about-content-2 ml-20">
-                        <div class="section-title">
-
-                            <h2 class="text-black">
-                                About Hytrix Technologies LLP – IT Company
-                            </h2>
-
-                            <p class="text-black">
-                                Hytrix Technologies LLP is an IT company in Lucknow providing reliable
-                                digital solutions for businesses of different sizes. Our services include
-                                web development, custom software development, mobile app development,
-                                e-commerce development, API integration and digital marketing.
-                            </p>
-
-                            <p class="text-black">
-                                Our experienced team focuses on understanding business requirements and
-                                delivering scalable, user-friendly and technology-driven solutions that
-                                help businesses improve their digital presence and achieve their goals.
-                            </p>
-
-                            <ul class="list-unstyled mt-2 text-black">
-                                <li>
-                                    <i class="bx bx-check"></i>
-                                    We understand our customers' needs and provide customized solutions.
-                                </li>
-
-                                <li>
-                                    <i class="bx bx-check"></i>
-                                    We provide reliable and scalable technology solutions.
-                                </li>
-
-                                <li>
-                                    <i class="bx bx-check"></i>
-                                    We use modern technologies to build effective digital solutions.
-                                </li>
-
-                                <li>
-                                    <i class="bx bx-check"></i>
-                                    We turn our customers' ideas into practical digital solutions.
-                                </li>
-                            </ul>
-
-                        </div>
+                <div class="col-lg-6 ps-lg-4">
+                    <div class="section-title mb-4">
+                        <span class="sp-color2 fw-bold text-uppercase" style="letter-spacing: 1px;">About Hytrix Technologies</span>
+                        <h2>A Technology Partner Dedicated to Your Long-Term Success</h2>
                     </div>
+
+                    <p class="text-dark">
+                        Hytrix Technologies LLP is a premier IT services company based in Lucknow, Uttar Pradesh. We specialize in custom software engineering, scalable web applications, Android development, and data-driven digital marketing.
+                    </p>
+
+                    <p class="text-muted">
+                        Our seasoned engineers combine deep domain expertise with cutting-edge technologies to solve complex operational challenges and deliver measurable business ROI.
+                    </p>
+
+                    <ul class="list-unstyled mt-4 mb-4">
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="bx bx-check-circle text-primary fs-5 me-2"></i>
+                            <span class="fw-semibold">Custom-tailored IT solutions aligned with business objectives</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="bx bx-check-circle text-primary fs-5 me-2"></i>
+                            <span class="fw-semibold">Scalable, enterprise-grade architecture with zero compromises</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="bx bx-check-circle text-primary fs-5 me-2"></i>
+                            <span class="fw-semibold">Modern, secure tech stack (PHP, Laravel, React, Kotlin, Cloud)</span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="bx bx-check-circle text-primary fs-5 me-2"></i>
+                            <span class="fw-semibold">Transparent communication and responsive ongoing technical support</span>
+                        </li>
+                    </ul>
+
+                    <a href="{{ route('about') }}" class="default-btn btn-bg-two">
+                        Learn More About Us <i class='bx bx-chevron-right'></i>
+                    </a>
                 </div>
 
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="choose-area innovation_bg  pt-100 pb-70"
-        style="background-image:url('{{ asset('public/assets//images/features-background.jpg') }}')!important;">
-        <div class="container">
-            <div class="row">
+    {{-- ====== Innovation & Values Section (Glassmorphism Cards) ====== --}}
+    <section class="py-5 position-relative text-white"
+             style="background: linear-gradient(135deg, rgba(4, 18, 55, 0.95) 0%, rgba(0, 18, 57, 0.92) 100%), url('{{ asset('public/assets/images/features-background.jpg') }}') center/cover no-repeat;">
+        <div class="container py-lg-4">
+            <div class="row align-items-center mb-5">
                 <div class="col-lg-8">
-                    <div class="choose-content mr-20">
-                        <div class="row">
-                            <div class="col-lg-6 col-6">
-                                <div class="choose-content-card">
-                                    <div class="content">
-                                        <i class="flaticon-practice"></i>
-                                        <h3>INNOVATION</h3>
-                                    </div>
-                                    <p>Change is the only constant and we are constantly evolving and learning</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-6">
-                                <div class="choose-content-card">
-                                    <div class="content">
-                                        <i class="flaticon-help"></i>
-                                        <h3>SIMPLICITY</h3>
-                                    </div>
-                                    <p>Simplifying what technology can do and how to use it. Digital is an enabler</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-6">
-                                <div class="choose-content-card">
-                                    <div class="content">
-                                        <i class="flaticon-effective"></i>
-                                        <h3>QUALITY</h3>
-                                    </div>
-                                    <p>We consider our work to be good when we know we’ve made something that works</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-6">
-                                <div class="choose-content-card">
-                                    <div class="content">
-                                        <i class="flaticon-implement"></i>
-                                        <h3>ROPE WALK</h3>
-                                    </div>
-                                    <p>Its tough but we love it, our aim is to create a niche positioning for players like
-                                        us</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <span class="text-info fw-bold text-uppercase" style="letter-spacing: 1.5px;">Core Principles</span>
+                    <h2 class="text-white mt-1">Our Engineering &amp; Operational Values</h2>
+                    <p class="text-white-50 mb-0">
+                        The foundation of every line of code we write and every client relationship we build.
+                    </p>
                 </div>
             </div>
-        </div>
-    </div>
 
+            <div class="row g-4">
 
-
-    <!--  <div class="talk-area ptb-100">
-             <div class="container">
-                <div class="talk-content text-center">
-                   <div class="section-title text-center">
-                      <span class="sp-color1">Let's Talk</span>
-                      <h2>We Are Adding Kinds of It Services That You Grow Success</h2>
-                   </div>
-                   <a href="{{ route('contact') }}" class="default-btn btn-bg-two border-radius-5">Contact Us</a>
-                </div>
-             </div>
-          </div> -->
-
-
-    <div class="choose-area pt-100 pb-70">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="choose-content mr-20">
-                        <div class="section-title">
-                            <span class="sp-color1">Why Choose Us</span>
-                            <h2>Why Choose Hytrix Technologies?</h2>
-                            <p>
-                                Hytrix Technologies is an IT company in India focused on delivering
-                                reliable, scalable and customized technology solutions. Our team works
-                                closely with businesses to understand their goals and develop solutions
-                                that support digital growth, operational efficiency and long-term
-                                business success.
+                {{-- Innovation --}}
+                <div class="col-lg-3 col-md-6">
+                    <div class="home-value-card">
+                        <div>
+                            <div class="home-value-card__icon">
+                                <i class='bx bx-bulb'></i>
+                            </div>
+                            <h3 class="home-value-card__title">INNOVATION</h3>
+                            <p class="home-value-card__text">
+                                Embracing evolving technologies, continuous learning, and state-of-the-art architectures.
                             </p>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-6 col-6">
-                                <div class="choose-content-card">
-                                    <div class="content">
-                                        <i class="flaticon-practice"></i>
-                                        <h3>Experienced IT Team</h3>
-                                    </div>
-                                    <p>
-                                        Our team develops customized web, software and digital solutions based
-                                        on the specific requirements of businesses and organizations.
+                    </div>
+                </div>
+
+                {{-- Simplicity --}}
+                <div class="col-lg-3 col-md-6">
+                    <div class="home-value-card">
+                        <div>
+                            <div class="home-value-card__icon">
+                                <i class='bx bx-intersect'></i>
+                            </div>
+                            <h3 class="home-value-card__title">SIMPLICITY</h3>
+                            <p class="home-value-card__text">
+                                Simplifying complex technology into clean, intuitive, and enjoyable digital experiences.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Quality --}}
+                <div class="col-lg-3 col-md-6">
+                    <div class="home-value-card">
+                        <div>
+                            <div class="home-value-card__icon">
+                                <i class='bx bxs-medal'></i>
+                            </div>
+                            <h3 class="home-value-card__title">QUALITY</h3>
+                            <p class="home-value-card__text">
+                                Rigorous standards, clean code principles, and extensive testing for robust deliverables.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Focus --}}
+                <div class="col-lg-3 col-md-6">
+                    <div class="home-value-card">
+                        <div>
+                            <div class="home-value-card__icon">
+                                <i class='bx bx-target-lock'></i>
+                            </div>
+                            <h3 class="home-value-card__title">FOCUS</h3>
+                            <p class="home-value-card__text">
+                                Laser focus on delivering measurable client outcomes, timely execution, and reliable support.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    {{-- ====== Why Choose Us & Key Features ====== --}}
+    <section class="py-5 bg-white">
+        <div class="container py-lg-4">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="section-title mb-4">
+                        <span class="sp-color1 fw-bold text-uppercase" style="letter-spacing: 1px;">Why Hytrix</span>
+                        <h2>Why Leading Businesses Trust Hytrix Technologies</h2>
+                        <p class="text-muted">
+                            We combine technical excellence with business understanding to deliver reliable software solutions that drive lasting value.
+                        </p>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="home-choose-card">
+                                <div class="home-choose-card__icon">
+                                    <i class='bx bx-group'></i>
+                                </div>
+                                <div>
+                                    <h3 class="home-choose-card__title">Experienced Engineering Team</h3>
+                                    <p class="home-choose-card__text">
+                                        Full-stack developers, UI/UX designers, and QA engineers dedicated to bringing your product vision to life.
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-6">
-                                <div class="choose-content-card">
-                                    <div class="content">
-                                        <i class="flaticon-help"></i>
-                                        <h3>Reliable Technical Support</h3>
-                                    </div>
-                                    <p>
-                                        We provide responsive technical support to help businesses maintain
-                                        their websites, applications and digital solutions.
+                        </div>
+
+                        <div class="col-12">
+                            <div class="home-choose-card">
+                                <div class="home-choose-card__icon">
+                                    <i class='bx bx-support'></i>
+                                </div>
+                                <div>
+                                    <h3 class="home-choose-card__title">24/7 Dedicated Support</h3>
+                                    <p class="home-choose-card__text">
+                                        Proactive maintenance, performance monitoring, and responsive assistance whenever you need it.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+
+                <div class="col-lg-6 ps-lg-4">
                     <div class="choose-img">
                         <img src="{{ url('public/assets/images/choose-img.jpg') }}"
-                            alt="Hytrix Technologies IT company in India">
+                            alt="Why choose Hytrix Technologies for IT solutions"
+                            class="img-fluid rounded-4 shadow-sm"
+                            style="border-radius: 20px;">
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
 
-
-    <section class="cta-subscribe py-5">
-        <div class="container">
-            <div class="bg-gradient ptb-120 position-relative overflow-hidden rounded-custom">
-                <div class="row justify-content-center">
-                    <div class="col-lg-7 col-md-8">
-                        <div class="subscribe-info-wrap text-center position-relative z-2">
-                            <div class="section-heading">
-                                <h4 class="h5 text-warning">Let's Talk</h4>
-                                <h2 class="text-light">You Grow Success</h2>
-                                <p>We Are Adding Kinds of It Services That help you to create your dream website for better
-                                    business revenue.</p>
-                            </div>
-                            <div class="form-block-banner mw-60 m-auto mt-4">
-                                <a href="{{ route('contact') }}" class="default-btn btn-bg-two border-radius-5">Contact
-                                    Us</a>
-
-                            </div>
-                            <ul class="nav justify-content-center subscribe-feature-list mt-4">
-                                <li class="nav-item">
-                                    <span><i class="bx bx-check"></i>Research</span>
-                                </li>
-                                <li class="nav-item">
-                                    <span><i class="bx bx-check"></i>Designing</span>
-                                </li>
-                                <li class="nav-item">
-                                    <span><i class="bx bx-check"></i>Building</span>
-                                </li>
-                                <li class="nav-item">
-                                    <span><i class="bx bx-check"></i>Deliver</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light left-5"></div>
-                <div class="bg-circle rounded-circle circle-shape-1 position-absolute bg-warning right-5"></div>
             </div>
         </div>
     </section>
+
+    {{-- ====== Modern Symmetrical CTA Banner ====== --}}
+    <section class="py-5" style="background: var(--color-bg-light);">
+        <div class="container">
+            <div class="home-cta-banner text-center">
+                <span class="badge bg-white text-primary px-3 py-2 rounded-pill mb-3 fw-bold">Let's Collaborate</span>
+                <h2>Ready to Build Your Next Digital Product?</h2>
+                <p>
+                    From custom web apps to enterprise software and cloud platforms, our technical team is ready to make your vision a reality.
+                </p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="{{ route('contact') }}" class="default-btn btn-bg-two">
+                        Get A Free Consultation <i class='bx bx-chevron-right'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 @endsection

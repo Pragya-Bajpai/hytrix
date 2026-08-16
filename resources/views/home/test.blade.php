@@ -8,7 +8,7 @@
 @extends('home.layout.main')
 
 @section('content')
-  
+
       <!-- start-about-area -->
     <div class="about-area ptb-100">
         <div class="container">
@@ -22,7 +22,7 @@
 				<img src="{{asset('images/1686126839-slider-logo1_1691904337.png')}}" alt="Girl in a jacket" width="100" height="100">
 
               </div>
-            
+
            </div>
         </div>
      </div>
@@ -34,20 +34,20 @@
                         filebrowserUploadUrl:"{{route('ckeditor.upload',['_token' => csrf_token() ])}}",
                          filebrowserUploadMethod :"form"
                      });
-                      
-          
+
+
                 </script>
      <div class="choose-area pt-100 pb-70">
         <div class="container">
            <div class="row">
               <div class="col-lg-6">
-                 <div class="choose-content mr-20">
+                 <div class="choose-content mr-lg-20">
                     <div class="section-title">
                        <span class="sp-color1">Why Choose Us</span>
                        <h2>What we are?</h2>
                        <p>
                           Maxus IT Services assists the software development companies in India with development service
-                          and translates their product vision and technology leadership into functionality and features that bring value to 
+                          and translates their product vision and technology leadership into functionality and features that bring value to
                           end customers. Put simply, if you want a partner who cares about your business choose <b>Maxus IT Services</b>.
 
 
@@ -110,8 +110,8 @@
                      <i class="flaticon-consultant"></i>
                      <h3><a href="#!">Mobile Development</a></h3>
                      <p>We have been playing an important role in the world of Android Mobile App Development Industry to provide the
-                     customized solutions to the clients on their special project demands. 
-                  
+                     customized solutions to the clients on their special project demands.
+
                          </p>
                   </div>
                </div>
@@ -120,22 +120,22 @@
                      <i class="flaticon-cyber-security"></i>
                      <h3><a href="#!">Blockchain</a></h3>
                      <p>
-                       We design, build and market Blockchain products and services for businesses across the globe. 
+                       We design, build and market Blockchain products and services for businesses across the globe.
                        We’ve not got all the answers. Yet. But Blockchain’s future is being decided right now and you’re in good company at Sequence.
 
 
                      </p>
                   </div>
                </div>
-           
-               
+
+
                <div class="col-lg-4 col-sm-6">
                   <div class="security-card web-height">
                      <i class="flaticon-implement"></i>
                      <h3><a href="#!">Software Development</a></h3>
                      <p>
                        Software development is the process of documentation,
-                     computer programming, testing and bug fixing involved in creating and maintaining frameworks and applications involved in a software product development.  
+                     computer programming, testing and bug fixing involved in creating and maintaining frameworks and applications involved in a software product development.
                      </p>
                   </div>
                </div>
@@ -146,7 +146,7 @@
                   <div class="security-card web-height">
                      <i class="flaticon-consulting"></i>
                      <h3><a href="#!">ERP Development</a></h3>
-                     <p>Enterprise Resource Planning systems are software systems that prove to be of great help in operations planning, administration and to optimize internal business processes, 
+                     <p>Enterprise Resource Planning systems are software systems that prove to be of great help in operations planning, administration and to optimize internal business processes,
                      comprising of manufacturing, supply chain, financials, customer relationship management.</p>
                   </div>
                </div>
@@ -154,5 +154,5 @@
         </div>
      </div>
     <!--end-about-area -->
-    
+
 @endsection

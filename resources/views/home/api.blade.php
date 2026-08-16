@@ -1,98 +1,164 @@
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hytrix</title>
-  @include('home.layout.head')
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>API Integration &amp; Development Services in India | Hytrix Technologies</title>
+
+    <meta name="description"
+        content="Hytrix Technologies provides seamless third-party API integration and custom RESTful API development services in India for payment gateways, CRMs, social media, shipping, and travel platforms.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="{{ url()->current() }}">
+
+    {{-- Open Graph --}}
+    <meta property="og:title" content="API Integration Services | Hytrix Technologies">
+    <meta property="og:description"
+        content="Seamless API integration services connecting your platforms with payment gateways, advertising networks, and third-party tools.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:site_name" content="Hytrix Technologies LLP">
+
+    @include('home.layout.head')
 </head>
 
 @extends('home.layout.main')
 
 @section('content')
 
- <!-- start-App-development-area -->
-         <div class="blog-details-area pt-100 pb-70">
-            <div class="container">
-               <div class="row align-items-center">
-                  <div class="col-lg-8 about-content">
-                    <p>
-                        The process followed and allowance given to programs to access, connect and communicate with other programs is known as API Integration. This software-to-software interface typically takes place behind the scenes allowing separate parties to communicate with each other with or without any prior user knowledge or intervention.
-                    </p>
-                    <p>
-                        At Hytrix Technology, the API integration services provided help efficiently integrate data with other third party applications. By consuming data from a wide range of third party sources, we help businesses easily integrate with shipping, travel, social media and payment gateways. The expert team at Hytrix Technology also comes with impressive experience with demand side platforms for the integration of popular online advertising network APIs such as Bing Ads and Google AdWords.
-                    </p>
-                    <p>
-                        <i class="font-weight-bold">
-                            Hytrix Technology has invested in developing unparalleled in-house expertise that helps cater to a businesses' API integration needs. By helping create more functional websites, our team works closely with companies to help meet their organizational goals.
-                        </i>
-                    </p>
-                  </div>
-                  <div class="col-lg-4">
-                     <div class="side-bar-area">
-                        <img src="https://ferryinfotech.com/assets/images/api_in.png" alt="">
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <section class="services-style-area pb-70">
-            <div class="container">
-               <div class="section-title text-center">
-                  <h2>Facilitating Reliable Third Party API Integration </h2>
-                  <p class="margin-auto">
-                    Our API integration services help businesses easily integrate data with other third party applications. With a host of reliable offerings, our key services include -
-                  </p>
-               </div>
-               <div class="row about-content  pt-45">
-                    <div class="col-lg-6 col-sm-6">
-                        <div class="work-process-card-three e_commerce_box">
-                            <ul class="about-list">
-                                <li><i class="bx bxs-check-circle"></i>
-                                    Demand side platforms which integrate with Bing Ads, Google AdWords and other online advertising networks.
-                                </li>
-                                <li><i class="bx bxs-check-circle"></i>
-                                    Social media APIs such as Facebook, Google+ and Twitter.
-                                </li>
-                                <li><i class="bx bxs-check-circle"></i> 
-                                    Seasonal logos, party logos and holiday logos.
-                                </li>
-                                <li><i class="bx bxs-check-circle"></i>
-                                    Social media APIs such as Facebook, Google+ and Twitter.
-                                </li>
-                                <li><i class="bx bxs-check-circle"></i>
-                                    Facebook Applications.
-                                </li>
-                            </ul>
-                            <i class="flaticon-project"></i>
+    {{-- ====== API Integration Intro ====== --}}
+    <div class="py-4 py-lg-5">
+        <div class="container py-lg-5">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="choose-content mr-lg-20">
+                        <div class="section-title">
+                            <span class="sp-color2">SYSTEM INTERCONNECTIVITY</span>
+                            <h1>Custom API Integration &amp; Development Services</h1>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-sm-6">
-                        <div class="work-process-card-three e_commerce_box">
-                            <ul class="about-list">
-                                <li><i class="bx bxs-check-circle"></i>
-                                    Google APIs such as YouTube, Charts, Search, Analytics and Maps.
-                                </li>
-                                <li><i class="bx bxs-check-circle"></i>
-                                    Travel APIs such as Amadeus and Expedia.
-                                </li>
-                                <li><i class="bx bxs-check-circle"></i> 
-                                    Integration of payment gateways such as PayPal.
-                                </li>
-                                <li><i class="bx bxs-check-circle"></i>
-                                    Shipping API integration with companies such as UPS and FedEx.
-                                </li>
-                                <li><i class="bx bxs-check-circle"></i>
-                                    Shopping cart and much more
-                                </li>
-                                <li><i class="bx bxs-check-circle"></i>
-                                    Multiple options for money transactions
-                                </li>
-                            </ul>
-                            <i class="flaticon-chip"></i>
-                        </div>
+                        <p class="text-dark">
+                            Connect your applications, automate data pipelines, and extend platform functionality with robust API integration solutions from Hytrix Technologies.
+                        </p>
+                        <p class="text-dark">
+                            Our software engineers specialize in connecting complex software ecosystems with payment processors, ERP systems, travel engines, shipping providers, and marketing platforms through secure, well-documented RESTful and GraphQL APIs.
+                        </p>
+                        <a href="{{ route('contact') }}" class="default-btn btn-bg-two mt-3">
+                            Connect Your Systems <i class='bx bx-chevron-right'></i>
+                        </a>
                     </div>
                 </div>
+
+                <div class="col-lg-6">
+                    <div class="choose-img">
+                        <img src="{{ asset('public/assets/images/about/webtype.jpg') }}"
+                            alt="API integration and development by Hytrix Technologies"
+                            class="img-fluid rounded shadow-sm">
+                    </div>
+                </div>
+
             </div>
-         </section>
-        <!-- end-App-development-area -->
+        </div>
+    </div>
+
+    {{-- ====== API Capabilities ====== --}}
+    <section class="services-style-area py-5" style="background: var(--color-bg-light);">
+        <div class="container py-lg-4">
+            <div class="section-title text-center mb-5">
+                <span class="sp-color1">Integration Ecosystem</span>
+                <h2>Reliable Third-Party API Integrations</h2>
+                <p class="margin-auto">
+                    We bridge the gap between your applications and external web services with zero data loss and maximum throughput.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                {{-- Payment Gateways --}}
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="security-card h-100">
+                        <i class='bx bx-credit-card'></i>
+                        <h3>Payment Gateways</h3>
+                        <p>
+                            Secure integration with Razorpay, Stripe, PayPal, Paytm, Authorize.net, and UPI for seamless multi-currency checkout.
+                        </p>
+                    </div>
+                </div>
+
+                {{-- Advertising & Marketing APIs --}}
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="security-card h-100">
+                        <i class='bx bx-target-lock'></i>
+                        <h3>Ad Networks &amp; DSPs</h3>
+                        <p>
+                            Direct data sync with Google Ads, Bing Ads, Meta Graph API, and TikTok Ads for automated campaign reporting.
+                        </p>
+                    </div>
+                </div>
+
+                {{-- Shipping & Logistics --}}
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="security-card h-100">
+                        <i class='bx bx-package'></i>
+                        <h3>Shipping &amp; Logistics</h3>
+                        <p>
+                            Real-time rate calculation, automated airway bill (AWB) generation, and live package tracking with Shiprocket, FedEx, and DHL.
+                        </p>
+                    </div>
+                </div>
+
+                {{-- Social Media APIs --}}
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="security-card h-100">
+                        <i class='bx bxl-meta'></i>
+                        <h3>Social &amp; Auth APIs</h3>
+                        <p>
+                            Social login via Google, Apple, and Facebook, alongside automated social feed publishing and user profile sync.
+                        </p>
+                    </div>
+                </div>
+
+                {{-- Travel & GDS APIs --}}
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="security-card h-100">
+                        <i class='bx bx-paper-plane'></i>
+                        <h3>Travel &amp; Booking APIs</h3>
+                        <p>
+                            Integration with GDS engines like Amadeus, Sabre, and Expedia for live flight, hotel, and car rental bookings.
+                        </p>
+                    </div>
+                </div>
+
+                {{-- Custom REST & Webhooks --}}
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="security-card h-100">
+                        <i class='bx bx-code-curly'></i>
+                        <h3>Custom RESTful APIs</h3>
+                        <p>
+                            Design, implementation, and documentation of secure internal microservices with OAuth2, JWT, and webhook event architecture.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    {{-- ====== CTA Section ====== --}}
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-7">
+                    <h2 class="mb-3">Need Custom API Integration?</h2>
+                    <p class="text-muted mb-4">
+                        Speak with our system architects to build secure, high-throughput interfaces that connect your tech stack.
+                    </p>
+                    <a href="{{ route('contact') }}" class="default-btn btn-bg-two">
+                        Schedule Consultation <i class='bx bx-chevron-right'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 @endsection

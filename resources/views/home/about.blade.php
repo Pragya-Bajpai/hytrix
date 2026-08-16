@@ -11,174 +11,66 @@
 
     <link rel="canonical" href="{{ url()->current() }}">
 
-    <!-- Open Graph -->
+    {{-- Open Graph --}}
     <meta property="og:title" content="About Hytrix Technologies | IT Company in India">
-
     <meta property="og:description"
         content="Discover Hytrix Technologies' web development, software development, mobile app, e-commerce, digital marketing and IT solutions for businesses across India.">
-
     <meta property="og:type" content="website">
-
     <meta property="og:url" content="{{ url()->current() }}">
-
     <meta property="og:image" content="{{ asset('public/assets/images/about/hytrix-img-2.jpeg') }}">
-
     <meta property="og:site_name" content="Hytrix Technologies LLP">
 
     @include('home.layout.head')
 </head>
 
-<style type="text/css">
-    .about-side__thumb {
-        display: flex;
-        position: relative;
-        gap: 30px;
-    }
-
-    .about-side__thumb>* {
-        flex-basis: 50%;
-    }
-
-    .about-side__thumb .abt-left img:first-child {
-        margin-bottom: 30px;
-    }
-
-    .about-side__thumb img {
-        width: 100%;
-        border-radius: 5px;
-    }
-
-    .about-side__thumb .p-right {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-
-    .about-side__thumb .p-right .box {
-        background: linear-gradient(45deg, rgb(4 18 55) 0%, rgb(114 190 222) 100%);
-        text-align: center;
-        position: relative;
-        width: 100%;
-        border-radius: 5px;
-        margin-top: 30px;
-    }
-
-    .about-side__thumb .shape {
-        position: absolute;
-        z-index: -1;
-        top: -10%;
-    }
-
-    .about-side__thumb .box h4 {
-        color: #ffffff;
-        margin: 10px 0;
-    }
-
-    .about-side__thumb .box p {
-        color: #ffffff;
-    }
-
-    .abt-list {
-        margin: 15px 0;
-        padding: 0;
-        list-style: none;
-    }
-
-    .abt-list li .icon {
-        background: linear-gradient(45deg, rgb(94, 64, 251) 0%, rgb(78, 149, 237) 100%);
-        color: #fff;
-        width: 25px;
-        height: 25px;
-        display: inline-block;
-        text-align: center;
-        line-height: 25px;
-        border-radius: 50%;
-        margin-right: 6px;
-        font-size: 13px;
-    }
-
-    .abt-list li .icon {
-        margin-bottom: 10px;
-    }
-
-    .abt-list li i {
-        margin-top: 6px;
-    }
-
-    .abt-list .text {
-        font-weight: 600;
-        font-size: 14px;
-    }
-
-    .about-content .content-down {
-        margin-bottom: 0px;
-        padding-top: 20px;
-        border-top: 1px solid;
-        margin-top: 25px;
-        gap: 50px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: start;
-    }
-
-    .about-content .content-down .i-box {
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        gap: 20px;
-        width: 100%;
-    }
-</style>
-
 @extends('home.layout.main')
 
 @section('content')
-    <!-- start-about-area -->
-    <div class="about-area ptb-100">
-        <div class="container">
+
+    {{-- ====== About Intro Section ====== --}}
+    <div class="about-area py-5">
+        <div class="container py-lg-4">
             <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <!-- <div class="about-play">
-                        <img src="public/assets/images/about/about-img1.jpg" alt="About Images">
-                     </div> -->
+
+                {{-- Left: About Collage Images --}}
+                <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="about-side__thumb">
                         <div class="abt-left">
-                            <img src="public/assets/images/about/hytrix-img-2.jpeg"
-                                alt="Hytrix Technologies IT company in India" height="220px;">
-                            <img src="public/assets/images/about/hytrix-img-4.jpeg"
-                                alt="Hytrix Technologies team and IT solutions" height="220 px;">
+                            <img src="{{ asset('public/assets/images/about/hytrix-img-2.jpeg') }}"
+                                alt="Hytrix Technologies IT company in India">
+                            <img src="{{ asset('public/assets/images/about/hytrix-img-4.jpeg') }}"
+                                alt="Hytrix Technologies team and IT solutions">
                         </div>
                         <div class="p-right">
-                            <img src="public/assets/images/about/hytrix-img-3.jpeg"
+                            <img src="{{ asset('public/assets/images/about/hytrix-img-3.jpeg') }}"
                                 alt="Hytrix Technologies software and web development team">
                             <div class="box">
                                 <h4>1000+</h4>
-                                <p>Successfully Project Deliverd</p>
+                                <p>Successfully Projects Delivered</p>
                             </div>
                         </div>
                         <div class="shape">
-                            <img src="public/assets/images/about/about-bg-shape.png"
+                            <img src="{{ asset('public/assets/images/about/about-bg-shape.png') }}"
                                 alt="Why choose Hytrix Technologies for IT solutions">
                         </div>
                     </div>
                 </div>
+
+                {{-- Right: About Content --}}
                 <div class="col-lg-6">
                     <div class="about-content ml-25">
                         <div class="section-title">
                             <span class="sp-color2">11 Years of Experience</span>
                             <h1>About Hytrix Technologies – IT Company in India</h1>
                         </div>
-                        <p class="about-content-text">
+                        <p class="about-content-text text-dark">
                             Hytrix Technologies LLP is an IT company in India based in Lucknow,
                             Uttar Pradesh, providing technology and digital solutions to businesses
                             across India. We specialize in web development, custom software
                             development, mobile app development, e-commerce development, API
                             integration, cloud computing, web hosting and digital marketing.
-
-                            <br><br>
-
+                        </p>
+                        <p class="about-content-text text-dark">
                             Our experienced team works with businesses to understand their
                             requirements and develop reliable, scalable and user-focused digital
                             solutions. From business websites and web applications to custom
@@ -187,7 +79,6 @@
                         </p>
 
                         <ul class="abt-list">
-
                             <li>
                                 <span class="icon">
                                     <i class='bx bx-check'></i>
@@ -196,16 +87,14 @@
                                     Customized IT Solutions
                                 </span>
                             </li>
-
                             <li>
                                 <span class="icon">
                                     <i class='bx bx-check'></i>
                                 </span>
                                 <span class="text">
-                                    Scalable Web & Software Development
+                                    Scalable Web &amp; Software Development
                                 </span>
                             </li>
-
                             <li>
                                 <span class="icon">
                                     <i class='bx bx-check'></i>
@@ -214,17 +103,16 @@
                                     Reliable Technical Support
                                 </span>
                             </li>
-
                         </ul>
 
                         <div class="content-down">
-                            <a href="{{ route('contact') }}" class="default-btn btn-bg-two border-radius-50">
-                                Talk to Our Team
+                            <a href="{{ route('contact') }}" class="default-btn btn-bg-two">
+                                Talk to Our Team <i class='bx bx-chevron-right'></i>
                             </a>
                             <div class="i-box wow animate__animated animate__fadeInLeft" data-wow-duration="1.5s"
                                 data-wow-delay="1s">
                                 <div class="icon">
-                                    <i class='bx bx-timer'></i>
+                                    <i class='bx bx-support'></i>
                                 </div>
                                 <div class="content">
                                     <span>We are here to assist you</span>
@@ -234,14 +122,18 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
-    <div class="choose-area pt-100 pb-70">
-        <div class="container">
-            <div class="row">
+
+    {{-- ====== Why Choose Us Section ====== --}}
+    <div class="choose-area py-5">
+        <div class="container py-lg-4">
+            <div class="row align-items-center">
+
                 <div class="col-lg-6">
-                    <div class="choose-content mr-20">
+                    <div class="choose-content mr-lg-20">
                         <div class="section-title">
                             <span class="sp-color1">Why Choose Us</span>
                             <h2>Why Choose Hytrix Technologies?</h2>
@@ -253,11 +145,11 @@
                                 business success.
                             </p>
                         </div>
-                        <div class="row">
+                        <div class="row mt-3">
                             <div class="col-lg-6 col-6">
                                 <div class="choose-content-card">
                                     <div class="content">
-                                        <i class="flaticon-practice"></i>
+                                        <i class='bx bx-group'></i>
                                         <h3>Experienced IT Team</h3>
                                     </div>
                                     <p>
@@ -269,7 +161,7 @@
                             <div class="col-lg-6 col-6">
                                 <div class="choose-content-card">
                                     <div class="content">
-                                        <i class="flaticon-help"></i>
+                                        <i class='bx bx-support'></i>
                                         <h3>Reliable Technical Support</h3>
                                     </div>
                                     <p>
@@ -281,40 +173,51 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+
+                <div class="col-lg-6 mt-4 mt-lg-0">
                     <div class="choose-img">
                         <img src="{{ url('public/assets/images/choose-img.jpg') }}"
-                            alt="Hytrix Technologies IT company in India">
+                            alt="Hytrix Technologies IT company in India" class="img-fluid rounded">
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
-    <div class="security-area pt-100 pb-70">
-        <div class="container">
-            <div class="section-title text-center">
+
+    {{-- ====== Our Services & Solutions Section ====== --}}
+    <div class="security-area py-5">
+        <div class="container py-lg-4">
+            <div class="section-title text-center mb-5">
+                <span class="sp-color2">Core Competencies</span>
                 <h2>Our IT Services and Digital Solutions</h2>
-
-
+                <p class="margin-auto">
+                    We deliver comprehensive, end-to-end technology solutions crafted for modern business challenges.
+                </p>
             </div>
-            <div class="row pt-45">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="{{ route('web') }}">
-                        <div class="security-card web-height">
-                            <i class="flaticon-implement"></i>
+
+            <div class="row g-4">
+
+                {{-- Web Development --}}
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="{{ route('web') }}" class="d-block h-100 text-decoration-none">
+                        <div class="security-card d-flex flex-column justify-content-between h-100 p-4">
+                            <i class='icon bx bx-code-alt'></i>
                             <h3>Web Development Services</h3>
                             <p>
                                 Discover seamless web solutions with our expert team. From captivating designs to robust
                                 backend, we craft websites that engage and perform. User-centric, responsive, and
-                                future-ready – we bring your online vision to life.
+                                future-ready — we bring your online vision to life.
                             </p>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="{{ route('software') }}">
-                        <div class="security-card web-height">
-                            <i class="flaticon-implement"></i>
+
+                {{-- Software Development --}}
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="{{ route('software') }}" class="d-block h-100 text-decoration-none">
+                        <div class="security-card d-flex flex-column justify-content-between h-100 p-4">
+                            <i class='icon bx bx-laptop'></i>
                             <h3>Software Development Services</h3>
                             <p>
                                 Empower your business with our end-to-end software solutions. From concept to deployment,
@@ -324,10 +227,12 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="{{ route('android') }}">
-                        <div class="security-card web-height">
-                            <i class="flaticon-implement"></i>
+
+                {{-- Android Development --}}
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="{{ route('android') }}" class="d-block h-100 text-decoration-none">
+                        <div class="security-card d-flex flex-column justify-content-between h-100 p-4">
+                            <i class='icon bx bxl-android'></i>
                             <h3>Android Development</h3>
                             <p>
                                 Unlock limitless possibilities with our Android development services. Crafted by experts,
@@ -337,78 +242,83 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="{{ route('ecommerce') }}">
-                        <div class="security-card web-height">
-                            <i class="flaticon-computer"></i>
-                            <h3>E-Commerce website Development</h3>
+
+                {{-- E-Commerce --}}
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="{{ route('ecommerce') }}" class="d-block h-100 text-decoration-none">
+                        <div class="security-card d-flex flex-column justify-content-between h-100 p-4">
+                            <i class='bx bx-store-alt'></i>
+                            <h3>E-Commerce Development</h3>
                             <p>
                                 Discover a seamless shopping experience on our E-commerce platform. Explore a wide range of
                                 products, from fashion and electronics to home essentials. Shop with confidence, thanks to
-                                secure transactions and swift delivery. Elevate your online shopping journey with us.
+                                secure transactions and swift delivery.
                             </p>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="{{ route('digital') }}">
-                        <div class="security-card web-height">
-                            <i class="flaticon-computer"></i>
+
+                {{-- Digital Marketing --}}
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="{{ route('digital') }}" class="d-block h-100 text-decoration-none">
+                        <div class="security-card d-flex flex-column justify-content-between h-100 p-4">
+                            <i class='icon bx bx-trending-up'></i>
                             <h3>Digital Marketing Services</h3>
                             <p>
                                 Unleash your brand's potential with our strategic digital marketing solutions. From SEO and
                                 PPC to social media and content strategies, we drive results that resonate. Elevate your
-                                online presence and engage your audience effectively with our data-driven approach.
+                                online presence and engage your audience effectively.
                             </p>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="{{ route('webhost') }}">
-                        <div class="security-card web-height">
-                            <i class="flaticon-computer"></i>
+
+                {{-- Web Hosting --}}
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="{{ route('webhost') }}" class="d-block h-100 text-decoration-none">
+                        <div class="security-card d-flex flex-column justify-content-between h-100 p-4">
+                            <i class='icon bx bx-server'></i>
                             <h3>Web Hosting Services</h3>
                             <p>
-                                "Experience seamless web hosting solutions with unmatched reliability. Our advanced
+                                Experience seamless web hosting solutions with unmatched reliability. Our advanced
                                 infrastructure ensures lightning-fast load times, 24/7 support keeps your site running
-                                smoothly, and scalable plans cater to your growth. Trust us for secure, high-performance
-                                hosting that empowers your online presence."
+                                smoothly, and scalable plans cater to your growth.
                             </p>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="{{ route('api') }}">
-                        <div class="security-card web-height">
-                            <i class="flaticon-computer"></i>
+
+                {{-- API Integration --}}
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="{{ route('api') }}" class="d-block h-100 text-decoration-none">
+                        <div class="security-card d-flex flex-column justify-content-between h-100 p-4">
+                            <i class='bx bx-transfer'></i>
                             <h3>API Integration Services</h3>
                             <p>
                                 Seamlessly integrate and expand your services with our robust API integration solutions.
                                 Streamline data exchange, enhance functionality, and empower your platform for enhanced user
-                                experiences. Unlock new possibilities through smooth API integration.
+                                experiences.
                             </p>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                 <a href="{{ route('cloud') }}">
-    <div class="security-card web-height">
 
-        <i class="flaticon-computer"></i>
-
-        <h3>Cloud Computing Solutions</h3>
-
-        <p>
-            Empower your business with flexible cloud computing solutions.
-            Deploy, manage and scale applications with modern cloud
-            infrastructure designed around your business requirements.
-        </p>
-
-    </div>
-</a>
+                {{-- Cloud Computing --}}
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="{{ route('cloud') }}" class="d-block h-100 text-decoration-none">
+                        <div class="security-card d-flex flex-column justify-content-between h-100 p-4">
+                            <i class='icon bx bx-cloud'></i>
+                            <h3>Cloud Computing Solutions</h3>
+                            <p>
+                                Empower your business with flexible cloud computing solutions. Deploy, manage and scale
+                                applications with modern cloud infrastructure designed around your business requirements.
+                            </p>
+                        </div>
+                    </a>
                 </div>
+
             </div>
         </div>
     </div>
-    <!--end-about-area -->
+
 @endsection
