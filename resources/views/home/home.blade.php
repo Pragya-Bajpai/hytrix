@@ -133,9 +133,9 @@
     <section class="py-5 bg-white">
         <div class="container py-lg-4">
             <div class="section-title text-center mb-5">
-                <span class="sp-color2 fw-bold text-uppercase" style="letter-spacing: 1px;">What We Do</span>
-                <h2>Comprehensive IT Services &amp; Digital Solutions</h2>
-                <p class="margin-auto text-muted" style="max-width: 650px;">
+                <span class="sp-color2 fw-bold text-uppercase">What We Do</span>
+                <h2 class="mb-2">Comprehensive IT Services &amp; Digital Solutions</h2>
+                <p class="margin-auto">
                     We design and develop technology solutions that empower organizations to streamline operations, engage customers, and scale reliably.
                 </p>
             </div>
@@ -309,9 +309,9 @@
     {{-- ====== Working Process Section (Symmetrical Process Cards) ====== --}}
     <section class="py-5" style="background: var(--color-bg-light);">
         <div class="container py-lg-4">
-            <div class="row align-items-center mb-5">
+            <div class="row align-items-center mb-4">
                 <div class="col-lg-6">
-                    <span class="sp-color1 fw-bold text-uppercase" style="letter-spacing: 1px;">Structured Workflow</span>
+                    <span class="sp-color1 fw-bold text-uppercase">Structured Workflow</span>
                     <h2>How We Transform Ideas Into High-Performance Products</h2>
                 </div>
                 <div class="col-lg-6 text-lg-end mt-3 mt-lg-0">
@@ -415,34 +415,34 @@
 
                 <div class="col-lg-6 ps-lg-4">
                     <div class="section-title mb-4">
-                        <span class="sp-color2 fw-bold text-uppercase" style="letter-spacing: 1px;">About Hytrix Technologies</span>
+                        <span class="sp-color2 fw-bold text-uppercase">About Hytrix Technologies</span>
                         <h2>A Technology Partner Dedicated to Your Long-Term Success</h2>
                     </div>
 
-                    <p class="text-dark">
+                    <p>
                         Hytrix Technologies LLP is a premier IT services company based in Lucknow, Uttar Pradesh. We specialize in custom software engineering, scalable web applications, Android development, and data-driven digital marketing.
                     </p>
 
-                    <p class="text-muted">
+                    <p>
                         Our seasoned engineers combine deep domain expertise with cutting-edge technologies to solve complex operational challenges and deliver measurable business ROI.
                     </p>
 
-                    <ul class="list-unstyled mt-4 mb-4">
+                    <ul class="list-unstyled mb-4">
                         <li class="d-flex align-items-center mb-2">
-                            <i class="bx bx-check-circle text-primary fs-5 me-2"></i>
-                            <span class="fw-semibold">Custom-tailored IT solutions aligned with business objectives</span>
+                            <i class="bx bx-check-circle text-primary me-2"></i>
+                            <span class="text-muted fw-semibold">Custom-tailored IT solutions aligned with business objectives</span>
                         </li>
                         <li class="d-flex align-items-center mb-2">
-                            <i class="bx bx-check-circle text-primary fs-5 me-2"></i>
-                            <span class="fw-semibold">Scalable, enterprise-grade architecture with zero compromises</span>
+                            <i class="bx bx-check-circle text-primary me-2"></i>
+                            <span class="text-muted fw-semibold">Scalable, enterprise-grade architecture with zero compromises</span>
                         </li>
                         <li class="d-flex align-items-center mb-2">
-                            <i class="bx bx-check-circle text-primary fs-5 me-2"></i>
-                            <span class="fw-semibold">Modern, secure tech stack (PHP, Laravel, React, Kotlin, Cloud)</span>
+                            <i class="bx bx-check-circle text-primary me-2"></i>
+                            <span class="text-muted fw-semibold">Modern, secure tech stack (PHP, Laravel, React, Kotlin, Cloud)</span>
                         </li>
                         <li class="d-flex align-items-center">
-                            <i class="bx bx-check-circle text-primary fs-5 me-2"></i>
-                            <span class="fw-semibold">Transparent communication and responsive ongoing technical support</span>
+                            <i class="bx bx-check-circle text-primary me-2"></i>
+                            <span class="text-muted fw-semibold">Transparent communication and responsive ongoing technical support</span>
                         </li>
                     </ul>
 
@@ -459,7 +459,7 @@
     <section class="py-5 position-relative text-white"
              style="background: linear-gradient(135deg, rgba(4, 18, 55, 0.95) 0%, rgba(0, 18, 57, 0.92) 100%), url('{{ asset('public/assets/images/features-background.jpg') }}') center/cover no-repeat;">
         <div class="container py-lg-4">
-            <div class="row align-items-center mb-5">
+            <div class="row align-items-center mb-4">
                 <div class="col-lg-8">
                     <span class="text-info fw-bold text-uppercase" style="letter-spacing: 1.5px;">Core Principles</span>
                     <h2 class="text-white mt-1">Our Engineering &amp; Operational Values</h2>
@@ -542,9 +542,9 @@
 
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="section-title mb-4">
-                        <span class="sp-color1 fw-bold text-uppercase" style="letter-spacing: 1px;">Why Hytrix</span>
+                        <span class="sp-color1 fw-bold text-uppercase">Why Hytrix</span>
                         <h2>Why Leading Businesses Trust Hytrix Technologies</h2>
-                        <p class="text-muted">
+                        <p>
                             We combine technical excellence with business understanding to deliver reliable software solutions that drive lasting value.
                         </p>
                     </div>

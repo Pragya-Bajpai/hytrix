@@ -66,7 +66,7 @@
         <div class="container py-lg-4">
             <div class="section-title text-center mb-5">
                 <span class="sp-color1">Why Choose E-Commerce</span>
-                <h2>Accelerate Your Business With Modern Online Retail</h2>
+                <h2 class="mb-2">Accelerate Your Business With Modern Online Retail</h2>
                 <p class="margin-auto">
                     Transform the way you sell online with comprehensive e-commerce solutions crafted for maximum performance.
                 </p>
@@ -76,7 +76,7 @@
 
                 {{-- Card 1: Why E-Commerce Solutions --}}
                 <div class="col-lg-6 mb-4">
-                    <div class="security-card h-100">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
                         <div class="d-flex align-items-center mb-3">
                             <i class='bx bx-store-alt me-2' style="font-size: 32px; color: var(--color-accent-link);"></i>
                             <h3 class="mb-0 ms-2">Why Invest in E-Commerce?</h3>
@@ -108,7 +108,7 @@
 
                 {{-- Card 2: What is covered --}}
                 <div class="col-lg-6 mb-4">
-                    <div class="security-card h-100">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
                         <div class="d-flex align-items-center mb-3">
                             <i class='bx bx-check-double me-2' style="font-size: 32px; color: var(--color-accent-link);"></i>
                             <h3 class="mb-0 ms-2">Features &amp; Capabilities Included</h3>

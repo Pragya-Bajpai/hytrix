@@ -66,7 +66,7 @@
         <div class="container py-lg-4">
             <div class="section-title text-center mb-5">
                 <span class="sp-color1">Hosting Solutions</span>
-                <h2>Reliable Server Environments for Every Need</h2>
+                <h2 class="mb-2">Reliable Server Environments for Every Need</h2>
                 <p class="margin-auto">
                     Engineered with cutting-edge NVMe SSD storage, HTTP/3 support, and free automated SSL certificates.
                 </p>
@@ -75,10 +75,12 @@
             <div class="row g-4">
 
                 {{-- Linux Hosting --}}
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="security-card h-100">
-                        <i class='bx bx-server'></i>
-                        <h3>Linux Web Hosting</h3>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bx-server'></i>
+                        </div>
+                        <h4>Linux Web Hosting</h4>
                         <p>
                             Optimized for PHP, Laravel, Node.js, and WordPress with cPanel access, automated daily backups, and malware protection.
                         </p>
@@ -86,9 +88,11 @@
                 </div>
 
                 {{-- Windows Hosting --}}
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="security-card h-100">
-                        <i class='bx bxl-windows'></i>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bxl-windows'></i>
+                        </div>
                         <h3>Windows Server Hosting</h3>
                         <p>
                             Full support for ASP.NET, .NET Core, MSSQL databases, and IIS web servers for Microsoft-stack enterprise systems.
@@ -97,10 +101,12 @@
                 </div>
 
                 {{-- Reseller Hosting --}}
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="security-card h-100">
-                        <i class='bx bx-store'></i>
-                        <h3>Reseller Hosting</h3>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bx-store'></i>
+                        </div>
+                        <h4>Reseller Hosting</h4>
                         <p>
                             Launch your own hosting brand with white-label WHM/cPanel controls, automated billing integration, and flexible allocation.
                         </p>

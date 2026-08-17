@@ -52,10 +52,10 @@
                         </div>
                     @endif
 
-                    <div class="bg-white p-4 p-md-5 rounded shadow-sm border">
+                    <div class="contact-form application-form bg-white p-4 p-md-5 rounded shadow-sm border">
                         <div class="text-center mb-4">
                             <h3 class="mb-2">Candidate Details</h3>
-                            <p class="text-muted">
+                            <p>
                                 Please submit accurate information. In case of any questions, reach out to us at
                                 <a href="mailto:info@hytrix.in">info@hytrix.in</a> or <a href="tel:+919076500530">+91 9076500530</a>.
                             </p>
@@ -67,48 +67,58 @@
                             <div class="row">
                                 {{-- First Name --}}
                                 <div class="col-md-6 mb-3">
-                                    <label for="inputFname" class="form-label text-muted">First Name <span class="text-danger">*</span></label>
+                                    <div class="form-group">
+                                        <label for="inputFname" class="form-label text-muted">First Name <span class="text-danger">*</span></label>
                                     <input type="text" class="form-control" required id="inputFname" placeholder="Your first name" name="fname" value="{{ old('fname') }}">
                                     @error('fname')
                                         <span class="text-danger small">{{ $message }}</span>
                                     @enderror
+                                    </div>
                                 </div>
 
                                 {{-- Last Name --}}
                                 <div class="col-md-6 mb-3">
-                                    <label for="inputLname" class="form-label text-muted">Last Name <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" required id="inputLname" placeholder="Your last name" name="lname" value="{{ old('lname') }}">
-                                    @error('lname')
-                                        <span class="text-danger small">{{ $message }}</span>
-                                    @enderror
+                                    <div class="form-group">
+                                        <label for="inputLname" class="form-label text-muted">Last Name <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" required id="inputLname" placeholder="Your last name" name="lname" value="{{ old('lname') }}">
+                                        @error('lname')
+                                            <span class="text-danger small">{{ $message }}</span>
+                                        @enderror
+                                    </div>
                                 </div>
 
                                 {{-- Email --}}
                                 <div class="col-md-6 mb-3">
-                                    <label for="inputEmail" class="form-label text-muted">Email Address <span class="text-danger">*</span></label>
-                                    <input type="email" class="form-control" required id="inputEmail" placeholder="yourname@domain.com" name="email" value="{{ old('email') }}">
-                                    @error('email')
-                                        <span class="text-danger small">{{ $message }}</span>
-                                    @enderror
+                                    <div class="form-group">
+                                        <label for="inputEmail" class="form-label text-muted">Email Address <span class="text-danger">*</span></label>
+                                        <input type="email" class="form-control" required id="inputEmail" placeholder="yourname@domain.com" name="email" value="{{ old('email') }}">
+                                        @error('email')
+                                            <span class="text-danger small">{{ $message }}</span>
+                                        @enderror
+                                    </div>
                                 </div>
 
                                 {{-- Mobile --}}
                                 <div class="col-md-6 mb-3">
-                                    <label for="inputMobile" class="form-label text-muted">Mobile Number <span class="text-danger">*</span></label>
-                                    <input type="tel" class="form-control" required id="inputMobile" placeholder="Contact number" name="mobile" value="{{ old('mobile') }}">
-                                    @error('mobile')
-                                        <span class="text-danger small">{{ $message }}</span>
-                                    @enderror
+                                    <div class="form-group">
+                                        <label for="inputMobile" class="form-label text-muted">Mobile Number <span class="text-danger">*</span></label>
+                                        <input type="tel" class="form-control" required id="inputMobile" placeholder="Contact number" name="mobile" value="{{ old('mobile') }}">
+                                        @error('mobile')
+                                            <span class="text-danger small">{{ $message }}</span>
+                                        @enderror
+                                    </div>
                                 </div>
 
                                 {{-- CV Upload --}}
                                 <div class="col-12 mb-3">
-                                    <label for="inputCv" class="form-label text-muted">Attach Your CV / Resume <span class="text-danger">*</span></label>
-                                    <input type="file" class="form-control" required id="inputCv" name="file">
-                                    <small class="text-muted">PDF, DOC, DOCX formats supported.</small>
-                                    @error('file')
-                                        <span class="text-danger small d-block">{{ $message }}</span>
-                                    @enderror
+                                    <div class="form-group">
+                                        <label for="inputCv" class="form-label text-muted">Attach Your CV / Resume <span class="text-danger">*</span></label>
+                                        <input type="file" class="form-control" required id="inputCv" name="file">
+                                        <small class="text-muted">PDF, DOC, DOCX formats supported.</small>
+                                        @error('file')
+                                            <span class="text-danger small d-block">{{ $message }}</span>
+                                        @enderror
+                                    </div>
                                 </div>
 
                                 {{-- Terms Agreement --}}

@@ -66,7 +66,7 @@
         <div class="container py-lg-4">
             <div class="section-title text-center mb-5">
                 <span class="sp-color1">Our Marketing Solutions</span>
-                <h2>Data-Driven Channels to Scale Your Brand</h2>
+                <h2 class="mb-2">Data-Driven Channels to Scale Your Brand</h2>
                 <p class="margin-auto">
                     We craft tailored campaigns designed to maximize your brand reach, user engagement, and customer acquisition.
                 </p>
@@ -75,10 +75,12 @@
             <div class="row g-4">
 
                 {{-- Content Marketing --}}
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="security-card h-100">
-                        <i class='bx bx-edit-alt'></i>
-                        <h3>Content Marketing</h3>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bx-edit-alt'></i>
+                        </div>
+                        <h4>Content Marketing</h4>
                         <p>
                             High-quality, search-optimized articles, blogs, and landing pages that establish domain authority and educate your target audience.
                         </p>
@@ -86,10 +88,12 @@
                 </div>
 
                 {{-- Social Media Marketing --}}
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="security-card h-100">
-                        <i class='bx bxl-facebook-circle'></i>
-                        <h3>Social Media Marketing</h3>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bxl-facebook-circle'></i>
+                        </div>
+                        <h4>Social Media Marketing</h4>
                         <p>
                             Strategic community building and paid advertising campaigns across LinkedIn, Instagram, Meta, and Twitter to amplify brand awareness.
                         </p>
@@ -97,10 +101,12 @@
                 </div>
 
                 {{-- SEO & Search Visibility --}}
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="security-card h-100">
-                        <i class='bx bx-search-alt'></i>
-                        <h3>Search Engine Optimization</h3>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bx-search-alt'></i>
+                        </div>
+                        <h4>Search Engine Optimization</h4>
                         <p>
                             On-page, technical, and off-page SEO optimizations to rank your business at the top of Google for competitive commercial keywords.
                         </p>
@@ -108,9 +114,11 @@
                 </div>
 
                 {{-- Personal & Corporate Branding --}}
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="security-card h-100">
-                        <i class='bx bx-user-pin'></i>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bx-user-pin'></i>
+                        </div>
                         <h3>Brand Identity &amp; Positioning</h3>
                         <p>
                             Distinctive visual identities, brand guidelines, and executive thought leadership programs that inspire trust and recognition.
@@ -119,10 +127,12 @@
                 </div>
 
                 {{-- Local SEO & Marketing --}}
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="security-card h-100">
-                        <i class='bx bx-map-pin'></i>
-                        <h3>Location-Based SEO</h3>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bx-map-pin'></i>
+                        </div>
+                        <h4>Location-Based SEO</h4>
                         <p>
                             Google Business Profile management, local citation audits, and geo-targeted ads that dominate local search results.
                         </p>
@@ -130,10 +140,12 @@
                 </div>
 
                 {{-- Analytics & Conversion Optimization --}}
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="security-card h-100">
-                        <i class='bx bx-line-chart'></i>
-                        <h3>Data Analytics &amp; CRO</h3>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bx-line-chart'></i>
+                        </div>
+                        <h4>Data Analytics &amp; CRO</h4>
                         <p>
                             In-depth funnel analysis, heatmapping, and A/B split testing to maximize your website's conversion rate and lifetime customer value.
                         </p>

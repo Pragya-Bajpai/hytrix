@@ -76,7 +76,7 @@
 
                 {{-- Cloud Migration --}}
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="security-card h-100">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
                         <i class='bx bx-cloud-upload'></i>
                         <h3>Cloud Migration</h3>
                         <p>
@@ -87,7 +87,7 @@
 
                 {{-- Cloud Deployment --}}
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="security-card h-100">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
                         <i class='bx bx-server'></i>
                         <h3>Automated CI/CD Deployment</h3>
                         <p>
@@ -98,7 +98,7 @@
 
                 {{-- Scalable Infrastructure --}}
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="security-card h-100">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
                         <i class='bx bx-layer'></i>
                         <h3>Scalable Cloud Architecture</h3>
                         <p>
@@ -109,7 +109,7 @@
 
                 {{-- Cloud Application Management --}}
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="security-card h-100">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
                         <i class='bx bx-cog'></i>
                         <h3>24/7 Managed Cloud Services</h3>
                         <p>
@@ -120,7 +120,7 @@
 
                 {{-- Cloud Integration --}}
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="security-card h-100">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
                         <i class='bx bx-transfer-alt'></i>
                         <h3>Hybrid &amp; Multi-Cloud Integration</h3>
                         <p>
@@ -131,7 +131,7 @@
 
                 {{-- Cloud Cost Optimization --}}
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="security-card h-100">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
                         <i class='bx bx-tachometer'></i>
                         <h3>Cloud Cost Optimization (FinOps)</h3>
                         <p>
