@@ -62,11 +62,11 @@
     </div>
 
     {{-- ====== Android Services Grid ====== --}}
-    <section class="services-style-area py-5" style="background: var(--color-bg-light);">
+    <section class="services-style-area py-5">
         <div class="container py-lg-4">
             <div class="section-title text-center mb-5">
                 <span class="sp-color1">Our Capabilities</span>
-                <h2>Comprehensive Android App Development Services</h2>
+                <h2 class="mb-2">Comprehensive Android App Development Services</h2>
                 <p class="margin-auto">
                     We empower businesses with an exceptional range of Android application development solutions designed for scale and performance.
                 </p>
@@ -75,10 +75,12 @@
             <div class="row g-4">
 
                 {{-- Customized Applications --}}
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="services-card services-style-bg">
-                        <i class='bx bxl-android'></i>
-                        <h3>Custom Android Apps</h3>
+                <div class="col-lg-4 col-sm-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bxl-android'></i>
+                        </div>
+                        <h4>Custom Android Apps</h4>
                         <p>
                             Tailor-made native applications built to your exact business specifications with modern Kotlin and Java architectures.
                         </p>
@@ -86,10 +88,12 @@
                 </div>
 
                 {{-- Hybrid App Development --}}
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="services-card services-style-bg">
-                        <i class='bx bx-mobile-alt'></i>
-                        <h3>Cross-Platform Apps</h3>
+                <div class="col-lg-4 col-sm-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bx-mobile-alt'></i>
+                        </div>
+                        <h4>Cross-Platform Apps</h4>
                         <p>
                             Cost-effective hybrid mobile applications that run smoothly across both Android and iOS with single codebase efficiency.
                         </p>
@@ -97,10 +101,12 @@
                 </div>
 
                 {{-- App Re-designing --}}
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="services-card services-style-bg">
-                        <i class='bx bx-palette'></i>
-                        <h3>UI/UX &amp; Redesign</h3>
+                <div class="col-lg-4 col-sm-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bx-palette'></i>
+                        </div>
+                        <h4>UI/UX &amp; Redesign</h4>
                         <p>
                             Transform outdated mobile apps with modern, sleek Material Design interfaces that maximize user engagement and retention.
                         </p>
@@ -108,10 +114,12 @@
                 </div>
 
                 {{-- App Testing & QA --}}
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="services-card services-style-bg">
-                        <i class='bx bx-check-shield'></i>
-                        <h3>App Testing &amp; QA</h3>
+                <div class="col-lg-4 col-sm-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bx-check-shield'></i>
+                        </div>
+                        <h4>App Testing &amp; QA</h4>
                         <p>
                             Rigorous device fragmentation testing, automated performance checks, and security audits to guarantee zero-crash releases.
                         </p>
@@ -119,10 +127,12 @@
                 </div>
 
                 {{-- Location & IoT Apps --}}
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="services-card services-style-bg">
-                        <i class='bx bx-map-pin'></i>
-                        <h3>GPS &amp; Location Apps</h3>
+                <div class="col-lg-4 col-sm-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bx-map-pin'></i>
+                        </div>
+                        <h4>GPS &amp; Location Apps</h4>
                         <p>
                             Feature-rich geofencing, real-time tracking, and maps integration for delivery, logistics, and on-demand services.
                         </p>
@@ -130,10 +140,12 @@
                 </div>
 
                 {{-- E-Commerce Application --}}
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="services-card services-style-bg">
-                        <i class='bx bx-shopping-bag'></i>
-                        <h3>Mobile Commerce</h3>
+                <div class="col-lg-4 col-sm-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bx-shopping-bag'></i>
+                        </div>
+                        <h4>Mobile Commerce</h4>
                         <p>
                             Full-featured m-commerce solutions with secure payment gateways, push notifications, and fast checkout experiences.
                         </p>

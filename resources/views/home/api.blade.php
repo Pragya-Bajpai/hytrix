@@ -66,7 +66,7 @@
         <div class="container py-lg-4">
             <div class="section-title text-center mb-5">
                 <span class="sp-color1">Integration Ecosystem</span>
-                <h2>Reliable Third-Party API Integrations</h2>
+                <h2 class="mb-2">Reliable Third-Party API Integrations</h2>
                 <p class="margin-auto">
                     We bridge the gap between your applications and external web services with zero data loss and maximum throughput.
                 </p>
@@ -75,10 +75,12 @@
             <div class="row g-4">
 
                 {{-- Payment Gateways --}}
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="security-card h-100">
-                        <i class='bx bx-credit-card'></i>
-                        <h3>Payment Gateways</h3>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bx-credit-card'></i>
+                        </div>
+                        <h4>Payment Gateways</h4>
                         <p>
                             Secure integration with Razorpay, Stripe, PayPal, Paytm, Authorize.net, and UPI for seamless multi-currency checkout.
                         </p>
@@ -86,10 +88,12 @@
                 </div>
 
                 {{-- Advertising & Marketing APIs --}}
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="security-card h-100">
-                        <i class='bx bx-target-lock'></i>
-                        <h3>Ad Networks &amp; DSPs</h3>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bx-target-lock'></i>
+                        </div>
+                        <h4>Ad Networks &amp; DSPs</h4>
                         <p>
                             Direct data sync with Google Ads, Bing Ads, Meta Graph API, and TikTok Ads for automated campaign reporting.
                         </p>
@@ -97,10 +101,12 @@
                 </div>
 
                 {{-- Shipping & Logistics --}}
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="security-card h-100">
-                        <i class='bx bx-package'></i>
-                        <h3>Shipping &amp; Logistics</h3>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bx-package'></i>
+                        </div>
+                        <h4>Shipping &amp; Logistics</h4>
                         <p>
                             Real-time rate calculation, automated airway bill (AWB) generation, and live package tracking with Shiprocket, FedEx, and DHL.
                         </p>
@@ -108,10 +114,12 @@
                 </div>
 
                 {{-- Social Media APIs --}}
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="security-card h-100">
-                        <i class='bx bxl-meta'></i>
-                        <h3>Social &amp; Auth APIs</h3>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bxl-meta'></i>
+                        </div>
+                        <h4>Social &amp; Auth APIs</h4>
                         <p>
                             Social login via Google, Apple, and Facebook, alongside automated social feed publishing and user profile sync.
                         </p>
@@ -119,10 +127,12 @@
                 </div>
 
                 {{-- Travel & GDS APIs --}}
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="security-card h-100">
-                        <i class='bx bx-paper-plane'></i>
-                        <h3>Travel &amp; Booking APIs</h3>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bx-paper-plane'></i>
+                        </div>
+                        <h4>Travel &amp; Booking APIs</h4>
                         <p>
                             Integration with GDS engines like Amadeus, Sabre, and Expedia for live flight, hotel, and car rental bookings.
                         </p>
@@ -130,10 +140,12 @@
                 </div>
 
                 {{-- Custom REST & Webhooks --}}
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="security-card h-100">
-                        <i class='bx bx-code-curly'></i>
-                        <h3>Custom RESTful APIs</h3>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bx-code-curly'></i>
+                        </div>
+                        <h4>Custom RESTful APIs</h4>
                         <p>
                             Design, implementation, and documentation of secure internal microservices with OAuth2, JWT, and webhook event architecture.
                         </p>

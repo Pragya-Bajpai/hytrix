@@ -60,7 +60,7 @@
                 </div>
             </div>
 
-            <div class="row pt-4">
+            <div class="row">
 
                 {{-- Left: Contact Info Sidebar --}}
                 <div class="col-lg-4 mb-4 mb-lg-0">
@@ -124,11 +124,11 @@
                 </div>
 
                 {{-- Right: Contact Message Form --}}
-                <div class="col-lg-8">
+                <div class="col-lg-8 ps-lg-4">
                     <div class="contact-form bg-white">
                         <div class="section-title mb-4">
-                            <h2>Send Us A Direct Message</h2>
-                            <p class="text-muted">Fill out the form below and we'll reply within 24 business hours.</p>
+                            <h2 class="mb-2">Send Us A Direct Message</h2>
+                            <p>Fill out the form below and we'll reply within 24 business hours.</p>
                         </div>
 
                         <form action="{{ route('contactstore') }}" method="POST">

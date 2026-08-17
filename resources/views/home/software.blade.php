@@ -66,7 +66,7 @@
         <div class="container py-lg-4">
             <div class="section-title text-center mb-5">
                 <span class="sp-color1">Our Solutions</span>
-                <h2>Comprehensive Software Development Offerings</h2>
+                <h2 class="mb-2">Comprehensive Software Development Offerings</h2>
                 <p class="margin-auto">
                     From ideation to continuous deployment, we provide end-to-end software engineering tailored to startups and established enterprises.
                 </p>
@@ -75,10 +75,12 @@
             <div class="row g-4">
 
                 {{-- Custom Software Development --}}
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="security-card d-flex flex-column justify-content-between h-100 p-4">
-                        <i class='bx bx-code-block'></i>
-                        <h3>Custom Software Development</h3>
+                <div class="col-lg-4 col-sm-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bx-code-block'></i>
+                        </div>
+                        <h4>Custom Software Development</h4>
                         <p>
                             Comprehensive full-lifecycle engineering covering consultation, modern architecture, development, and ongoing support for complex business systems.
                         </p>
@@ -86,10 +88,12 @@
                 </div>
 
                 {{-- Mobile Application Development --}}
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="security-card d-flex flex-column justify-content-between h-100 p-4">
-                        <i class='bx bx-mobile-alt'></i>
-                        <h3>Mobile Application Development</h3>
+                <div class="col-lg-4 col-sm-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bx-mobile-alt'></i>
+                        </div>
+                        <h4>Mobile Application Development</h4>
                         <p>
                             Impactful and intuitive native and cross-platform apps built for iOS and Android that drive engagement and solve core operational challenges.
                         </p>
@@ -97,10 +101,12 @@
                 </div>
 
                 {{-- Dedicated Development Center --}}
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="security-card d-flex flex-column justify-content-between h-100 p-4">
-                        <i class='bx bx-group'></i>
-                        <h3>Dedicated Development Teams</h3>
+                <div class="col-lg-4 col-sm-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bx-group'></i>
+                        </div>
+                        <h4>Dedicated Development Teams</h4>
                         <p>
                             Scale your in-house capabilities with dedicated, agile engineering teams that integrate smoothly into your workflows with complete transparency.
                         </p>
@@ -108,10 +114,12 @@
                 </div>
 
                 {{-- Web Application Development --}}
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="security-card d-flex flex-column justify-content-between h-100 p-4">
-                        <i class='bx bx-globe'></i>
-                        <h3>Web Application Development</h3>
+                <div class="col-lg-4 col-sm-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bx-globe'></i>
+                        </div>
+                        <h4>Web Application Development</h4>
                         <p>
                             Scalable, responsive web platforms built for e-Commerce, FinTech, EdTech, and enterprise SaaS systems using cutting-edge frameworks.
                         </p>
@@ -119,10 +127,12 @@
                 </div>
 
                 {{-- QA Automation Service --}}
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="security-card d-flex flex-column justify-content-between h-100 p-4">
-                        <i class='bx bx-check-shield'></i>
-                        <h3>QA Automation Services</h3>
+                <div class="col-lg-4 col-sm-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bx-check-shield'></i>
+                        </div>
+                        <h4>QA Automation Services</h4>
                         <p>
                             Accelerate release velocity and maintain rigorous code quality through automated regression testing, API checks, and load simulations.
                         </p>
@@ -130,9 +140,11 @@
                 </div>
 
                 {{-- Software Testing and QA --}}
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="security-card d-flex flex-column justify-content-between h-100 p-4">
-                        <i class='bx bx-test-tube'></i>
+                <div class="col-lg-4 col-sm-6 mb-2">
+                    <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
+                        <div class="icon">
+                            <i class='bx bx-test-tube'></i>
+                        </div>
                         <h3>Software Testing &amp; QA</h3>
                         <p>
                             Manual and exploratory QA audits that identify edge-case vulnerabilities, performance bottlenecks, and usability defects before launch.

@@ -47,8 +47,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
                     <span class="sp-color2 text-uppercase fw-bold mb-2 d-block">Work Culture</span>
-                    <h2 class="mb-4">Why Build Your Career at Hytrix?</h2>
-                    <p class="text-dark fs-6" style="line-height: 1.8;">
+                    <h2 class="mb-2">Why Build Your Career at Hytrix?</h2>
+                    <p>
                         At Hytrix, you will contribute to digital solutions that matter. From building scalable enterprise systems to shaping dynamic digital experiences, your work makes a tangible impact. We foster a collaborative, growth-focused culture where initiative is celebrated and learning never stops.
                     </p>
                 </div>
@@ -59,9 +59,9 @@
     {{-- ====== Open Positions Section ====== --}}
     <section class="py-5">
         <div class="container py-lg-4">
-            <div class="section-title text-center mb-5">
+            <div class="section-title text-center mb-4 mb-lg-5">
                 <span class="sp-color1">Opportunities</span>
-                <h2>Current Job Openings</h2>
+                <h2 class="mb-2">Current Job Openings</h2>
                 <p class="margin-auto">
                     Explore available positions and take the next leap in your professional journey.
                 </p>
@@ -71,7 +71,7 @@
                 @if(isset($data) && count($data) > 0)
                     @foreach($data as $careers)
                         <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="security-card d-flex flex-column justify-content-between h-100 p-4">
+                            <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
                                 <div>
                                     @if(!empty($careers->file))
                                         <div class="mb-3" style="width: 70px; height: 70px; overflow: hidden; border-radius: var(--radius-md);">
