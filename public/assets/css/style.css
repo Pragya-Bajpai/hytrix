@@ -477,16 +477,11 @@ Top Header
 }
 
 .top-header-left .top-contact:hover i {
-    background-color: var(--color-accent-link);
     color: var(--color-bg-white);
 }
 
-.top-header-left .top-contact:hover h3 a {
-    color: var(--color-highlight);
-}
-
 .top-header-left .top-contact h3 {
-    font-size: 1.4rem;
+    font-size: var(--font-size-sm);
     color: var(--color-bg-white);
     font-weight: 500;
     margin-bottom: 0;
