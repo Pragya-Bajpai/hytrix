@@ -33,7 +33,7 @@
 
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="choose-content mr-lg-20">
-                        <div class="section-title">
+                        <div class="section-title mt-5">
                             <span class="sp-color2">MOBILE APPLICATION SERVICES</span>
                             <h1>Android Application Development Company</h1>
                         </div>
@@ -172,5 +172,356 @@
             </div>
         </div>
     </section>
+{{-- ====== Android Development FAQ Section ====== --}}
+<section class="web-faq-section py-5">
+    <div class="container py-lg-4">
 
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+
+                <div class="section-title mb-5">
+
+                    <span class="sp-color2">
+                        FREQUENTLY ASKED QUESTIONS
+                    </span>
+
+                    <h2>
+                        Android App Development FAQs
+                    </h2>
+
+                    <p class="margin-auto">
+                        Find answers to common questions about Android app
+                        development, features, technologies, cost and support.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="accordion web-faq" id="androidFaqAccordion">
+
+                    {{-- FAQ 1 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="androidFaqHeadingOne">
+
+                            <button
+                                class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#androidFaqOne"
+                                aria-expanded="true"
+                                aria-controls="androidFaqOne">
+
+                                What Android app development services does Hytrix Technologies provide?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="androidFaqOne"
+                            class="accordion-collapse collapse show"
+                            aria-labelledby="androidFaqHeadingOne"
+                            data-bs-parent="#androidFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                Hytrix Technologies provides custom Android app
+                                development, cross-platform app development,
+                                UI/UX design, app redesign, testing and QA,
+                                GPS and location-based applications, and
+                                mobile commerce solutions.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 2 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="androidFaqHeadingTwo">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#androidFaqTwo"
+                                aria-expanded="false"
+                                aria-controls="androidFaqTwo">
+
+                                How much does Android app development cost?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="androidFaqTwo"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="androidFaqHeadingTwo"
+                            data-bs-parent="#androidFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                Android app development cost depends on the
+                                app's features, design, integrations, number
+                                of screens, backend requirements and overall
+                                project complexity. Contact our team to discuss
+                                your requirements and get a suitable estimate.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 3 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="androidFaqHeadingThree">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#androidFaqThree"
+                                aria-expanded="false"
+                                aria-controls="androidFaqThree">
+
+                                Do you develop custom Android applications?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="androidFaqThree"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="androidFaqHeadingThree"
+                            data-bs-parent="#androidFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                Yes. We develop custom Android applications
+                                according to your business requirements,
+                                target users, functionality and scalability
+                                needs.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 4 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="androidFaqHeadingFour">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#androidFaqFour"
+                                aria-expanded="false"
+                                aria-controls="androidFaqFour">
+
+                                Do you develop cross-platform mobile applications?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="androidFaqFour"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="androidFaqHeadingFour"
+                            data-bs-parent="#androidFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                Yes. We can develop cross-platform mobile
+                                applications that can run across Android and
+                                iOS using a shared codebase where suitable
+                                for the project requirements.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 5 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="androidFaqHeadingFive">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#androidFaqFive"
+                                aria-expanded="false"
+                                aria-controls="androidFaqFive">
+
+                                Can you redesign an existing Android application?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="androidFaqFive"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="androidFaqHeadingFive"
+                            data-bs-parent="#androidFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                Yes. We can redesign existing Android applications
+                                with modern UI/UX, improved navigation, better
+                                usability and a more consistent user experience.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 6 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="androidFaqHeadingSix">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#androidFaqSix"
+                                aria-expanded="false"
+                                aria-controls="androidFaqSix">
+
+                                Do you provide Android app testing and maintenance?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="androidFaqSix"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="androidFaqHeadingSix"
+                            data-bs-parent="#androidFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                Yes. Our services can include app testing,
+                                performance checks, troubleshooting, updates
+                                and ongoing technical support according to
+                                project requirements.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 7 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="androidFaqHeadingSeven">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#androidFaqSeven"
+                                aria-expanded="false"
+                                aria-controls="androidFaqSeven">
+
+                                Can you integrate GPS and location features into an app?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="androidFaqSeven"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="androidFaqHeadingSeven"
+                            data-bs-parent="#androidFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                Yes. We can develop location-based features such
+                                as GPS tracking, maps integration, geofencing
+                                and real-time location functionality for
+                                suitable mobile applications.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 8 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="androidFaqHeadingEight">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#androidFaqEight"
+                                aria-expanded="false"
+                                aria-controls="androidFaqEight">
+
+                                How can I start my Android app development project?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="androidFaqEight"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="androidFaqHeadingEight"
+                            data-bs-parent="#androidFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                You can contact our team and share your app idea,
+                                business requirements and desired features.
+                                We can then discuss the project scope and suggest
+                                a suitable development approach.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
 @endsection

@@ -33,7 +33,7 @@
 
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="choose-content mr-lg-20">
-                        <div class="section-title">
+                        <div class="section-title mt-5">
                             <span class="sp-color2">SYSTEM INTERCONNECTIVITY</span>
                             <h1>Custom API Integration &amp; Development Services</h1>
                         </div>
@@ -172,5 +172,371 @@
             </div>
         </div>
     </section>
+{{-- ====== API Integration FAQ Section ====== --}}
+<section class="web-faq-section py-5">
 
+    <div class="container py-lg-4">
+
+        {{-- FAQ Heading --}}
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+
+                <div class="section-title mb-5">
+
+                    <span class="sp-color2">
+                        FREQUENTLY ASKED QUESTIONS
+                    </span>
+
+                    <h2>
+                        API Integration FAQs
+                    </h2>
+
+                    <p class="margin-auto">
+                        Find answers to common questions about API integration,
+                        third-party APIs, payment gateways, data synchronization,
+                        security and custom API development.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        {{-- FAQ Accordion --}}
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <div class="accordion web-faq" id="apiFaqAccordion">
+
+
+                    {{-- FAQ 1 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="apiFaqHeadingOne">
+
+                            <button
+                                class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#apiFaqOne"
+                                aria-expanded="true"
+                                aria-controls="apiFaqOne">
+
+                                What is API integration?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="apiFaqOne"
+                            class="accordion-collapse collapse show"
+                            aria-labelledby="apiFaqHeadingOne"
+                            data-bs-parent="#apiFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                API integration connects different software
+                                applications and services so they can securely
+                                exchange data and communicate with each other.
+                                It helps businesses automate processes and
+                                connect their websites, applications and
+                                third-party services.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 2 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="apiFaqHeadingTwo">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#apiFaqTwo"
+                                aria-expanded="false"
+                                aria-controls="apiFaqTwo">
+
+                                What types of APIs can you integrate?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="apiFaqTwo"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="apiFaqHeadingTwo"
+                            data-bs-parent="#apiFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                We can integrate APIs for payment gateways,
+                                shipping services, CRM systems, ERP software,
+                                social media platforms, maps, communication
+                                services, authentication systems and other
+                                third-party business applications.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 3 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="apiFaqHeadingThree">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#apiFaqThree"
+                                aria-expanded="false"
+                                aria-controls="apiFaqThree">
+
+                                Can you integrate payment gateway APIs?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="apiFaqThree"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="apiFaqHeadingThree"
+                            data-bs-parent="#apiFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                Yes. Payment gateway APIs can be integrated
+                                into websites and applications to support
+                                secure online payments, transaction processing,
+                                payment verification and order status updates.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 4 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="apiFaqHeadingFour">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#apiFaqFour"
+                                aria-expanded="false"
+                                aria-controls="apiFaqFour">
+
+                                Do you provide custom API development?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="apiFaqFour"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="apiFaqHeadingFour"
+                            data-bs-parent="#apiFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                Yes. We can develop custom APIs based on your
+                                business requirements. Custom APIs can be used
+                                to connect websites, mobile applications,
+                                databases and external software systems.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 5 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="apiFaqHeadingFive">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#apiFaqFive"
+                                aria-expanded="false"
+                                aria-controls="apiFaqFive">
+
+                                Is API integration secure?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="apiFaqFive"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="apiFaqHeadingFive"
+                            data-bs-parent="#apiFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                API security depends on proper authentication,
+                                authorization, data validation and secure
+                                communication. We implement appropriate
+                                security practices according to the API and
+                                application requirements.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 6 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="apiFaqHeadingSix">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#apiFaqSix"
+                                aria-expanded="false"
+                                aria-controls="apiFaqSix">
+
+                                Can APIs connect websites and mobile applications?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="apiFaqSix"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="apiFaqHeadingSix"
+                            data-bs-parent="#apiFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                Yes. APIs can connect websites, Android and
+                                iOS applications with databases, backend
+                                systems and third-party services. This allows
+                                applications to exchange information and
+                                provide synchronized functionality.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 7 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="apiFaqHeadingSeven">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#apiFaqSeven"
+                                aria-expanded="false"
+                                aria-controls="apiFaqSeven">
+
+                                How long does API integration take?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="apiFaqSeven"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="apiFaqHeadingSeven"
+                            data-bs-parent="#apiFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                The integration time depends on the API
+                                documentation, number of endpoints,
+                                authentication requirements, testing and
+                                overall project complexity. The timeline can
+                                be estimated after reviewing the API and
+                                project requirements.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 8 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="apiFaqHeadingEight">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#apiFaqEight"
+                                aria-expanded="false"
+                                aria-controls="apiFaqEight">
+
+                                Can you integrate APIs with Laravel and PHP applications?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="apiFaqEight"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="apiFaqHeadingEight"
+                            data-bs-parent="#apiFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                Yes. APIs can be integrated with PHP and Laravel
+                                applications for payment processing, data
+                                synchronization, authentication, external
+                                services and other business requirements.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 @endsection

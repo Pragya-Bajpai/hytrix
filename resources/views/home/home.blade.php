@@ -43,7 +43,6 @@
 @extends('home.layout.main')
 
 @section('content')
-
     {{-- ====== Hero Slider Section ====== --}}
     <div class="banner-slider-area ht-banner">
         <div class="banner-slider owl-carousel owl-theme">
@@ -57,11 +56,13 @@
                                 <span>High-Impact IT Solutions</span>
                                 <h1>Best IT Company in Lucknow for Web &amp; Software Development</h1>
                                 <p>
-                                    At Hytrix, we engineer digital transformations. We craft scalable web platforms, enterprise software, and mobile apps designed to accelerate business growth.
+                                    At Hytrix, we engineer digital transformations. We craft scalable web platforms,
+                                    enterprise software, and mobile apps designed to accelerate business growth.
                                 </p>
                                 <div class="banner-btn">
                                     <a href="{{ route('about') }}" class="default-btn btn-bg-two">
-                                        Why Choose Us <i class='bx bx-chevron-right'></i>
+                                        Why Choose Hytrix Technologies
+                                        <i class='bx bx-chevron-right'></i>
                                     </a>
                                     <a href="{{ route('contact') }}" class="default-btn btn-bg-one">
                                         Get A Quote <i class='bx bx-chevron-right'></i>
@@ -82,11 +83,16 @@
                                 <span>Scalable Architecture</span>
                                 <h1>Custom Software &amp; Cloud Solutions for Modern Enterprises</h1>
                                 <p>
-                                    Stay ahead in rapidly shifting digital landscapes. We deliver secure, robust, and scalable cloud and software ecosystems tailored to your exact workflows.
+                                    Stay ahead in rapidly shifting digital landscapes. We deliver secure, robust, and
+                                    scalable cloud and software ecosystems tailored to your exact workflows.
                                 </p>
                                 <div class="banner-btn">
-                                    <a href="{{ route('about') }}" class="default-btn btn-bg-two">
+                                    {{-- <a href="{{ route('about') }}" class="default-btn btn-bg-two">
                                         Learn More <i class='bx bx-chevron-right'></i>
+                                    </a> --}}
+                                    <a href="{{ route('about') }}" class="default-btn btn-bg-two">
+                                        Explore Hytrix Technologies
+                                        <i class='bx bx-chevron-right'></i>
                                     </a>
                                     <a href="{{ route('contact') }}" class="default-btn btn-bg-one">
                                         Get A Quote <i class='bx bx-chevron-right'></i>
@@ -107,11 +113,16 @@
                                 <span>Results-Driven Growth</span>
                                 <h1>Mobile App &amp; E-Commerce Development That Converts</h1>
                                 <p>
-                                    Ignite revenue and customer retention with ultra-fast e-commerce stores, native Android apps, and data-driven digital marketing campaigns.
+                                    Ignite revenue and customer retention with ultra-fast e-commerce stores, native Android
+                                    apps, and data-driven digital marketing campaigns.
                                 </p>
                                 <div class="banner-btn">
-                                    <a href="{{ route('about') }}" class="default-btn btn-bg-two">
+                                    {{-- <a href="{{ route('about') }}" class="default-btn btn-bg-two">
                                         Our Work <i class='bx bx-chevron-right'></i>
+                                    </a> --}}
+                                    <a href="{{ route('about') }}" class="default-btn btn-bg-two">
+                                        Discover Our IT Solutions
+                                        <i class='bx bx-chevron-right'></i>
                                     </a>
                                     <a href="{{ route('contact') }}" class="default-btn btn-bg-one">
                                         Get A Quote <i class='bx bx-chevron-right'></i>
@@ -136,7 +147,8 @@
                 <span class="sp-color2 fw-bold text-uppercase">What We Do</span>
                 <h2 class="mb-2">Comprehensive IT Services &amp; Digital Solutions</h2>
                 <p class="margin-auto">
-                    We design and develop technology solutions that empower organizations to streamline operations, engage customers, and scale reliably.
+                    We design and develop technology solutions that empower organizations to streamline operations, engage
+                    customers, and scale reliably.
                 </p>
             </div>
 
@@ -152,7 +164,8 @@
                                 </div>
                                 <h3 class="home-service-card__title">Web Development</h3>
                                 <p class="home-service-card__text">
-                                    Responsive business websites, custom web applications, and scalable Laravel solutions built for optimal performance.
+                                    Responsive business websites, custom web applications, and scalable Laravel solutions
+                                    built for optimal performance.
                                 </p>
                             </div>
                             <div class="mt-3 text-primary fw-bold small">
@@ -161,6 +174,8 @@
                         </div>
                     </a>
                 </div>
+
+
 
                 {{-- Software Development --}}
                 <div class="col-lg-3 col-md-6">
@@ -172,7 +187,8 @@
                                 </div>
                                 <h3 class="home-service-card__title">Software Engineering</h3>
                                 <p class="home-service-card__text">
-                                    Custom enterprise software, ERP, CRM, and automation workflows engineered to optimize operational efficiency.
+                                    Custom enterprise software, ERP, CRM, and automation workflows engineered to optimize
+                                    operational efficiency.
                                 </p>
                             </div>
                             <div class="mt-3 text-primary fw-bold small">
@@ -192,7 +208,8 @@
                                 </div>
                                 <h3 class="home-service-card__title">Android Apps</h3>
                                 <p class="home-service-card__text">
-                                    Intuitive, feature-rich native and cross-platform mobile apps that drive engagement and seamless mobile experiences.
+                                    Intuitive, feature-rich native and cross-platform mobile apps that drive engagement and
+                                    seamless mobile experiences.
                                 </p>
                             </div>
                             <div class="mt-3 text-primary fw-bold small">
@@ -212,7 +229,8 @@
                                 </div>
                                 <h3 class="home-service-card__title">E-Commerce Stores</h3>
                                 <p class="home-service-card__text">
-                                    High-converting online storefronts with seamless multi-currency checkout, inventory management, and gateway integration.
+                                    High-converting online storefronts with seamless multi-currency checkout, inventory
+                                    management, and gateway integration.
                                 </p>
                             </div>
                             <div class="mt-3 text-primary fw-bold small">
@@ -232,7 +250,8 @@
                                 </div>
                                 <h3 class="home-service-card__title">Digital Marketing</h3>
                                 <p class="home-service-card__text">
-                                    Data-driven SEO, Google Ads, social media marketing, and conversion optimization to scale qualified lead generation.
+                                    Data-driven SEO, Google Ads, social media marketing, and conversion optimization to
+                                    scale qualified lead generation.
                                 </p>
                             </div>
                             <div class="mt-3 text-primary fw-bold small">
@@ -252,7 +271,8 @@
                                 </div>
                                 <h3 class="home-service-card__title">Web Hosting</h3>
                                 <p class="home-service-card__text">
-                                    High-speed Linux &amp; Windows servers, reseller hosting, SSL encryption, and 99.9% guaranteed uptime support.
+                                    High-speed Linux &amp; Windows servers, reseller hosting, SSL encryption, and 99.9%
+                                    guaranteed uptime support.
                                 </p>
                             </div>
                             <div class="mt-3 text-primary fw-bold small">
@@ -272,7 +292,8 @@
                                 </div>
                                 <h3 class="home-service-card__title">API Integration</h3>
                                 <p class="home-service-card__text">
-                                    Seamless connectivity with payment gateways, logistics carriers, advertising networks, and third-party SaaS tools.
+                                    Seamless connectivity with payment gateways, logistics carriers, advertising networks,
+                                    and third-party SaaS tools.
                                 </p>
                             </div>
                             <div class="mt-3 text-primary fw-bold small">
@@ -283,7 +304,7 @@
                 </div>
 
                 {{-- Cloud Computing --}}
-                <div class="col-lg-3 col-md-6">
+                {{-- <div class="col-lg-3 col-md-6">
                     <a href="{{ route('cloud') }}" class="text-decoration-none d-block h-100">
                         <div class="home-service-card">
                             <div>
@@ -300,7 +321,7 @@
                             </div>
                         </div>
                     </a>
-                </div>
+                </div> --}}
 
             </div>
         </div>
@@ -335,7 +356,8 @@
                             </div>
                             <h3 class="home-process-card__title">Discovery &amp; Strategy</h3>
                             <p class="home-process-card__text">
-                                We analyze your business requirements, define user personas, and establish a clear technical roadmap.
+                                We analyze your business requirements, define user personas, and establish a clear technical
+                                roadmap.
                             </p>
                         </div>
                     </div>
@@ -353,7 +375,8 @@
                             </div>
                             <h3 class="home-process-card__title">Design &amp; Architecture</h3>
                             <p class="home-process-card__text">
-                                Wireframes, responsive UI/UX prototypes, and scalable database schemas designed for maximum usability.
+                                Wireframes, responsive UI/UX prototypes, and scalable database schemas designed for maximum
+                                usability.
                             </p>
                         </div>
                     </div>
@@ -371,7 +394,8 @@
                             </div>
                             <h3 class="home-process-card__title">Agile Engineering</h3>
                             <p class="home-process-card__text">
-                                Clean, maintainable, and secure code built in rapid iterative sprints with continuous code reviews.
+                                Clean, maintainable, and secure code built in rapid iterative sprints with continuous code
+                                reviews.
                             </p>
                         </div>
                     </div>
@@ -389,7 +413,8 @@
                             </div>
                             <h3 class="home-process-card__title">QA &amp; Deployment</h3>
                             <p class="home-process-card__text">
-                                Automated testing, security audits, and zero-downtime deployment backed by ongoing 24/7 support.
+                                Automated testing, security audits, and zero-downtime deployment backed by ongoing 24/7
+                                support.
                             </p>
                         </div>
                     </div>
@@ -406,10 +431,16 @@
 
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="position-relative">
-                        <img src="{{ asset('public/home/hytrix-img-1.jpeg') }}"
-                             alt="Hytrix Technologies IT team in Lucknow"
-                             class="img-fluid rounded-4 shadow-md"
-                             style="border-radius: 24px; width: 100%; object-fit: cover; max-height: 480px;">
+                       <img 
+    src="https://hytrix.in/new/public/home/hytrix-img-1.webp"
+    alt="Hytrix Technologies IT team in Lucknow"
+    class="img-fluid rounded-4 shadow-md"
+    width="400"
+    height="400"
+    loading="lazy"
+    decoding="async"
+    style="border-radius:24px; width:100%; object-fit:cover; max-height:480px;"
+>
                     </div>
                 </div>
 
@@ -420,29 +451,36 @@
                     </div>
 
                     <p>
-                        Hytrix Technologies LLP is a premier IT services company based in Lucknow, Uttar Pradesh. We specialize in custom software engineering, scalable web applications, Android development, and data-driven digital marketing.
+                        Hytrix Technologies LLP is a premier IT services company based in Lucknow, Uttar Pradesh. We
+                        specialize in custom software engineering, scalable web applications, Android development, and
+                        data-driven digital marketing.
                     </p>
 
                     <p>
-                        Our seasoned engineers combine deep domain expertise with cutting-edge technologies to solve complex operational challenges and deliver measurable business ROI.
+                        Our seasoned engineers combine deep domain expertise with cutting-edge technologies to solve complex
+                        operational challenges and deliver measurable business ROI.
                     </p>
 
                     <ul class="list-unstyled mb-4">
                         <li class="d-flex align-items-center mb-2">
                             <i class="bx bx-check-circle text-primary me-2"></i>
-                            <span class="text-muted fw-semibold">Custom-tailored IT solutions aligned with business objectives</span>
+                            <span class="text-muted fw-semibold">Custom-tailored IT solutions aligned with business
+                                objectives</span>
                         </li>
                         <li class="d-flex align-items-center mb-2">
                             <i class="bx bx-check-circle text-primary me-2"></i>
-                            <span class="text-muted fw-semibold">Scalable, enterprise-grade architecture with zero compromises</span>
+                            <span class="text-muted fw-semibold">Scalable, enterprise-grade architecture with zero
+                                compromises</span>
                         </li>
                         <li class="d-flex align-items-center mb-2">
                             <i class="bx bx-check-circle text-primary me-2"></i>
-                            <span class="text-muted fw-semibold">Modern, secure tech stack (PHP, Laravel, React, Kotlin, Cloud)</span>
+                            <span class="text-muted fw-semibold">Modern, secure tech stack (PHP, Laravel, React, Kotlin,
+                                Cloud)</span>
                         </li>
                         <li class="d-flex align-items-center">
                             <i class="bx bx-check-circle text-primary me-2"></i>
-                            <span class="text-muted fw-semibold">Transparent communication and responsive ongoing technical support</span>
+                            <span class="text-muted fw-semibold">Transparent communication and responsive ongoing technical
+                                support</span>
                         </li>
                     </ul>
 
@@ -457,7 +495,7 @@
 
     {{-- ====== Innovation & Values Section (Glassmorphism Cards) ====== --}}
     <section class="py-5 position-relative text-white"
-             style="background: linear-gradient(135deg, rgba(4, 18, 55, 0.95) 0%, rgba(0, 18, 57, 0.92) 100%), url('{{ asset('public/assets/images/features-background.jpg') }}') center/cover no-repeat;">
+        style="background: linear-gradient(135deg, rgba(4, 18, 55, 0.95) 0%, rgba(0, 18, 57, 0.92) 100%), url('{{ asset('public/assets/images/features-background.jpg') }}') center/cover no-repeat;">
         <div class="container py-lg-4">
             <div class="row align-items-center mb-4">
                 <div class="col-lg-8">
@@ -525,7 +563,8 @@
                             </div>
                             <h3 class="home-value-card__title">FOCUS</h3>
                             <p class="home-value-card__text">
-                                Laser focus on delivering measurable client outcomes, timely execution, and reliable support.
+                                Laser focus on delivering measurable client outcomes, timely execution, and reliable
+                                support.
                             </p>
                         </div>
                     </div>
@@ -545,7 +584,8 @@
                         <span class="sp-color1 fw-bold text-uppercase">Why Hytrix</span>
                         <h2>Why Leading Businesses Trust Hytrix Technologies</h2>
                         <p>
-                            We combine technical excellence with business understanding to deliver reliable software solutions that drive lasting value.
+                            We combine technical excellence with business understanding to deliver reliable software
+                            solutions that drive lasting value.
                         </p>
                     </div>
 
@@ -558,7 +598,8 @@
                                 <div>
                                     <h3 class="home-choose-card__title">Experienced Engineering Team</h3>
                                     <p class="home-choose-card__text">
-                                        Full-stack developers, UI/UX designers, and QA engineers dedicated to bringing your product vision to life.
+                                        Full-stack developers, UI/UX designers, and QA engineers dedicated to bringing your
+                                        product vision to life.
                                     </p>
                                 </div>
                             </div>
@@ -572,7 +613,8 @@
                                 <div>
                                     <h3 class="home-choose-card__title">24/7 Dedicated Support</h3>
                                     <p class="home-choose-card__text">
-                                        Proactive maintenance, performance monitoring, and responsive assistance whenever you need it.
+                                        Proactive maintenance, performance monitoring, and responsive assistance whenever
+                                        you need it.
                                     </p>
                                 </div>
                             </div>
@@ -582,9 +624,11 @@
 
                 <div class="col-lg-6 ps-lg-4">
                     <div class="choose-img">
-                        <img src="{{ url('public/assets/images/choose-img.jpg') }}"
-                            alt="Why choose Hytrix Technologies for IT solutions"
-                            class="img-fluid rounded-4 shadow-sm"
+                        <img src="{{ asset('public/assets/images/choose-img.webp') }}"
+                            alt="Why choose Hytrix Technologies for IT solutions" class="img-fluid rounded-4 shadow-sm"
+                             loading="lazy" decoding="async"><img
+                            src="{{ url('public/assets/images/choose-img (2).webp') }}"
+                            alt="Why choose Hytrix Technologies for IT solutions" class="img-fluid rounded-4 shadow-sm"
                             style="border-radius: 20px;">
                     </div>
                 </div>
@@ -600,7 +644,8 @@
                 <span class="badge bg-white text-primary px-3 py-2 rounded-pill mb-3 fw-bold">Let's Collaborate</span>
                 <h2>Ready to Build Your Next Digital Product?</h2>
                 <p>
-                    From custom web apps to enterprise software and cloud platforms, our technical team is ready to make your vision a reality.
+                    From custom web apps to enterprise software and cloud platforms, our technical team is ready to make
+                    your vision a reality.
                 </p>
                 <div class="d-flex justify-content-center gap-3 flex-wrap">
                     <a href="{{ route('contact') }}" class="default-btn btn-bg-two">
@@ -610,5 +655,4 @@
             </div>
         </div>
     </section>
-
 @endsection

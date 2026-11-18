@@ -1,85 +1,472 @@
+
 @extends('admin.layout.master')
 
 @section('content')
 
-	<!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
+<!-- DataTables Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap4.min.css">
+
+<style>
+    /* =====================================
+       HYTRIX JOB CONTACT DETAILS
+    ===================================== */
+
+    .content-wrapper {
+        background: #f1f5fc !important;
+        min-height: 100vh;
+    }
+
+    .content-header {
+        padding: 24px 20px 12px;
+    }
+
+    .content-header h1 {
+        color: #263d79;
+        font-size: 25px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .breadcrumb {
+        background: transparent;
+        padding: 8px 0;
+        margin-bottom: 0;
+    }
+
+    .breadcrumb-item {
+        font-size: 13px;
+        color: #8995ad;
+    }
+
+    .breadcrumb-item a {
+        color: #50a9d5;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .breadcrumb-item.active {
+        color: #263d79;
+        font-weight: 600;
+    }
+
+    .job-contact-section {
+        padding: 12px 20px 30px;
+    }
+
+    .job-contact-card {
+        background: #fff;
+        border: 1px solid #e6edf7;
+        border-radius: 15px;
+        box-shadow: 0 5px 24px rgba(38, 61, 121, 0.07);
+        overflow: hidden;
+    }
+
+    .job-contact-card-header {
+        padding: 20px 24px;
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        border-bottom: 1px solid #edf1f7;
+        background: linear-gradient(120deg, #fff, #f7faff);
+    }
+
+    .job-contact-icon {
+        width: 45px;
+        height: 45px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 19px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #263d79, #50c4e2);
+        box-shadow: 0 5px 12px rgba(38, 61, 121, .18);
+    }
+
+    .job-contact-card-header h5 {
+        margin: 0;
+        color: #263d79;
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    .job-contact-card-header p {
+        margin: 4px 0 0;
+        color: #8995ad;
+        font-size: 12px;
+    }
+
+    .job-contact-card-body {
+        padding: 22px 24px;
+    }
+
+    /* Table */
+
+    #example1 {
+        width: 100% !important;
+        border-collapse: separate !important;
+        border-spacing: 0;
+        margin-top: 10px !important;
+    }
+
+    #example1 thead th {
+        background: #f1f5fc;
+        color: #344f91;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .4px;
+        padding: 15px 14px;
+        white-space: nowrap;
+        border-top: 1px solid #e4ebf5;
+        border-bottom: 1px solid #e4ebf5;
+    }
+
+    #example1 tbody td {
+        color: #52617d;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 14px;
+        vertical-align: middle;
+        border-bottom: 1px solid #edf1f7;
+    }
+
+    #example1 tbody tr {
+        transition: background .2s ease;
+    }
+
+    #example1 tbody tr:hover {
+        background: #f7faff;
+    }
+
+    #example1 tbody td:first-child {
+        color: #344f91;
+        font-weight: 700;
+    }
+
+    #example1 tbody td:nth-child(2),
+    #example1 tbody td:nth-child(3) {
+        color: #263d79;
+        font-weight: 600;
+    }
+
+    #example1 tbody td:nth-child(4) {
+        color: #438eae;
+    }
+
+    #example1 tfoot th {
+        background: #f7f9fd;
+        color: #344f91;
+        font-size: 11px;
+        font-weight: 700;
+        padding: 12px 14px;
+        text-transform: uppercase;
+        border-top: 1px solid #e5ebf5;
+    }
+
+    .cv-frame {
+        width: 50px;
+        height: 50px;
+        border: 1px solid #dce6f5;
+        border-radius: 8px;
+        background: #f5f8fd;
+        display: block;
+    }
+
+    /* DataTables search and entries */
+
+    .dataTables_wrapper {
+        color: #66738d;
+        font-size: 13px;
+    }
+
+    .dataTables_wrapper .dataTables_length,
+    .dataTables_wrapper .dataTables_filter {
+        margin-bottom: 15px;
+        color: #52617d;
+        font-size: 13px;
+    }
+
+    .dataTables_wrapper .dataTables_length select,
+    .dataTables_wrapper .dataTables_filter input {
+        height: 36px;
+        border: 1px solid #dce5f2;
+        border-radius: 7px;
+        color: #344f91;
+        background: #fff;
+        outline: none;
+        padding: 5px 10px;
+        box-shadow: none;
+    }
+
+    .dataTables_wrapper .dataTables_filter input {
+        margin-left: 7px;
+        min-width: 190px;
+    }
+
+    .dataTables_wrapper .dataTables_length select:focus,
+    .dataTables_wrapper .dataTables_filter input:focus {
+        border-color: #50b9dc;
+        box-shadow: 0 0 0 3px rgba(80, 196, 226, .12);
+    }
+
+    .dataTables_wrapper .dataTables_info {
+        padding-top: 15px;
+        color: #8995ad;
+        font-size: 12px;
+    }
+
+    /* Pagination */
+/* Simple Small Pagination */
+.dataTables_wrapper .dataTables_paginate {
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 3px 8px !important;
+    margin: 0 2px !important;
+    font-size: 11px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 3px !important;
+    background: #fff !important;
+    color: #344f91 !important;
+    min-width: 25px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background: #344f91 !important;
+    color: #fff !important;
+    border-color: #344f91 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #eee !important;
+    color: #263d79 !important;
+    border-color: #ccc !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
+    color: #aaa !important;
+    background: #f8f8f8 !important;
+}
+
+</style>
+
+<!-- Content Wrapper -->
+<div class="content-wrapper">
+
+    <!-- Content Header -->
     <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1>Job Contact mail Details</h1>
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Job Contact mail Details</li>
-            </ol>
-          </div>
+        <div class="container-fluid">
+            <div class="row mb-2 align-items-center">
+
+                <div class="col-sm-6">
+                    <h1>Job Contact Mail Details</h1>
+                </div>
+
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            Job Contact Mail Details
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
         </div>
-      </div><!-- /.container-fluid -->
     </section>
 
+    <!-- Main Content -->
+    <section class="content job-contact-section">
+        <div class="container-fluid">
 
+            <div class="row">
+                <div class="col-md-12">
 
-    <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
-        <div class="row">
-	<div class="col-md-12">
-            <div class="card">
-              
-              <!-- /.card-header -->
-              <div class="card-body">
-                <table id="example1" class="table table-bordered table-striped">
-                  <thead>
-                  <tr>
-                    <th>Sr.</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email</th>
-                    <th>Mobile</th>
-                    <th>CV</th>
-                  </tr>
-                  </thead>
-                  <?php $i=0; ?>
-                  <tbody>
-                  @foreach($data as $datas)
-                    <tr>
-                      <td>{{++$i}}</td>
-                      <td>{{$datas->fname}}</td>
-                      <td>{{$datas->lname}}</td>
-                      <td>{{$datas->email}}</td>
-                      <td>{{$datas->mobile}}</td>
-                      <td><iframe src="{{asset('/public/assets/file')}}/{{$datas->file}}" style="width:50px;height:50px"></iframe></td>
-                    </tr>
-                  @endforeach      
-                  <tfoot>
-                  <tr>
-                    <th>Sr.</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email</th>
-                    <th>Mobile</th>
-                    <th>CV</th>
-                  </tr>
-                  </tfoot>
-                </table>
-              </div>
-              <!-- /.card-body -->
+                    <div class="job-contact-card">
+
+                        <!-- Card Header -->
+                        <div class="job-contact-card-header">
+
+                            <div class="job-contact-icon">
+                                <i class="fas fa-envelope-open-text"></i>
+                            </div>
+
+                            <div>
+                                <h5>Job Contact Submissions</h5>
+                                <p>Manage candidate details and submitted CVs</p>
+                            </div>
+
+                        </div>
+
+                        <!-- Card Body -->
+                        <div class="job-contact-card-body">
+
+                            <div class="table-responsive">
+
+                                <table id="example1" class="table">
+
+                                    <thead>
+                                        <tr>
+                                            <th>Sr.</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Email</th>
+                                            <th>Mobile</th>
+                                            <th>CV</th>
+                                        </tr>
+                                    </thead>
+
+                                    <?php $i = 0; ?>
+
+                                    <tbody>
+
+                                        @foreach($data as $datas)
+
+                                        <tr>
+                                            <td>{{++$i}}</td>
+
+                                            <td>{{$datas->fname}}</td>
+
+                                            <td>{{$datas->lname}}</td>
+
+                                            <td>{{$datas->email}}</td>
+
+                                            <td>{{$datas->mobile}}</td>
+
+                                            <td>
+                                                <iframe
+                                                    src="{{asset('/public/assets/file')}}/{{$datas->file}}"
+                                                    class="cv-frame">
+                                                </iframe>
+                                            </td>
+                                        </tr>
+
+                                        @endforeach
+
+                                    </tbody>
+
+                                    <tfoot>
+                                        <tr>
+                                            <th>Sr.</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Email</th>
+                                            <th>Mobile</th>
+                                            <th>CV</th>
+                                        </tr>
+                                    </tfoot>
+
+                                </table>
+
+                            </div>
+
+                        </div>
+                        <!-- Card Body End -->
+
+                    </div>
+
+                </div>
             </div>
-            <!-- /.card -->
-          </div>
-   		  </div>
-       </div><!-- /.container-fluid -->	
-		</div>
-	 </div>
-	</section>	
-	
-	
-</div> <!-- Content Wrapper end. Contains page content -->
+
+        </div>
+    </section>
+
+</div>
+<!-- Content Wrapper End -->
+
+<!-- DataTables Initialization -->
+<script>
+    window.addEventListener('load', function () {
+
+        function initializeContactTable() {
+
+            if (!window.jQuery) {
+                console.error('jQuery is not loaded. Please check admin master layout.');
+                return;
+            }
+
+            if (typeof jQuery.fn.DataTable === 'undefined') {
+                console.error('DataTables could not be loaded.');
+                return;
+            }
+
+            if (jQuery.fn.DataTable.isDataTable('#example1')) {
+                return;
+            }
+
+            jQuery('#example1').DataTable({
+                paging: true,
+                pageLength: 10,
+                lengthChange: true,
+                lengthMenu: [
+                    [5, 10, 25, 50, 100],
+                    [5, 10, 25, 50, 100]
+                ],
+                searching: true,
+                ordering: true,
+                info: true,
+                autoWidth: false,
+                pagingType: 'simple_numbers',
+
+                columnDefs: [
+                    {
+                        targets: 5,
+                        orderable: false,
+                        searchable: false
+                    }
+                ],
+
+                language: {
+                    search: 'Search:',
+                    searchPlaceholder: 'Search candidates...',
+                    lengthMenu: 'Show _MENU_ entries',
+                    info: 'Showing _START_ to _END_ of _TOTAL_ entries',
+                    infoEmpty: 'Showing 0 to 0 of 0 entries',
+                    infoFiltered: '(filtered from _MAX_ total entries)',
+                    zeroRecords: 'No matching records found',
+                    emptyTable: 'No job contact records available',
+                    paginate: {
+                        previous: 'Previous',
+                        next: 'Next'
+                    }
+                }
+            });
+        }
+
+        // If DataTables is already loaded in master layout
+        if (window.jQuery && jQuery.fn.DataTable) {
+            initializeContactTable();
+            return;
+        }
+
+        // Load DataTables core only when not already available
+        var coreScript = document.createElement('script');
+        coreScript.src = 'https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js';
+
+        coreScript.onload = function () {
+
+            var bootstrapScript = document.createElement('script');
+            bootstrapScript.src = 'https://cdn.datatables.net/1.13.8/js/dataTables.bootstrap4.min.js';
+
+            bootstrapScript.onload = initializeContactTable;
+
+            document.body.appendChild(bootstrapScript);
+        };
+
+        document.body.appendChild(coreScript);
+
+    });
+</script>
+
 @endsection
+
 @section('title')
-Job Mail Details 
+Job Mail Details
 @endsection
+

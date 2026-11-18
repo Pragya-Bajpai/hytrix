@@ -182,5 +182,32 @@
         }
     };
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
 
+    function fixAccessibility() {
+
+        // Owl Carousel dots
+        document.querySelectorAll('.banner-slider .owl-dot').forEach(function (dot, index) {
+            dot.setAttribute('aria-label', 'Go to slide ' + (index + 1));
+            dot.setAttribute('type', 'button');
+        });
+
+        // Mobile hamburger menu
+        document.querySelectorAll('.meanmenu-reveal').forEach(function (menu) {
+            menu.setAttribute('aria-label', 'Open navigation menu');
+            menu.setAttribute('title', 'Open navigation menu');
+        });
+    }
+
+    // First check
+    fixAccessibility();
+
+    // Check again because Owl/MeanMenu create elements dynamically
+    setTimeout(fixAccessibility, 500);
+    setTimeout(fixAccessibility, 1000);
+    setTimeout(fixAccessibility, 2000);
+
+});
+</script>
 {{-- ====== End: Footer ====== --}}

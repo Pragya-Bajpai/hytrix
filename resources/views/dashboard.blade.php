@@ -572,7 +572,7 @@
                   <!-- button with a dropdown -->
                   <div class="btn-group">
                     <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown" data-offset="-52">
-                      <i class="fas fa-bars"></i> 
+                      <i class="fas fa-bars"></i>
                     </button>
                     <div class="dropdown-menu" role="menu">
                       <a href="#" class="dropdown-item">Add new event</a>
@@ -602,8 +602,8 @@
           <!-- right col -->
         </div>
         <!-- /.row (main row) -->
-      </div><!-- /.container-fluid -->   
+      </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-  </div>  
+  </div>
 @endsection

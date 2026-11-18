@@ -57,56 +57,144 @@
     </section>
 
     {{-- ====== Open Positions Section ====== --}}
-    <section class="py-5">
-        <div class="container py-lg-4">
-            <div class="section-title text-center mb-4 mb-lg-5">
-                <span class="sp-color1">Opportunities</span>
-                <h2 class="mb-2">Current Job Openings</h2>
-                <p class="margin-auto">
-                    Explore available positions and take the next leap in your professional journey.
-                </p>
-            </div>
+    {{-- ====== Open Positions Section ====== --}}
+<section class="career-jobs-section py-5">
+    <div class="container py-lg-4">
 
-            <div class="row pt-4">
-                @if(isset($data) && count($data) > 0)
-                    @foreach($data as $careers)
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
-                                <div>
-                                    @if(!empty($careers->file))
-                                        <div class="mb-3" style="width: 70px; height: 70px; overflow: hidden; border-radius: var(--radius-md);">
-                                            <img src="{{ asset('public/'.$careers->file) }}" class="img-fluid w-100 h-100 object-fit-cover" alt="{{ $careers->title }}">
-                                        </div>
-                                    @else
-                                        <div class="mb-3">
-                                            <i class='bx bx-briefcase' style="font-size: 36px; color: var(--color-accent-link);"></i>
-                                        </div>
-                                    @endif
-
-                                    <h3 class="mb-3">{{ $careers->title }}</h3>
-
-                                    <div class="text-muted mb-4 fs-6">
-                                        {!! $careers->description !!}
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <a href="{{ url('application') }}" class="default-btn btn-bg-two">
-                                        Apply Now <i class='bx bx-chevron-right'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-                @else
-                    <div class="col-12 text-center py-5">
-                        <i class='bx bx-briefcase-alt-2' style="font-size: 48px; color: var(--color-text-muted);"></i>
-                        <h4 class="mt-3 text-muted">No open positions currently</h4>
-                        <p class="text-muted">You can still send your CV to <a href="mailto:info@hytrix.in">info@hytrix.in</a> for future opportunities.</p>
-                    </div>
-                @endif
-            </div>
+        <div class="section-title text-center mb-4 mb-lg-5">
+            <span class="sp-color1">Opportunities</span>
+            <h2 class="mb-2">Current Job Openings</h2>
+            <p class="margin-auto">
+                Explore available positions and take the next step in your professional journey.
+            </p>
         </div>
-    </section>
 
+
+        <div class="row g-4">
+
+            @if(isset($data) && count($data) > 0)
+
+                @foreach($data as $careers)
+
+                    @php
+                        $jobTitle = strtolower($careers->title ?? '');
+
+                        if (
+                            str_contains($jobTitle, 'php') ||
+                            str_contains($jobTitle, 'laravel') ||
+                            str_contains($jobTitle, 'developer') ||
+                            str_contains($jobTitle, 'web')
+                        ) {
+                            $jobIcon = 'bx bx-code-alt';
+                        } elseif (
+                            str_contains($jobTitle, 'ui') ||
+                            str_contains($jobTitle, 'ux') ||
+                            str_contains($jobTitle, 'designer')
+                        ) {
+                            $jobIcon = 'bx bx-palette';
+                        } elseif (
+                            str_contains($jobTitle, 'marketing') ||
+                            str_contains($jobTitle, 'seo')
+                        ) {
+                            $jobIcon = 'bx bx-line-chart';
+                        } elseif (
+                            str_contains($jobTitle, 'hr') ||
+                            str_contains($jobTitle, 'human')
+                        ) {
+                            $jobIcon = 'bx bx-group';
+                        } elseif (
+                            str_contains($jobTitle, 'sales')
+                        ) {
+                            $jobIcon = 'bx bx-bar-chart-alt-2';
+                        } else {
+                            $jobIcon = 'bx bx-briefcase-alt-2';
+                        }
+                    @endphp
+
+
+                    <div class="col-lg-4 col-md-6">
+
+                        <div class="career-job-card h-100">
+
+                            {{-- Top Icon --}}
+                            <div class="career-job-icon">
+                                <i class="{{ $jobIcon }}"></i>
+                            </div>
+
+
+                            {{-- Job Content --}}
+                            <div class="career-job-content">
+
+                                <span class="career-job-label">
+                                    <i class='bx bx-briefcase'></i>
+                                    Career Opportunity
+                                </span>
+
+                                <h3>
+                                    {{ $careers->title }}
+                                </h3>
+
+                                <div class="career-job-description">
+                                    {!! $careers->description !!}
+                                </div>
+
+                            </div>
+
+
+                            {{-- Apply Button --}}
+                            <div class="career-job-footer">
+
+                                <a href="{{ url('application') }}"
+                                   class="career-apply-btn">
+
+                                    Apply Now
+
+                                    <i class='bx bx-right-arrow-alt'></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                @endforeach
+
+            @else
+
+                <div class="col-12">
+
+                    <div class="career-empty-state text-center">
+
+                        <div class="career-empty-icon">
+                            <i class='bx bx-briefcase-alt-2'></i>
+                        </div>
+
+                        <h4>No Open Positions Currently</h4>
+
+                        <p>
+                            We don't have any active openings right now,
+                            but we'd still love to hear from you.
+                        </p>
+
+                        <a href="mailto:info@hytrix.in"
+                           class="career-email-btn">
+
+                            Send Your CV
+
+                            <i class='bx bx-envelope'></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            @endif
+
+        </div>
+
+    </div>
+</section>
 @endsection

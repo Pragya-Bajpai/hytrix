@@ -25,7 +25,6 @@
 @extends('home.layout.main')
 
 @section('content')
-
     {{-- ====== Contact Hero Banner ====== --}}
     <section class="portfolio-hero">
         <div class="container">
@@ -34,7 +33,8 @@
                     <span class="hero-badge">Get In Touch</span>
                     <h1>Contact Hytrix Technologies</h1>
                     <p>
-                        Have a project in mind, need technical assistance, or want a free consultation? Send us a message and our team will get back to you promptly.
+                        Have a project in mind, need technical assistance, or want a free consultation? Send us a message
+                        and our team will get back to you promptly.
                     </p>
                 </div>
             </div>
@@ -48,7 +48,7 @@
             {{-- Flash messages --}}
             <div class="row">
                 <div class="col-12">
-                    @if(session()->has('success'))
+                    @if (session()->has('success'))
                         <div class="alert alert-success alert-dismissible fade show mb-4" role="alert">
                             <i class='bx bx-check-circle me-2'></i> {{ session()->get('success') }}
                         </div>
@@ -90,9 +90,12 @@
                                 </div>
                                 <div class="content ms-2">
                                     <h3 class="fs-6 fw-bold mb-1">Phone Numbers</h3>
-                                    <a href="tel:+919076500530" class="d-block small text-decoration-none">+91 9076500530 (Manager)</a>
-                                    <a href="tel:+919076500528" class="d-block small text-decoration-none">+91 9076500528 (Sales Team)</a>
-                                    <a href="tel:+919076500529" class="d-block small text-decoration-none">+91 9076500529 (Dev Team)</a>
+                                    <a href="tel:+919076500530" class="d-block small text-decoration-none">+91 9076500530
+                                        (Manager)</a>
+                                    <a href="tel:+919076500528" class="d-block small text-decoration-none">+91 9076500528
+                                        (Sales Team)</a>
+                                    <a href="tel:+919076500529" class="d-block small text-decoration-none">+91 9076500529
+                                        (Dev Team)</a>
                                 </div>
                             </li>
 
@@ -103,8 +106,10 @@
                                 </div>
                                 <div class="content ms-2">
                                     <h3 class="fs-6 fw-bold mb-1">Email Inquiries</h3>
-                                    <a href="mailto:info@hytrix.in" class="d-block small text-decoration-none">info@hytrix.in</a>
-                                    <a href="mailto:hytrixtech@gmail.com" class="d-block small text-decoration-none">hytrixtech@gmail.com</a>
+                                    <a href="mailto:info@hytrix.in"
+                                        class="d-block small text-decoration-none">info@hytrix.in</a>
+                                    <a href="mailto:hytrixtech@gmail.com"
+                                        class="d-block small text-decoration-none">hytrixtech@gmail.com</a>
                                 </div>
                             </li>
 
@@ -138,8 +143,10 @@
                                 {{-- Name --}}
                                 <div class="col-lg-6 mb-3">
                                     <div class="form-group">
-                                        <label class="form-label text-muted">Your Name <span class="text-danger">*</span></label>
-                                        <input type="text" name="name" class="form-control" placeholder="Full name" value="{{ old('name') }}" required>
+                                        <label class="form-label text-muted">Your Name <span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" name="name" class="form-control" placeholder="Full name"
+                                            value="{{ old('name') }}" required>
                                         @error('name')
                                             <span class="text-danger small">{{ $message }}</span>
                                         @enderror
@@ -149,8 +156,10 @@
                                 {{-- Email --}}
                                 <div class="col-lg-6 mb-3">
                                     <div class="form-group">
-                                        <label class="form-label text-muted">Your Email <span class="text-danger">*</span></label>
-                                        <input type="email" name="email" id="email" class="form-control" placeholder="Email address" value="{{ old('email') }}" required>
+                                        <label class="form-label text-muted">Your Email <span
+                                                class="text-danger">*</span></label>
+                                        <input type="email" name="email" id="email" class="form-control"
+                                            placeholder="Email address" value="{{ old('email') }}" required>
                                         @error('email')
                                             <span class="text-danger small">{{ $message }}</span>
                                         @enderror
@@ -160,8 +169,10 @@
                                 {{-- Phone --}}
                                 <div class="col-lg-6 mb-3">
                                     <div class="form-group">
-                                        <label class="form-label text-muted">Phone Number <span class="text-danger">*</span></label>
-                                        <input type="tel" name="phone_number" id="phone_number" class="form-control" placeholder="Phone number" value="{{ old('phone_number') }}" required>
+                                        <label class="form-label text-muted">Phone Number <span
+                                                class="text-danger">*</span></label>
+                                        <input type="tel" name="phone_number" id="phone_number" class="form-control"
+                                            placeholder="Phone number" value="{{ old('phone_number') }}" required>
                                         @error('phone_number')
                                             <span class="text-danger small">{{ $message }}</span>
                                         @enderror
@@ -171,8 +182,10 @@
                                 {{-- Subject --}}
                                 <div class="col-lg-6 mb-3">
                                     <div class="form-group">
-                                        <label class="form-label text-muted">Subject <span class="text-danger">*</span></label>
-                                        <input type="text" name="msg_subject" id="msg_subject" class="form-control" placeholder="Project or topic" value="{{ old('msg_subject') }}" required>
+                                        <label class="form-label text-muted">Subject <span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" name="msg_subject" id="msg_subject" class="form-control"
+                                            placeholder="Project or topic" value="{{ old('msg_subject') }}" required>
                                         @error('msg_subject')
                                             <span class="text-danger small">{{ $message }}</span>
                                         @enderror
@@ -182,8 +195,10 @@
                                 {{-- Message --}}
                                 <div class="col-12 mb-3">
                                     <div class="form-group">
-                                        <label class="form-label text-muted">Your Message <span class="text-danger">*</span></label>
-                                        <textarea name="message" class="form-control" id="message" cols="30" rows="6" placeholder="Describe your project, goals, or inquiry..." required>{{ old('message') }}</textarea>
+                                        <label class="form-label text-muted">Your Message <span
+                                                class="text-danger">*</span></label>
+                                        <textarea name="message" class="form-control" id="message" cols="30" rows="6"
+                                            placeholder="Describe your project, goals, or inquiry..." required>{{ old('message') }}</textarea>
                                         @error('message')
                                             <span class="text-danger small">{{ $message }}</span>
                                         @enderror
@@ -193,9 +208,12 @@
                                 {{-- Agreement Checkbox --}}
                                 <div class="col-12 mb-4">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="chb1" name="check" required>
+                                        <input class="form-check-input" type="checkbox" id="chb1" name="check"
+                                            required>
                                         <label class="form-check-label small" for="chb1">
-                                            I agree to the <a href="{{ route('terms.conditions') }}" target="_blank">Terms &amp; Conditions</a> and <a href="{{ route('privacy.policy') }}" target="_blank">Privacy Policy</a>.
+                                            I agree to the <a href="{{ route('terms.conditions') }}"
+                                                target="_blank">Terms &amp; Conditions</a> and <a
+                                                href="{{ route('privacy.policy') }}" target="_blank">Privacy Policy</a>.
                                         </label>
                                         @error('check')
                                             <span class="text-danger small d-block">{{ $message }}</span>
@@ -218,5 +236,19 @@
             </div>
         </div>
     </div>
+    {{-- ====== Office Location ====== --}}
+    <section class="contact-location-section">
 
+
+        {{-- Map --}}
+        <div class="contact-map">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.2832528097756!2d80.99435747421917!3d26.86274036223859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be31536bf235d%3A0xd7a666d31c9772a0!2sHytrix%20Technology%20LLP!5e0!3m2!1sen!2sin!4v1787050185605!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+        </div>
+
+    </section>
 @endsection

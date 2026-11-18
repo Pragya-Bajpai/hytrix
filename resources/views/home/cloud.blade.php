@@ -150,7 +150,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="choose-content mr-lg-20">
-                        <div class="section-title">
+                        <div class="section-title mt-5">
                             <span class="sp-color1">WHY CLOUD COMPUTING?</span>
                             <h2>Strategic Business Advantages of the Cloud</h2>
                         </div>

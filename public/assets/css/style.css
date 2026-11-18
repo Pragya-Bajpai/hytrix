@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 
 /* ====================================================
    CSS DESIGN TOKENS — Single source of truth for
@@ -9,15 +8,15 @@
 
 :root {
     /* --- Brand Colors --- */
-    --color-primary: #041237;
+    --color-primary: #070b3b;
     /* Deep navy — primary brand */
-    --color-primary-dark: #001239;
+    --color-primary-dark: #070b3b;
     /* Darker navy — buttons, bg */
-    --color-accent: #72bede;
+    --color-accent: #0977aa;
     /* Sky blue — highlights, accents */
     --color-accent-bright: #04bdff;
     /* Bright cyan — sp-color1/2 */
-    --color-accent-link: #0071dc;
+    --color-accent-link: #33488b;
     /* Link / active state blue */
     --color-top-bar: #00abe7;
     /* Top header bar background */
@@ -248,7 +247,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3.2rem;
+    font-size: 3rem;
 }
 
 h3 {
@@ -368,7 +367,7 @@ img {
 }
 
 .section-title p {
-    max-width: 53rem;
+    /* max-width: 53rem; */
     color: var(--color-text-body);
     margin-bottom: 0;
 }
@@ -501,10 +500,6 @@ Top Header
     float: right;
 }
 
-.top-header-right {
-    float: right;
-}
-
 .social-handles {
     list-style: none;
     display: flex;
@@ -582,7 +577,7 @@ Top Header
     border-radius: 0.5rem 0 0 0.5rem;
     background-color: transparent;
     color: var(--color-bg-white);
-    border-radius: 0;
+
     margin-bottom: 0;
     z-index: 9999;
 }
@@ -1393,17 +1388,23 @@ Main Banner Area
 }
 
 .item-bg1 {
-    background-image: url(../images/home-one/ht-banner1.jpg);
+    background-image: url(../images/home-one/ht-banner1.webp);
 }
 
 .item-bg2 {
-    background-image: url(../images/home-one/ht-banner2.jpg);
+    background-image: url(../images/home-one/ht-banner2.webp);
 }
 
 .item-bg3 {
-    background-image: url(../images/home-one/home-one-img3.jpg);
+    background-image: url(../images/home-one/home-one-img1.webp);
 }
-
+.item-bg1,
+.item-bg2,
+.item-bg3 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .banner-area {
     position: relative;
     z-index: 1;
@@ -1715,15 +1716,22 @@ Main Banner Area
     position: relative;
 }
 
-.banner-sideImg {
-    position: absolute;
-    top: 10%;
-    right: 0;
-    z-index: 2;
+.banner-sideImg{
+    position:absolute;
+    top:10%;
+    right:0;
+    z-index:2;
+    width:500px;
+    height:500px;
 }
 
-.banner-sideImg img {
-    width: 90%;
+.banner-sideImg img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    margin-top:60px;
+    margin-right:100px;
 }
 
 .banner-sideImg img {
@@ -1731,10 +1739,6 @@ Main Banner Area
     animation: mover 1s infinite alternate;
 }
 
-.banner-sideImg img {
-    -webkit-animation: mover 1s infinite alternate;
-    animation: mover 1s infinite alternate;
-}
 
 @keyframes mover {
     0% {
@@ -1754,7 +1758,77 @@ Main Banner Area
 /*==================================
 Main Banner Area End
 =================================*/
+/* =========================================
+   HERO SLIDER - CLS FIX
+========================================= */
 
+.banner-slider-area {
+    position: relative;
+    width: 100%;
+}
+
+.banner-slider {
+    width: 100%;
+}
+
+.banner-item {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    min-height: 650px;
+
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.banner-item .d-table {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-item .d-table-cell {
+    vertical-align: middle;
+}
+
+.banner-item-content {
+    max-width: 65rem;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .banner-item {
+        height: 700px;
+        min-height: 700px;
+    }
+
+    .banner-item .d-table {
+        height: 100%;
+    }
+
+    .banner-item-content {
+        max-width: 100%;
+    }
+
+    .banner-sideImg {
+        width: 220px;
+        height: 220px;
+        right: 0;
+        top: auto;
+        bottom: 20px;
+    }
+
+    .banner-sideImg img {
+        margin-top: 0;
+        margin-right: 0;
+    }
+}
 /*==================================
 Banner Bottom Area
 =================================*/
@@ -1915,8 +1989,6 @@ About Area
     -webkit-transition: 0.5s;
     transition: 0.5s;
     padding-left: 2.4rem;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
 }
 
 .about-content .about-list li:hover {
@@ -2950,9 +3022,28 @@ Work Area End
 }
 
 .choose-img img {
-    border-radius: 1.5rem;
+    width: 100%;
+    height: auto !important;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+	border-radius: 1.5rem;
 }
+@media (max-width: 767px) {
 
+    .choose-img {
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .choose-img img {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100%;
+        object-fit: contain !important;
+    }
+
+}
 .choose-content-two .section-title {
     margin-bottom: 2.5rem;
 }
@@ -4199,8 +4290,8 @@ Brand Area
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../images/brand-logo/brand-bg.png);
-}
 
+}
 .brand-area-two {
     position: relative;
     background-color: var(--color-accent-link);
@@ -4297,7 +4388,7 @@ Clients Area
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     right: -7%;
-    color: var(--color-text-body) !important;
+    /**color: var(--color-text-body) !important;**/
     font-size: 2.5rem !important;
     -webkit-transition: 0.7s;
     transition: 0.7s;
@@ -4363,7 +4454,7 @@ Clients Area
     top: 0;
     left: 0;
     border-radius: 50%;
-    width: unset !important;
+    /*width: unset !important;*/
     width: 8.5rem !important;
     height: 8.5rem !important;
 }
@@ -4947,7 +5038,6 @@ Blog Area End
 }
 
 .blog-item .content ul li a i {
-    font-size: 2rem;
     color: var(--color-accent-link);
     margin-right: 0.5rem;
     position: relative;
@@ -5422,7 +5512,6 @@ Blog Area End
 .side-bar-widget .side-bar-categories ul li a {
     display: inline-block;
     color: var(--color-text-body);
-    font-weight: normal;
     padding: 0.5rem 0 0.5rem 2.5rem;
     font-weight: 600;
     position: relative;
@@ -5793,7 +5882,7 @@ Faq Area
     position: absolute;
     right: 1.5rem;
     top: 1.4rem;
-    font-size: 2.5rem;
+
     -webkit-transition: 0.5s;
     transition: 0.5s;
     font-size: 2.4rem;
@@ -6351,10 +6440,8 @@ Coming Soon Area
     display: block;
     width: 100%;
     height: 6rem;
-    border: none;
     background-color: var(--color-text-white);
     padding-left: 1.5rem;
-    color: var(--color-text-white);
     outline: 0;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -7344,7 +7431,7 @@ Home Page Six Css End
 }
 
 .footer-logo a img {
-    width: 6.3rem;
+    width: 9rem;
     border-radius: 0.5rem;
 }
 
@@ -7979,110 +8066,6 @@ Home Page Six Css End
 
 /* ====== END: Portfolio Page ====== */
 
-/* ====== SECTION: Web Dev — Tech Cards (bx icon variant) ====== */
-
-.tech-card {
-    position: relative;
-    height: 100%;
-    min-height: 26rem;
-    padding: 3.2rem 2.5rem;
-    background: var(--color-bg-white);
-    border: 0.1rem solid var(--color-border);
-    border-radius: 1.5rem;
-    overflow: hidden;
-    box-shadow: var(--shadow-md);
-    transition: var(--transition-base);
-    margin-bottom: 2.4rem;
-}
-
-/* Top accent line */
-.tech-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0.4rem;
-    background: var(--gradient-primary-h);
-}
-
-/* Background circle decoration */
-.tech-card::after {
-    content: "";
-    position: absolute;
-    width: 13rem;
-    height: 13rem;
-    right: -6.5rem;
-    bottom: -6.5rem;
-    border-radius: 50%;
-    background: var(--overlay-accent-8);
-    transition: var(--transition-slow);
-}
-
-.tech-card:hover {
-    transform: translateY(-0.8rem);
-    border-color: var(--color-accent);
-    box-shadow: var(--shadow-hover);
-}
-
-.tech-card:hover::after {
-    transform: scale(1.5);
-}
-
-/* Icon wrapper using bx icons */
-.tech-icon {
-    width: 6.8rem;
-    height: 6.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2.2rem;
-    border-radius: 1.4rem;
-    background: var(--gradient-primary);
-    box-shadow: 0 0.8rem 2rem var(--overlay-primary-18);
-}
-
-.tech-icon i {
-    color: var(--color-text-white);
-    font-size: 3rem;
-    line-height: 1;
-}
-
-/* Tech card content */
-.tech-content {
-    position: relative;
-    z-index: 2;
-}
-
-.tech-content h3 {
-    color: var(--color-primary);
-    font-size: 1.9rem;
-    font-weight: 700;
-    margin-bottom: 1.2rem;
-}
-
-.tech-content p {
-    color: var(--color-text-muted);
-    font-size: var(--font-size-sm);
-    line-height: 1.7;
-    margin-bottom: 0;
-}
-
-/* Large decorative number */
-.tech-number {
-    position: absolute;
-    right: 2rem;
-    top: 2.5rem;
-    color: var(--color-border);
-    font-size: 3.8rem;
-    font-weight: 800;
-    line-height: 1;
-    transition: var(--transition-base);
-}
-
-.tech-card:hover .tech-number {
-    color: var(--overlay-accent-25);
-}
 
 /* ====== END: Web Dev — Tech Cards ====== */
 
@@ -8333,83 +8316,272 @@ Home Page Six Css End
     margin-bottom: 0;
 }
 
-/* ====== SECTION: Modern Symmetrical Homepage Styles ====== */
 
-/* --- Modern Service Card --- */
+
+
+/* =========================================
+   HOME SERVICES - SERVICE CARD
+========================================= */
+
 .home-service-card {
-    background: var(--color-bg-white);
-    border: 0.1rem solid var(--color-border);
-    border-radius: var(--radius-md);
-    padding: 3.2rem 2.4rem;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+
+    padding: 30px 20px;
+    min-height: 280px;
     height: 100%;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: var(--transition-base);
-    box-shadow: var(--shadow-sm);
-    position: relative;
-    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+
+    transition:
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
 }
 
-.home-service-card::before {
+
+/* =========================================
+   BOTTOM-RIGHT HOVER CIRCLE
+========================================= */
+
+.home-service-card::after {
     content: "";
+
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 0.4rem;
-    background: var(--gradient-primary-h);
-    opacity: 0;
-    transition: var(--transition-base);
+    width: 140px;
+    height: 140px;
+
+    right: -40px;
+    bottom: -40px;
+
+    background: #0bb5ee;
+    opacity: 0.12;
+
+    border-radius: 50%;
+
+    transition:
+        width 1s ease-in-out,
+        height 1s ease-in-out,
+        right 1s ease-in-out,
+        bottom 1s ease-in-out,
+        border-radius 1s ease-in-out,
+        opacity 0.3s ease;
+
+    pointer-events: none;
+    z-index: 1;
 }
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.home-service-card > * {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================
+   SERVICE ICON
+========================================= */
+
+.home-service-card__icon {
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+    min-height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin-bottom: 18px;
+
+    background: transparent !important;
+    box-shadow: none !important;
+
+    line-height: 1;
+}
+
+
+.home-service-card__icon i {
+    display: inline-flex;
+
+    width: 42px;
+    height: 42px;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 42px;
+    line-height: 1;
+
+    color: #0bb5ee;
+
+    transition: color 0.7s ease;
+}
+
+
+/* =========================================
+   SERVICE TITLE
+========================================= */
+
+.home-service-card__title {
+    margin-bottom: 12px;
+
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.3;
+
+    color: #111111;
+
+    transition: color 0.7s ease;
+}
+
+
+/* =========================================
+   SERVICE DESCRIPTION
+========================================= */
+
+.home-service-card__text {
+    margin-bottom: 0;
+
+    font-size: 15px;
+    line-height: 1.65;
+
+    color: #444444;
+
+    transition: color 0.7s ease;
+}
+
+
+/* =========================================
+   LEARN MORE
+========================================= */
+
+.home-service-card .text-primary {
+    color: #0bb5ee !important;
+
+    transition: color 0.7s ease;
+}
+
+
+/* =========================================
+   CARD HOVER
+========================================= */
 
 .home-service-card:hover {
-    transform: translateY(-0.8rem);
-    box-shadow: var(--shadow-hover);
-    border-color: var(--color-accent);
+    border-color: #0bb5ee;
+
+    box-shadow: 0 12px 30px rgba(11, 181, 238, 0.25);
 }
 
-.home-service-card:hover::before {
+
+/* =========================================
+   HOVER CIRCLE → FULL CARD
+========================================= */
+
+.home-service-card:hover::after {
+    width: 100%;
+    height: 100%;
+
+    right: 0;
+    bottom: 0;
+
+    border-radius: 0;
+
+    background: #0bb5ee;
     opacity: 1;
 }
 
-.home-service-card__icon {
-    width: 5.2rem;
-    height: 5.2rem;
-    border-radius: 1.4rem;
-    background: var(--gradient-primary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2rem;
-    box-shadow: 0 0.6rem 1.8rem var(--overlay-primary-15);
-    transition: var(--transition-base);
+
+/* =========================================
+   HOVER TEXT / ICON COLORS
+========================================= */
+
+.home-service-card:hover .home-service-card__icon i {
+    color: #ffffff !important;
 }
 
-.home-service-card:hover .home-service-card__icon {
-    transform: scale(1.08) rotate(3deg);
+.home-service-card:hover .home-service-card__title {
+    color: #ffffff !important;
 }
 
-.home-service-card__icon i {
-    font-size: 3.2rem;
-    color: var(--color-text-white);
+.home-service-card:hover .home-service-card__text {
+    color: #ffffff !important;
 }
 
-.home-service-card__title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--color-primary);
-    margin-bottom: 1.2rem;
-    line-height: 1.3;
+
+/* =========================================
+   HOME SERVICES SECTION
+   CLS-SAFE
+========================================= */
+
+.home-services-section {
+    position: relative;
 }
 
-.home-service-card__text {
-    font-size: var(--font-size-sm);
-    color: var(--color-text-muted);
-    line-height: 1.65;
-    margin-bottom: 0;
+
+/* =========================================
+   HOME SERVICES TITLE
+========================================= */
+
+.home-services-title {
+    text-align: center;
 }
 
+.home-services-title h2 {
+    line-height: 1.2;
+}
+
+.home-services-title p {
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767.98px) {
+
+    .home-service-card {
+        min-height: 280px;
+    }
+
+    .home-service-card__icon {
+        width: 64px;
+        height: 64px;
+        min-width: 64px;
+        min-height: 64px;
+    }
+
+    .home-service-card__title {
+        font-size: 20px;
+    }
+
+    .home-service-card__text {
+        font-size: 15px;
+    }
+}
+
+
+/* =========================================
+   LEARN MORE WHITE
+========================================= */
+
+.home-service-card:hover .text-primary {
+    color: #ffffff !important;
+}
 /* --- Modern Process Card --- */
 .home-process-card {
     background: var(--color-bg-white);
@@ -8656,4 +8828,807 @@ Home Page Six Css End
 .application-form input[type="file"]::file-selector-button:hover,
 .application-form input[type="file"]::-webkit-file-upload-button:hover {
     background-color: var(--color-accent-link);
+}
+/* =========================================
+   CAREER JOB SECTION
+========================================= */
+
+.career-jobs-section {
+    background: #f8fbfd;
+}
+
+/* =========================================
+   CAREER JOB CARD
+========================================= */
+
+.career-job-card {
+    position: relative;
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #e8eef2;
+    border-radius: 18px;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+}
+
+/* Top blue line */
+/*
+.career-job-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 0;
+    height: 4px;
+
+    background: #0bb5ee;
+
+    transition: width 0.5s ease;
+} */
+
+/* Hover */
+
+.career-job-card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(11, 181, 238, 0.35);
+
+    box-shadow: 0 18px 45px rgba(11, 181, 238, 0.14);
+}
+
+.career-job-card:hover::before {
+    width: 100%;
+}
+
+/* =========================================
+   JOB ICON
+========================================= */
+
+.career-job-icon {
+    width: 64px;
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background: rgba(11, 181, 238, 0.1);
+
+    margin-bottom: 22px;
+
+    transition:
+        background 0.4s ease,
+        transform 0.4s ease;
+}
+
+.career-job-icon i {
+    font-size: 32px;
+
+    color: #070b3b;
+
+    transition: color 0.4s ease;
+}
+
+.career-job-card:hover .career-job-icon {
+    transform: translateY(-3px) rotate(-3deg);
+}
+
+.career-job-card:hover .career-job-icon i {
+    color: #070b3b;
+}
+
+/* =========================================
+   CAREER LABEL
+========================================= */
+
+.career-job-label {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 6px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    color: #0bb5ee;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.8px;
+
+    margin-bottom: 10px;
+}
+
+.career-job-label i {
+    font-size: 15px;
+}
+
+/* =========================================
+   JOB TITLE
+========================================= */
+
+.career-job-content h3 {
+    font-size: 22px;
+
+    line-height: 1.35;
+
+    font-weight: 700;
+
+    color: #17202a;
+
+    margin-bottom: 14px;
+
+    transition: color 0.3s ease;
+}
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.career-job-description {
+    color: #667085;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+.career-job-description p {
+    margin-bottom: 8px;
+}
+
+.career-job-description ul {
+    padding-left: 18px;
+    margin-bottom: 0;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.career-job-footer {
+    margin-top: auto;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #edf1f4;
+}
+
+/* =========================================
+   APPLY BUTTON
+========================================= */
+
+.career-apply-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    width: 100%;
+
+    padding: 12px 18px;
+
+    border-radius: 8px;
+
+    background: #001239;
+
+    color: #ffffff !important;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.career-apply-btn i {
+    font-size: 20px;
+
+    transition: transform 0.3s ease;
+}
+
+.career-apply-btn:hover {
+    background: #078fbe;
+
+    color: #ffffff !important;
+}
+
+.career-apply-btn:hover i {
+    transform: translateX(4px);
+}
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.career-empty-state {
+    background: #ffffff;
+
+    border: 1px solid #e8eef2;
+
+    border-radius: 18px;
+
+    padding: 60px 25px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+}
+
+.career-empty-icon {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(11, 181, 238, 0.1);
+}
+
+.career-empty-icon i {
+    font-size: 38px;
+
+    color: #001239;
+}
+
+.career-empty-state h4 {
+    font-size: 24px;
+
+    font-weight: 700;
+
+    color: #17202a;
+
+    margin-bottom: 10px;
+}
+
+.career-empty-state p {
+    color: #667085;
+
+    margin-bottom: 25px;
+}
+
+/* =========================================
+   SEND CV BUTTON
+========================================= */
+
+.career-email-btn {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 8px;
+
+    padding: 11px 22px;
+
+    background: #001239;
+
+    color: #ffffff !important;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.career-email-btn:hover {
+    background: #078fbe;
+    color: #ffffff !important;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 767px) {
+    .career-job-card {
+        padding: 24px;
+    }
+
+    .career-job-icon {
+        width: 58px;
+        height: 58px;
+    }
+
+    .career-job-content h3 {
+        font-size: 20px;
+    }
+}
+/* =========================================
+   OFFICE LOCATION
+========================================= */
+
+.contact-location-section {
+    background: #f7fafc;
+    padding-top: 60px;
+}
+
+/* Details Box */
+
+.location-details-box {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    gap: 22px;
+
+    background: #ffffff;
+
+    padding: 28px 30px;
+
+    border: 1px solid #e7edf1;
+
+    border-bottom: none;
+
+    border-radius: 16px 16px 0 0;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+/* Icon */
+
+.location-icon {
+    width: 65px;
+    height: 65px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(11, 181, 238, 0.1);
+
+    border-radius: 14px;
+}
+
+.location-icon i {
+    font-size: 32px;
+    color: #0bb5ee;
+}
+
+/* Content */
+
+.location-content {
+    flex: 1;
+}
+
+.location-content > span {
+    display: block;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: #0bb5ee;
+
+    margin-bottom: 5px;
+}
+
+.location-content h2 {
+    font-size: 22px;
+
+    font-weight: 700;
+
+    color: #17202a;
+
+    margin-bottom: 6px;
+}
+
+.location-content p {
+    color: #68737d;
+
+    font-size: 14px;
+
+    margin: 0;
+
+    line-height: 1.6;
+}
+
+/* Phone / Email */
+
+.location-info {
+    display: flex;
+
+    gap: 20px;
+
+    margin-top: 8px;
+}
+
+.location-info a {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    color: #68737d;
+
+    font-size: 13px;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.location-info a i {
+    color: #0bb5ee;
+    font-size: 17px;
+}
+
+.location-info a:hover {
+    color: #0bb5ee;
+}
+
+/* =========================================
+   OPEN MAP BUTTON
+========================================= */
+
+.open-map-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    flex-shrink: 0;
+
+    padding: 12px 18px;
+
+    background: #0bb5ee;
+
+    color: #ffffff !important;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.open-map-btn i {
+    font-size: 19px;
+
+    transition: transform 0.3s ease;
+}
+
+.open-map-btn:hover {
+    background: #078fbe;
+
+    color: #ffffff !important;
+}
+
+.open-map-btn:hover i {
+    transform: translateX(4px);
+}
+
+/* =========================================
+   MAP
+========================================= */
+
+.contact-map {
+    width: 100%;
+
+    overflow: hidden;
+
+    line-height: 0;
+}
+
+.contact-map iframe {
+    width: 100%;
+
+    height: 450px;
+
+    border: 0;
+
+    display: block;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+    .contact-location-section {
+        padding-top: 45px;
+    }
+
+    .location-details-box {
+        flex-wrap: wrap;
+
+        padding: 24px;
+
+        border-radius: 14px 14px 0 0;
+    }
+
+    .location-content {
+        width: calc(100% - 87px);
+        flex: none;
+    }
+
+    .location-info {
+        flex-direction: column;
+
+        gap: 6px;
+    }
+
+    .open-map-btn {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .contact-map iframe {
+        height: 350px;
+    }
+}
+
+
+/**
+=======================
+faqs
+=======================
+**/
+.web-faq-section {
+    width: 100%;
+    background: #f5faff;
+    padding: 80px 0 !important;
+}
+
+.web-faq {
+    width: 100%;
+}
+
+.web-faq .accordion-item {
+    border: 1px solid #dbeafe;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    overflow: hidden;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.web-faq .accordion-button {
+    /* min-height: 80px; */
+    padding: 10px 24px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #0f172a;
+    background: #fff;
+    box-shadow: none;
+}
+
+.web-faq .accordion-button:not(.collapsed) {
+    color: #fff;
+    background: #0f172a;
+    box-shadow: none;
+}
+
+.web-faq .accordion-button:focus {
+    box-shadow: none;
+}
+
+.web-faq .accordion-item:has(
+    .accordion-button:not(.collapsed)
+) {
+    border-color: #38bdf8;
+    box-shadow: 0 8px 25px rgba(56, 189, 248, 0.12);
+}
+
+.web-faq .accordion-body {
+    /* min-height: 90px; */
+    padding: 10px 24px;
+    color: #475569;
+    background: #fff;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.web-faq .accordion-button::after {
+    transition: transform 0.3s ease;
+}
+
+.web-faq .accordion-button:not(.collapsed)::after {
+    filter: brightness(0) invert(1);
+}
+
+.web-faq .accordion-item:hover {
+    border-color: #38bdf8;
+}
+
+@media (max-width: 767px) {
+
+    .web-faq-section {
+        padding: 55px 0 !important;
+    }
+
+    .web-faq .accordion-button {
+        /* min-height: 70px; */
+        padding: 10px 24px;
+        font-size: 13px;
+    }
+
+    .web-faq .accordion-body {
+        min-height: auto;
+        padding: 18px 20px 22px;
+        font-size: 15px;
+    }
+}
+
+
+/* =========================================
+   GET A QUOTE BUTTON
+   Desktop + Mobile
+========================================= */
+
+/* Desktop */
+.nav-side .get-btn .default-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+/* Mobile Quote Button */
+.mobile-quote-btn {
+    display: none;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media only screen and (max-width: 991px) {
+
+    .mobile-quote-btn {
+        display: block;
+        position: absolute;
+        right: 73px;
+        top: 14px;
+        z-index: 9999;
+    }
+
+    .mobile-quote-btn .default-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        /* min-width: 135px; */
+        height: 26px;
+
+        padding: 10px 16px;
+
+        border-radius: 25px;
+
+        font-size: 14px;
+        font-weight: 600;
+
+        white-space: nowrap;
+    }
+
+    .mobile-quote-btn .default-btn i {
+        margin-left: 5px;
+        font-size: 18px;
+    }
+
+}
+
+
+/* Small Mobile */
+@media only screen and (max-width: 480px) {
+
+    .mobile-quote-btn {
+        right: 72px;
+        /* top: 62px; */
+    }
+
+    .mobile-quote-btn .default-btn {
+        /* min-width: 120px; */
+        height: 26px;
+        padding: 8px 22px;
+        font-size: 14px;
+    }
+
+}
+@media (max-width: 767px) {
+
+    .top-header .row {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .top-header .col-lg-6,
+    .top-header .col-md-6 {
+        width: auto !important;
+        padding: 0 22px !important;
+    }
+
+    /* Phone */
+    .top-header-left {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    .top-contact h3 {
+        font-size: 12px;
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    /* Social icons RIGHT SIDE */
+    .top-header-right {
+        margin-left: auto !important;
+        display: flex;
+        align-items: center;
+		justify-content: flex-end;
+    }
+
+    .social-handles {
+        display: flex !important;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 8px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none;
+    }
+
+    .social-handles li {
+        display: flex !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Icons bigger */
+    .social-handles li a {
+        width: 24px !important;
+        height: 24px !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        padding: 0 !important;
+        margin-bottom: 10px;
+    }
+
+    .social-handles li a i {
+        font-size: 16px !important;
+    }
 }

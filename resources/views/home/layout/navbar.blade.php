@@ -17,8 +17,10 @@
 
                 {{-- Brand logo --}}
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="{{ url('public/assets/images/logos/logo.png') }}" class="logo-one" alt="Hytrix Technologies Logo">
-                    <img src="{{ url('public/assets/images/logos/logo.png') }}" class="logo-two" alt="Hytrix Technologies Logo">
+                    <img src="{{ url('public/assets/images/logos/logo.png') }}" class="logo-one"
+                        alt="Hytrix Technologies Logo">
+                    <img src="{{ url('public/assets/images/logos/logo.png') }}" class="logo-two"
+                        alt="Hytrix Technologies Logo">
                 </a>
 
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -44,7 +46,8 @@
 
                         {{-- Services dropdown --}}
                         <li class="nav-item">
-                            <a href="#!" class="nav-link {{ in_array(Route::current()->getName(), ['software', 'web', 'android', 'ecommerce', 'digital', 'webhost', 'api', 'cloud']) ? 'active' : '' }}">
+                            <a href="#!"
+                                class="nav-link {{ in_array(Route::current()->getName(), ['software', 'web', 'android', 'ecommerce', 'digital', 'webhost', 'api', 'cloud']) ? 'active' : '' }}">
                                 Services
                                 <i class='bx bx-caret-down'></i>
                             </a>
@@ -84,11 +87,11 @@
                                         <i class='bx bx-transfer'></i> API Integration
                                     </a>
                                 </li>
-                                <li class="nav-item">
+                                {{-- <li class="nav-item">
                                     <a href="#">
                                         <i class='bx bx-cloud'></i> Cloud Computing
                                     </a>
-                                </li>
+                                </li> --}}
                             </ul>
                         </li>
 
@@ -102,7 +105,8 @@
 
                         {{-- Work With Us dropdown --}}
                         <li class="nav-item">
-                            <a href="#!" class="nav-link {{ Route::current()->getName() == 'career' ? 'active' : '' }}">
+                            <a href="#!"
+                                class="nav-link {{ Route::current()->getName() == 'career' ? 'active' : '' }}">
                                 Work With Us
                                 <i class='bx bx-caret-down'></i>
                             </a>
@@ -135,14 +139,19 @@
                             </div>
                         </div>
                     </div>
-
+                    {{-- Mobile CTA Button --}}
+                    <div class="mobile-quote-btn">
+                        <a href="{{ url('contact') }}" class="default-btn btn-bg-two">
+                            Get A Quote <i class='bx bx-chevron-right'></i>
+                        </a>
+                    </div>
                 </div>
             </nav>
         </div>
     </div>
 
     {{-- Side-nav responsive CTA (fixes broken contact.html href) --}}
-    <div class="side-nav-responsive">
+    {{-- <div class="side-nav-responsive">
         <div class="container-max">
             <div class="dot-menu">
                 <div class="circle-inner">
@@ -165,7 +174,8 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
+
 
 </div>
 

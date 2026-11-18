@@ -33,7 +33,7 @@
 
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="choose-content mr-lg-20">
-                        <div class="section-title">
+                        <div class="section-title mt-5">
                             <span class="sp-color2">GROWTH &amp; PERFORMANCE MARKETING</span>
                             <h1>Digital Marketing Company in India</h1>
                         </div>
@@ -172,5 +172,369 @@
             </div>
         </div>
     </section>
+{{-- ====== Digital Marketing FAQ Section ====== --}}
+<section class="web-faq-section py-5">
 
+    <div class="container py-lg-4">
+
+        {{-- FAQ Heading --}}
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8 text-center">
+
+                <div class="section-title mb-5">
+
+                    <span class="sp-color2">
+                        FREQUENTLY ASKED QUESTIONS
+                    </span>
+
+                    <h2>
+                        Digital Marketing FAQs
+                    </h2>
+
+                    <p class="margin-auto">
+                        Find answers to common questions about SEO, social media
+                        marketing, PPC advertising, content marketing and online
+                        brand growth.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        {{-- FAQ Accordion --}}
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <div class="accordion web-faq" id="digitalFaqAccordion">
+
+
+                    {{-- FAQ 1 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="digitalFaqHeadingOne">
+
+                            <button
+                                class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#digitalFaqOne"
+                                aria-expanded="true"
+                                aria-controls="digitalFaqOne">
+
+                                What digital marketing services does Hytrix Technologies provide?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="digitalFaqOne"
+                            class="accordion-collapse collapse show"
+                            aria-labelledby="digitalFaqHeadingOne"
+                            data-bs-parent="#digitalFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                Hytrix Technologies provides digital marketing
+                                services including SEO, on-page SEO, off-page SEO,
+                                social media marketing, PPC advertising, content
+                                marketing, local SEO and online brand promotion.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 2 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="digitalFaqHeadingTwo">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#digitalFaqTwo"
+                                aria-expanded="false"
+                                aria-controls="digitalFaqTwo">
+
+                                How can digital marketing help my business?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="digitalFaqTwo"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="digitalFaqHeadingTwo"
+                            data-bs-parent="#digitalFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                Digital marketing can help businesses increase
+                                online visibility, reach potential customers,
+                                generate qualified leads, improve brand awareness
+                                and build a stronger online presence.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 3 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="digitalFaqHeadingThree">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#digitalFaqThree"
+                                aria-expanded="false"
+                                aria-controls="digitalFaqThree">
+
+                                What is SEO and why is it important?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="digitalFaqThree"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="digitalFaqHeadingThree"
+                            data-bs-parent="#digitalFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                SEO, or Search Engine Optimization, helps improve
+                                a website's visibility in search engine results.
+                                A well-planned SEO strategy can help attract relevant
+                                organic traffic and increase opportunities for
+                                leads and conversions.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 4 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="digitalFaqHeadingFour">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#digitalFaqFour"
+                                aria-expanded="false"
+                                aria-controls="digitalFaqFour">
+
+                                Do you provide SEO services for businesses in India?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="digitalFaqFour"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="digitalFaqHeadingFour"
+                            data-bs-parent="#digitalFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                Yes. We provide SEO solutions for businesses
+                                across India, including keyword research,
+                                on-page optimization, technical SEO, content
+                                optimization, local SEO and off-page SEO.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 5 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="digitalFaqHeadingFive">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#digitalFaqFive"
+                                aria-expanded="false"
+                                aria-controls="digitalFaqFive">
+
+                                How long does it take to see SEO results?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="digitalFaqFive"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="digitalFaqHeadingFive"
+                            data-bs-parent="#digitalFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                SEO results depend on factors such as website
+                                condition, competition, keywords, content,
+                                technical optimization and backlink profile.
+                                SEO is a long-term process and results can vary
+                                from one website to another.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 6 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="digitalFaqHeadingSix">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#digitalFaqSix"
+                                aria-expanded="false"
+                                aria-controls="digitalFaqSix">
+
+                                Do you provide social media marketing services?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="digitalFaqSix"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="digitalFaqHeadingSix"
+                            data-bs-parent="#digitalFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                Yes. We can help businesses with social media
+                                strategy, content planning, creative campaigns,
+                                audience engagement and social media promotion
+                                across relevant platforms.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 7 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="digitalFaqHeadingSeven">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#digitalFaqSeven"
+                                aria-expanded="false"
+                                aria-controls="digitalFaqSeven">
+
+                                Do you provide Google Ads and PPC advertising?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="digitalFaqSeven"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="digitalFaqHeadingSeven"
+                            data-bs-parent="#digitalFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                Yes. We can create and manage PPC advertising
+                                campaigns focused on reaching relevant audiences,
+                                generating leads and improving advertising
+                                performance based on your campaign objectives.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 8 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="digitalFaqHeadingEight">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#digitalFaqEight"
+                                aria-expanded="false"
+                                aria-controls="digitalFaqEight">
+
+                                How much does digital marketing cost?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="digitalFaqEight"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="digitalFaqHeadingEight"
+                            data-bs-parent="#digitalFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                Digital marketing cost depends on the services
+                                required, campaign goals, target audience,
+                                competition and marketing strategy. We can
+                                recommend a suitable plan after understanding
+                                your business requirements.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 @endsection

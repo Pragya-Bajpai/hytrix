@@ -174,7 +174,7 @@
 
                 <div class="col-lg-6 mt-4 mt-lg-0">
                     <div class="choose-img">
-                        <img src="{{ url('public/assets/images/choose-img.jpg') }}"
+                        <img src="{{ url('public/assets/images/choose-img (2).webp') }}"
                             alt="Hytrix Technologies IT company in India" class="img-fluid rounded">
                     </div>
                 </div>
@@ -316,7 +316,7 @@
                 </div>
 
                 {{-- Cloud Computing --}}
-                <div class="col-lg-4 col-sm-6 mb-2">
+                {{-- <div class="col-lg-4 col-sm-6 mb-2">
                     <a href="{{ route('cloud') }}" class="d-block h-100 text-decoration-none">
                         <div class="security-card d-flex flex-column h-100 p-4 p-lg-5">
                             <div class="icon">
@@ -329,9 +329,340 @@
                             </p>
                         </div>
                     </a>
-                </div>
+                </div> --}}
 
             </div>
         </div>
     </div>
+    <!-- =========================
+     FAQ SECTION
+========================= -->
+<section class="web-faq-section py-5">
+    <div class="container py-lg-2">
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+
+                <div class="section-title mb-5">
+
+                    <span class="sp-color2 mb-3">
+                        FREQUENTLY ASKED QUESTIONS
+                    </span>
+
+                    <h2>
+                        Frequently Asked Questions
+                    </h2>
+
+                    <p class="text-muted">
+                        Find answers to common questions about Hytrix Technologies,
+                        our IT services, development process and digital solutions.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="accordion web-faq" id="webFaqAccordion">
+
+                    <!-- FAQ 1 -->
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="faqHeadingOne">
+
+                            <button
+                                class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#faqOne"
+                                aria-expanded="true"
+                                aria-controls="faqOne">
+
+                                What services does Hytrix Technologies provide?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="faqOne"
+                            class="accordion-collapse collapse show"
+                            aria-labelledby="faqHeadingOne"
+                            data-bs-parent="#webFaqAccordion">
+
+                            <div class="accordion-body">
+                                Hytrix Technologies provides web development,
+                                software development, Android app development,
+                                e-commerce development, digital marketing,
+                                web hosting and API integration services.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 2 -->
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="faqHeadingTwo">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#faqTwo"
+                                aria-expanded="false"
+                                aria-controls="faqTwo">
+
+                                Where is Hytrix Technologies located?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="faqTwo"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="faqHeadingTwo"
+                            data-bs-parent="#webFaqAccordion">
+
+                            <div class="accordion-body">
+                                Hytrix Technologies LLP is an IT company based
+                                in Lucknow, Uttar Pradesh, providing technology
+                                and digital solutions to businesses across India.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 3 -->
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="faqHeadingThree">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#faqThree"
+                                aria-expanded="false"
+                                aria-controls="faqThree">
+
+                                Do you provide custom website development?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="faqThree"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="faqHeadingThree"
+                            data-bs-parent="#webFaqAccordion">
+
+                            <div class="accordion-body">
+                                Yes. We develop customized and responsive websites
+                                according to your business requirements, branding,
+                                functionality and long-term goals.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 4 -->
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="faqHeadingFour">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#faqFour"
+                                aria-expanded="false"
+                                aria-controls="faqFour">
+
+                                Does Hytrix provide software development services?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="faqFour"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="faqHeadingFour"
+                            data-bs-parent="#webFaqAccordion">
+
+                            <div class="accordion-body">
+                                Yes. We develop customized software solutions
+                                designed around business workflows, operational
+                                requirements and scalability.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 5 -->
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="faqHeadingFive">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#faqFive"
+                                aria-expanded="false"
+                                aria-controls="faqFive">
+
+                                Do you provide Android app development?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="faqFive"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="faqHeadingFive"
+                            data-bs-parent="#webFaqAccordion">
+
+                            <div class="accordion-body">
+                                Yes. Our Android development services focus on
+                                creating functional, reliable and user-friendly
+                                mobile applications.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 6 -->
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="faqHeadingSix">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#faqSix"
+                                aria-expanded="false"
+                                aria-controls="faqSix">
+
+                                Can you develop an e-commerce website?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="faqSix"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="faqHeadingSix"
+                            data-bs-parent="#webFaqAccordion">
+
+                            <div class="accordion-body">
+                                Yes. We develop e-commerce solutions with features
+                                for product management, customer experience,
+                                online transactions and business requirements.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 7 -->
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="faqHeadingSeven">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#faqSeven"
+                                aria-expanded="false"
+                                aria-controls="faqSeven">
+
+                                Do you provide digital marketing services?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="faqSeven"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="faqHeadingSeven"
+                            data-bs-parent="#webFaqAccordion">
+
+                            <div class="accordion-body">
+                                Yes. Our digital marketing services include SEO,
+                                PPC, social media marketing and content strategies
+                                designed to improve online visibility and reach.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 8 -->
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="faqHeadingEight">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#faqEight"
+                                aria-expanded="false"
+                                aria-controls="faqEight">
+
+                                How can I start a project with Hytrix Technologies?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="faqEight"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="faqHeadingEight"
+                            data-bs-parent="#webFaqAccordion">
+
+                            <div class="accordion-body">
+                                You can contact our team and share your project
+                                requirements or business goals. Our team will
+                                discuss your requirements and suggest a suitable
+                                technology solution.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
 @endsection

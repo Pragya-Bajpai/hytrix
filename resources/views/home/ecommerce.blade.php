@@ -33,7 +33,7 @@
 
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="choose-content mr-lg-20">
-                        <div class="section-title">
+                        <div class="section-title mt-5">
                             <span class="sp-color2">ONLINE STORE SOLUTIONS</span>
                             <h1>E-Commerce Website Development in India</h1>
                         </div>
@@ -158,5 +158,368 @@
             </div>
         </div>
     </section>
+{{-- ====== E-Commerce FAQ Section ====== --}}
+<section class="web-faq-section py-5">
 
+    <div class="container py-lg-4">
+
+        {{-- FAQ Heading --}}
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8 text-center">
+
+                <div class="section-title mb-5">
+
+                    <span class="sp-color2">
+                        FREQUENTLY ASKED QUESTIONS
+                    </span>
+
+                    <h2>
+                        E-Commerce Development FAQs
+                    </h2>
+
+                    <p class="margin-auto">
+                        Find answers to common questions about e-commerce
+                        website development, features, payment gateways,
+                        security, integrations and online stores.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        {{-- FAQ Accordion --}}
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <div class="accordion web-faq" id="ecommerceFaqAccordion">
+
+
+                    {{-- FAQ 1 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="ecommerceFaqHeadingOne">
+
+                            <button
+                                class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#ecommerceFaqOne"
+                                aria-expanded="true"
+                                aria-controls="ecommerceFaqOne">
+
+                                What e-commerce development services does Hytrix Technologies provide?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="ecommerceFaqOne"
+                            class="accordion-collapse collapse show"
+                            aria-labelledby="ecommerceFaqHeadingOne"
+                            data-bs-parent="#ecommerceFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                Hytrix Technologies provides custom e-commerce
+                                website development, online store development,
+                                multi-vendor marketplace development, payment
+                                gateway integration, shopping cart development,
+                                inventory management and e-commerce maintenance.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 2 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="ecommerceFaqHeadingTwo">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#ecommerceFaqTwo"
+                                aria-expanded="false"
+                                aria-controls="ecommerceFaqTwo">
+
+                                How much does e-commerce website development cost?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="ecommerceFaqTwo"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="ecommerceFaqHeadingTwo"
+                            data-bs-parent="#ecommerceFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                The cost depends on the type of online store,
+                                number of products, design requirements,
+                                payment gateways, integrations, admin features
+                                and overall project complexity. We can provide
+                                an estimate after understanding your requirements.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 3 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="ecommerceFaqHeadingThree">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#ecommerceFaqThree"
+                                aria-expanded="false"
+                                aria-controls="ecommerceFaqThree">
+
+                                Can you develop a custom e-commerce website?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="ecommerceFaqThree"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="ecommerceFaqHeadingThree"
+                            data-bs-parent="#ecommerceFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                Yes. We develop customized e-commerce websites
+                                according to your business model, product
+                                categories, customer requirements and operational
+                                workflow. The platform can be designed with
+                                customized features and scalable architecture.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 4 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="ecommerceFaqHeadingFour">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#ecommerceFaqFour"
+                                aria-expanded="false"
+                                aria-controls="ecommerceFaqFour">
+
+                                Which payment gateways can be integrated into an e-commerce website?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="ecommerceFaqFour"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="ecommerceFaqHeadingFour"
+                            data-bs-parent="#ecommerceFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                We can integrate suitable payment gateways
+                                according to your business requirements,
+                                including Razorpay, Stripe, PayPal, UPI and
+                                other supported payment solutions.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 5 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="ecommerceFaqHeadingFive">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#ecommerceFaqFive"
+                                aria-expanded="false"
+                                aria-controls="ecommerceFaqFive">
+
+                                Can you develop a multi-vendor e-commerce marketplace?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="ecommerceFaqFive"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="ecommerceFaqHeadingFive"
+                            data-bs-parent="#ecommerceFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                Yes. We can develop multi-vendor marketplaces
+                                with vendor registration, product management,
+                                order management, commission systems, payments,
+                                customer management and administrative controls.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 6 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="ecommerceFaqHeadingSix">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#ecommerceFaqSix"
+                                aria-expanded="false"
+                                aria-controls="ecommerceFaqSix">
+
+                                Will my e-commerce website be mobile responsive?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="ecommerceFaqSix"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="ecommerceFaqHeadingSix"
+                            data-bs-parent="#ecommerceFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                Yes. We develop responsive e-commerce websites
+                                that provide a smooth shopping experience across
+                                desktops, tablets and mobile devices.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 7 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="ecommerceFaqHeadingSeven">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#ecommerceFaqSeven"
+                                aria-expanded="false"
+                                aria-controls="ecommerceFaqSeven">
+
+                                Can you integrate inventory and order management?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="ecommerceFaqSeven"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="ecommerceFaqHeadingSeven"
+                            data-bs-parent="#ecommerceFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                Yes. We can develop or integrate inventory,
+                                product, stock and order management features
+                                that help businesses manage their online store
+                                efficiently.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    {{-- FAQ 8 --}}
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header" id="ecommerceFaqHeadingEight">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#ecommerceFaqEight"
+                                aria-expanded="false"
+                                aria-controls="ecommerceFaqEight">
+
+                                Do you provide e-commerce website maintenance and support?
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="ecommerceFaqEight"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="ecommerceFaqHeadingEight"
+                            data-bs-parent="#ecommerceFaqAccordion">
+
+                            <div class="accordion-body">
+
+                                Yes. We can provide ongoing e-commerce maintenance
+                                and technical support, including updates,
+                                troubleshooting, performance improvements,
+                                security updates and feature enhancements.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 @endsection

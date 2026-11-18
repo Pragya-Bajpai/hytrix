@@ -1,13 +1,17 @@
 @extends('app')
 @section('content')
+
 <div class="login-box">
-  <div class="login-logo">
-  <img src="{{asset('dist/img/logo1.png')}}" alt="company logo" class="img-fluid" width="100px" height="auto;">
+
+  <!-- /.login-logo -->
+  <div class="card">
+      <div class="login-logo">
+  <img src="{{ asset('public/assets/images/logos/logo.jpeg') }}"
+     alt="Hytrix Technologies Logo"
+     class="img-fluid">
 
     <!--a href="{{ route('login') }}"><b>Admin</b>LTE</a--->
   </div>
-  <!-- /.login-logo -->
-  <div class="card">
      @if(session()->has('error'))
                    <div class="alert alert-danger">
                         {{ session()->get('error') }}

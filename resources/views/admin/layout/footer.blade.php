@@ -1,9 +1,95 @@
-<footer class="main-footer">
-{{-- <div class="float-right d-none d-sm-block">
-      <b>Version</b> 
+
+<footer class="main-footer hytrix-footer">
+    <div class="footer-left">
+        <span class="footer-copyright">
+            &copy; <span id="footerYear"></span>
+            <a href="https://hytrix.in" target="_blank">Hytrix Technology</a>.
+        </span>
+        <span class="footer-rights">All rights reserved.</span>
     </div>
-<strong>Copyright &copy; 2025 <a href="https://adminlte.io">Hytrix</a>.</strong> All rights reserved.--}}
-  </footer>
+
+    <div class="footer-version">
+        <span class="footer-status-dot"></span>
+        Admin Panel
+    </div>
+</footer>
+
+<style>
+    .hytrix-footer {
+        background: #ffffff;
+        border-top: 1px solid #e5ebf4;
+        padding: 15px 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        color: #71809b;
+        font-size: 12px;
+        box-shadow: 0 -3px 12px rgba(25, 43, 86, 0.025);
+    }
+
+    .footer-left {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .footer-copyright {
+        color: #52617e;
+        font-weight: 500;
+    }
+
+    .footer-copyright a {
+        color: #344f91;
+        font-weight: 700;
+        text-decoration: none;
+        transition: .2s;
+    }
+
+    .footer-copyright a:hover {
+        color: #50a9d5;
+    }
+
+    .footer-rights {
+        color: #8995a9;
+    }
+
+    .footer-version {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        color: #52617e;
+        font-weight: 600;
+        letter-spacing: .2px;
+    }
+
+    .footer-status-dot {
+        width: 7px;
+        height: 7px;
+        background: #50c4a0;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    @media(max-width: 576px) {
+        .hytrix-footer {
+            justify-content: center;
+            text-align: center;
+            padding: 13px 10px;
+        }
+
+        .footer-left {
+            justify-content: center;
+        }
+    }
+</style>
+
+<script>
+    document.getElementById('footerYear').textContent = new Date().getFullYear();
+</script>
+
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">

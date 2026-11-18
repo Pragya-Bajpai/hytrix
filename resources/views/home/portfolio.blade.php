@@ -20,7 +20,15 @@
 
     @include('home.layout.head')
 </head>
-
+<style>
+    .portfolio-card__description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+</style>
 @extends('home.layout.main')
 
 @section('content')
@@ -65,85 +73,269 @@
             </div>
 
             {{-- Portfolio Grid --}}
-            @if(isset($data) && $data->count() > 0)
-                @php
-                    $categoryMap = [
-                        'web' => ['name' => 'Web Development', 'icon' => 'bx bx-code-alt'],
-                        'mobile' => ['name' => 'Mobile App', 'icon' => 'bx bxl-android'],
-                        'software' => ['name' => 'Software System', 'icon' => 'bx bx-laptop'],
-                        'ecommerce' => ['name' => 'E-Commerce Store', 'icon' => 'bx bx-store-alt'],
-                    ];
-                    $catKeys = ['web', 'mobile', 'software', 'ecommerce'];
-                @endphp
+     {{-- =========================================
+     PORTFOLIO GRID
+========================================= --}}
 
-                <div class="row g-4" id="portfolio-grid">
-                    @foreach($data as $index => $val)
-                        @php
-                            // Determine item category based on title keyword or round-robin distribution
-                            $titleLower = strtolower($val->title ?? '');
-                            if (str_contains($titleLower, 'app') || str_contains($titleLower, 'android') || str_contains($titleLower, 'mobile')) {
-                                $itemCategory = 'mobile';
-                            } elseif (str_contains($titleLower, 'shop') || str_contains($titleLower, 'store') || str_contains($titleLower, 'commerce') || str_contains($titleLower, 'cart')) {
-                                $itemCategory = 'ecommerce';
-                            } elseif (str_contains($titleLower, 'crm') || str_contains($titleLower, 'erp') || str_contains($titleLower, 'software') || str_contains($titleLower, 'portal')) {
-                                $itemCategory = 'software';
-                            } else {
-                                $itemCategory = $catKeys[$index % count($catKeys)];
-                            }
-                            $catMeta = $categoryMap[$itemCategory];
-                        @endphp
+@if(isset($data) && $data->count() > 0)
 
-                        <div class="col-lg-4 col-md-6 col-12 portfolio-item" data-category="{{ $itemCategory }}">
-                            <div class="portfolio-card h-100 d-flex flex-column justify-content-between">
+    @php
 
-                                {{-- Project Image with Overlay --}}
-                                <div class="portfolio-card__image-wrap">
-                                    <img src="{{ asset($val->image) }}"
-                                         alt="{{ $val->title ?? 'Hytrix Technologies Project ' . ($index + 1) }}"
-                                         loading="{{ $index < 6 ? 'eager' : 'lazy' }}"
-                                         class="img-fluid">
+        /*
+        |--------------------------------------------------------------------------
+        | Project Details
+        |--------------------------------------------------------------------------
+        | Index ke according project ki category, URL aur short description.
+        |--------------------------------------------------------------------------
+        */
 
-                                    {{-- Hover Overlay --}}
-                                    <div class="portfolio-card__overlay">
-                                        <a href="{{ asset($val->image) }}"
-                                           class="portfolio-card__view-btn"
-                                           target="_blank"
-                                           rel="noopener noreferrer">
-                                            <i class='bx bx-zoom-in'></i> View Project
-                                        </a>
-                                    </div>
-                                </div>
+        $projectDetails = [
 
-                                {{-- Card Body --}}
-                                <div class="portfolio-card__body flex-grow-1 d-flex flex-column justify-content-between">
-                                    <div>
-                                        <span class="portfolio-card__category">
-                                            <i class='{{ $catMeta['icon'] }}'></i> {{ $catMeta['name'] }}
-                                        </span>
-                                        <h3 class="portfolio-card__title mt-1">
-                                            {{ $val->title ?? 'Client Project ' . ($index + 1) }}
-                                        </h3>
-                                    </div>
-                                </div>
+            0 => [
+                'category' => 'web',
+                'name' => 'Reliable Heal',
+                'description' => 'A professional healthcare website designed to provide clear information and an easy user experience.',
+                'url' => 'https://reliableheal.com/',
+            ],
 
-                            </div>
+            1 => [
+                'category' => 'web',
+                'name' => 'Rising Engineers',
+                'description' => 'A modern engineering website showcasing professional services, solutions and company expertise.',
+                'url' => 'https://risingengineers.in/',
+            ],
+
+            2 => [
+                'category' => 'web',
+                'name' => 'Amit Mark Photography',
+                'description' => 'A creative photography website designed to showcase photography services and visual portfolios.',
+                'url' => 'https://amitmarkphotography.in/',
+            ],
+
+            3 => [
+                'category' => 'ecommerce',
+                'name' => 'PPE Bazar',
+                'description' => 'An e-commerce platform built for browsing and purchasing professional safety and protective products.',
+                'url' => 'https://www.ppebazar.com/',
+            ],
+
+            4 => [
+                'category' => 'web',
+                'name' => 'UCS World Tour & Travel',
+                'description' => 'A travel website presenting tour packages, travel services and destination experiences.',
+                'url' => 'https://ucsworldtourandtravel.com/',
+            ],
+ 5 => [
+    'category' => 'mobile',
+    'name' => 'Shyam Sundar Co. Jewellers',
+'description' => 'A modern jewellery e-commerce platform offering a seamless shopping experience with exclusive jewellery collections, digital gold, special offers and easy customer services.',
+    'url' => '#',
+    // 'image' => 'assets/images/mobileapp.png',
+],
+
+6 => [
+    'category' => 'software',
+    'name' => 'Shyam Sundar Co. Jewellers',
+    'description' => 'A modern jewellery e-commerce platform offering a seamless shopping experience with exclusive jewellery collections, digital gold, special offers and easy customer services.',
+    'url' => '#',
+    // 'image' => 'assets/images/mobileapp.png',
+],
+        ];
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | Category Information
+        |--------------------------------------------------------------------------
+        */
+
+        $categoryMap = [
+
+            'web' => [
+                'name' => 'Web Development',
+                'icon' => 'bx bx-code-alt'
+            ],
+
+            'mobile' => [
+                'name' => 'Mobile App',
+                'icon' => 'bx bxl-android'
+            ],
+
+            'software' => [
+                'name' => 'Software System',
+                'icon' => 'bx bx-laptop'
+            ],
+
+            'ecommerce' => [
+                'name' => 'E-Commerce',
+                'icon' => 'bx bx-store-alt'
+            ],
+
+        ];
+
+    @endphp
+
+
+    <div class="row g-4" id="portfolio-grid">
+
+        @foreach($data as $index => $val)
+
+            @php
+
+                /*
+                |--------------------------------------------------------------------------
+                | Project Detail
+                |--------------------------------------------------------------------------
+                */
+
+                $project = $projectDetails[$index] ?? null;
+
+                if (!$project) {
+                    continue;
+                }
+
+                $itemCategory = $project['category'];
+
+                $catMeta = $categoryMap[$itemCategory];
+
+            @endphp
+
+
+            {{-- =========================================
+                 PORTFOLIO ITEM
+            ========================================== --}}
+
+            <div
+                class="col-lg-4 col-md-6 col-12 portfolio-item"
+                data-category="{{ $itemCategory }}"
+            >
+
+                <div class="portfolio-card h-100 d-flex flex-column justify-content-between">
+
+
+                    {{-- =====================================
+                         PROJECT IMAGE
+                    ====================================== --}}
+
+                    <div class="portfolio-card__image-wrap">
+
+                        {{-- <img
+                            src="{{ asset($val->image) }}"
+                            alt="{{ $project['name'] }} - Hytrix Technologies"
+                            loading="{{ $index < 6 ? 'eager' : 'lazy' }}"
+                            class="img-fluid"
+                        > --}}
+
+<img
+    src="{{ asset($project['image'] ?? $val->image) }}"
+    alt="{{ $project['name'] }} - Hytrix Technologies"
+    loading="{{ $index < 6 ? 'eager' : 'lazy' }}"
+    class="img-fluid"
+>
+                        {{-- =================================
+                             HOVER OVERLAY
+                        ================================== --}}
+
+                        <div class="portfolio-card__overlay">
+
+                            <a
+                                href="{{ $project['url'] }}"
+                                class="portfolio-card__view-btn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+
+                                <i class='bx bx-link-external'></i>
+
+                                View Project
+
+                            </a>
+
                         </div>
-                    @endforeach
+
+                    </div>
+
+
+                    {{-- =====================================
+                         CARD CONTENT
+                    ====================================== --}}
+
+                    <div class="portfolio-card__body flex-grow-1 d-flex flex-column justify-content-between">
+
+                        <div>
+
+                            {{-- Category --}}
+
+                            <span class="portfolio-card__category">
+
+                                <i class="{{ $catMeta['icon'] }}"></i>
+
+                                {{ $catMeta['name'] }}
+
+                            </span>
+
+
+                            {{-- Project Name --}}
+
+                            <h3 class="portfolio-card__title mt-2">
+
+                                {{ $project['name'] }}
+
+                            </h3>
+
+
+                            {{-- Project Description --}}
+
+                            <p class="portfolio-card__description">
+
+                                {{ $project['description'] }}
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
-            @else
+            </div>
 
-                {{-- Empty State --}}
-                <div class="portfolio-empty py-5">
-                    <i class='bx bx-image-alt fs-1'></i>
-                    <h3 class="mt-3">Portfolio Coming Soon</h3>
-                    <p class="text-muted">We're updating our portfolio. Check back soon to see our latest projects.</p>
-                    <a href="{{ route('contact') }}" class="default-btn btn-bg-two mt-3">
-                        Get In Touch <i class='bx bx-chevron-right'></i>
-                    </a>
-                </div>
+        @endforeach
 
-            @endif
+    </div>
+
+
+@else
+
+
+    {{-- =========================================
+         EMPTY STATE
+    ========================================== --}}
+
+    <div class="portfolio-empty py-5 text-center">
+
+        <i class='bx bx-image-alt fs-1'></i>
+
+        <h3 class="mt-3">
+            Portfolio Coming Soon
+        </h3>
+
+        <p class="text-muted">
+            We're updating our portfolio.
+            Check back soon to see our latest projects.
+        </p>
+
+        <a
+            href="{{ route('contact') }}"
+            class="default-btn btn-bg-two mt-3"
+        >
+            Get In Touch
+            <i class='bx bx-chevron-right'></i>
+        </a>
+
+    </div>
+
+@endif
 
         </div>
     </section>
